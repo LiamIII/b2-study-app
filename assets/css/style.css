@@ -1,37 +1,233 @@
-/* Stili generali per una UX migliore */
+/* ================================================ */
+/*             TEMA "ENCOURAGING COACH"             */
+/* ================================================ */
+
+/* --- Import del Font (opzionale, ma consigliato) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* --- Variabili Globali del Tema --- */
+:root {
+    /* Le variabili di colore e font rimangono le stesse */
+    --primary-color: #6f42c1;
+    --danger-color: #e63946;
+    --warning-color: #ffbe0b;
+    --success-color: #2a9d8f;
+    --card-background: #ffffff;
+    --text-color: #343a40;
+    --text-muted: #6c757d;
+    --border-color: #e9ecef;
+    --font-family: "Poppins", system-ui, -apple-system, sans-serif;
+    --card-shadow: 0 6px 20px rgba(111, 66, 193, 0.1);
+    --card-radius: 1rem;
+    
+    /* MODIFICA: Lo sfondo di base è quasi bianco */
+    --background-color: #fdfdff;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #212529; /* Testo più scuro per miglior contrasto */
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    /* Creiamo due grandi "nuvole" di colore sfumato con i colori del tema */
+    background-image: 
+        radial-gradient(circle at 10% 10%, rgba(111, 66, 193, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(42, 157, 143, 0.1) 0%, transparent 50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Le nuvole restano ferme durante lo scroll */
 }
 
-main.container {
-    max-width: 960px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400; /* Font leggermente più bold del default per gerarchia */
-}
-
-/* Stile coerente per tutte le card */
 .card {
     border: none;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    background-color: var(--card-background);
     transition: all 0.2s ease-in-out;
 }
 
-/* Stili specifici per il quiz */
-#options-container .btn-outline-primary:hover {
-    background-color: #0d6efd;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+/* --- Header e Navigazione --- */
+.dropdown-menu {
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-radius);
+    border: none;
+}
+.btn-light {
+    transition: transform 0.2s ease;
+}
+.btn-light:hover {
+    transform: scale(1.1);
+}
+
+/* --- Piano di Studio Giornaliero --- */
+.daily-plan-card {
+    border-left: 5px solid var(--primary-color);
+}
+.daily-plan-card .card-header {
+    background-color: var(--card-background);
+}
+.daily-plan-card .task-link {
+    text-decoration: none;
+    color: inherit;
+}
+.daily-plan-card .task-link .list-group-item {
+    transition: background-color 0.2s ease-in-out;
+    border-radius: var(--card-radius);
+}
+.daily-plan-card .task-link:hover .list-group-item {
+    background-color: var(--background-color);
+}
+
+
+/* --- Lista Categorie --- */
+#category-list .list-group-item-action {
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+}
+#category-list .list-group-item-action:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(111, 66, 193, 0.15);
+    border-color: var(--primary-color);
+}
+#category-list h5 {
+    font-weight: 500;
+}
+
+/* --- Barre di Progresso con Gradiente --- */
+.progress {
+    height: 8px !important;
+    border-radius: 8px;
+    background-color: #e9ecef;
+}
+.progress-bar.bg-danger {
+    background: linear-gradient(to right, #e63946, #f77f00);
+}
+.progress-bar.bg-warning {
+    background: linear-gradient(to right, #ffbe0b, #fb5607);
+}
+.progress-bar.bg-success {
+    background: linear-gradient(to right, #2a9d8f, #83c5be);
+}
+
+
+/* --- Badge --- */
+/* Le classi per i badge verranno generate da JS usando i colori di Bootstrap, 
+   quindi non servono stili custom qui, basta usare le classi giuste. */
+
+
+/* ================================================ */
+/*             STILI PAGINA QUIZ V2.0               */
+/* ================================================ */
+
+.quiz-container {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-card {
+    width: 100%;
+    max-width: 720px; /* Limita la larghezza per una migliore leggibilità */
+}
+
+.quiz-card .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.quiz-card .timer-display {
+    background-color: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px; /* Pasticca arrotondata */
+    font-weight: 500;
+}
+
+.quiz-card #question-text {
+    font-size: 1.5rem; /* Testo domanda più grande */
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+/* Stile personalizzato per i pulsanti di opzione */
+.btn-quiz-option {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    text-align: left;
+    border: 2px solid var(--border-color);
+    border-radius: var(--card-radius);
+    background-color: transparent;
+    color: var(--text-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-quiz-option:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(111, 66, 193, 0.05); /* Sfondo viola leggerissimo */
+}
+
+/* Stile per l'opzione selezionata in modalità esame */
+.btn-quiz-option.active {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(111, 66, 193, 0.2);
+}
+
+/* Stili per il feedback immediato in modalità studio */
+.btn-quiz-option.correct {
+    border-color: var(--success-color);
+    background-color: var(--success-color);
     color: white;
 }
 
-/* Stile per il canvas della mappa strategica */
-#strategic-map-canvas {
-    max-height: 500px;
-    width: 100% !important;
+.btn-quiz-option.incorrect {
+    border-color: var(--danger-color);
+    background-color: var(--danger-color);
+    color: white;
 }
 
-#strategic-map-canvas:hover {
-    cursor: pointer;
+/* Stile per mostrare la soluzione corretta quando si sbaglia */
+.btn-quiz-option.solution {
+    border-color: var(--success-color);
+    background-color: rgba(42, 157, 143, 0.1); /* Sfondo verde leggero */
+    color: var(--success-color);
+}
+
+.btn-quiz-option[disabled]:not(.active) {
+    opacity: 0.6;
+}
+
+/* Icone di feedback */
+.feedback-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+/* Box spiegazione */
+#explanation-container {
+    background-color: var(--background-color);
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border-color);
+}
+
+#improvement-areas .border-top {
+    border-color: var(--border-color) !important;
+}
+
+/* Nasconde il dropdown "Ordina" nella vista Mappa per pulizia */
+#map-view.d-none ~ #dashboard-view #sort-dropdown {
+    display: block;
+}
+#dashboard-view.d-none ~ #map-view #sort-dropdown {
+    display: none;
 }

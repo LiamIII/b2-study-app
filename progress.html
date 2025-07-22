@@ -119,6 +119,30 @@
             </div>
         </section>
 
+        <section class="row mt-4">
+    <div class="col-lg-12 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>
+                    <i class="bi bi-graph-up-arrow me-2"></i>
+                    Andamento delle Performance nel Tempo
+                </span>
+                <div class="col-md-4">
+                    <select id="performance-filter" class="form-select form-select-sm" aria-label="Filtra per metrica di performance">
+                        <option value="overall" selected>Performance Complessiva (% Errore)</option>
+                        <!-- Le altre opzioni verranno popolate da JS -->
+                    </select>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="performance-chart-container" style="min-height: 300px;">
+                    <canvas id="performance-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- in progress.html -->
 <section class="row mt-4">
