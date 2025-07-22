@@ -1,6 +1,6 @@
 /**
- * common.js - VERSIONE FINALE E COMPLETA
- * Contiene tutte le funzioni di logica di base condivise tra le pagine.
+ * common.js - VERSIONE FINALE E CORRETTA
+ * Corregge i percorsi dei file di dati per renderli relativi.
  */
 
 // =============================================================
@@ -10,6 +10,7 @@
 async function loadData() {
     try {
         const [questionsResponse, performanceResponse] = await Promise.all([
+            // CORREZIONE: rimossi gli slash iniziali
             fetch('data/questions.json'),
             fetch('data/performance.csv')
         ]);
@@ -97,30 +98,24 @@ function saveErrorDeck(errorDeck) {
 function updateLearningState(questionId, isCorrect) {
     const srsData = getSrsData();
     const errorDeck = getErrorDeck();
-
     if (!isCorrect) {
         if (!errorDeck.includes(questionId)) {
             errorDeck.push(questionId);
         }
     }
     saveErrorDeck(errorDeck);
-
-    const intervals = [1, 3, 7, 15, 30, 60]; 
+    const intervals = [1, 3, 7, 15, 30, 60];
     let currentSrs = srsData[questionId] || { level: 0 };
-
     if (isCorrect) {
         currentSrs.level = Math.min(currentSrs.level + 1, intervals.length - 1);
     } else {
         currentSrs.level = 0;
     }
-
     const daysToAdd = intervals[currentSrs.level];
     const nextReviewDate = new Date();
     nextReviewDate.setDate(nextReviewDate.getDate() + daysToAdd);
-    
     currentSrs.nextReview = nextReviewDate.toISOString().split('T')[0];
     srsData[questionId] = currentSrs;
-    
     saveSrsData(srsData);
 }
 
@@ -147,7 +142,6 @@ function recordStudySession(questionsStudied) {
     }
     history[todayStr].studied += questionsStudied;
     localStorage.setItem('studyHistory', JSON.stringify(history));
-
     const profile = getUserProfile();
     if (profile.lastStudyDay !== todayStr) {
         const yesterday = new Date();
