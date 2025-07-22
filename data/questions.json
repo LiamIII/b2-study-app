@@ -1,0 +1,2531 @@
+[
+  {
+    "id": 1,
+    "domanda": "I'm happy to say that I ... you tomorrow.",
+    "opzioni": [ "Able to meet you", "Can will meet you", "Can meet you", "Will can meet you" ],
+    "soluzione": "Can meet you",
+    "ripasso": "Unit 26 - Can, could and (be) able to",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "Il verbo modale 'can' esprime abilità o possibilità ed è seguito dalla forma base del verbo ('meet'). Non è possibile combinare due verbi modali come 'will can'. La forma 'able to' richiederebbe 'will be able to' per riferirsi al futuro."
+  },
+  {
+    "id": 2,
+    "domanda": "... is this pair of jeans?",
+    "opzioni": [ "How size", "What size", "What big", "How much big" ],
+    "soluzione": "What size",
+    "ripasso": "Unit 47 - What...?, Which...?, How...?",
+    "categoria": "Question Formation",
+    "spiegazione": "Per chiedere la taglia di un capo di abbigliamento, l'espressione corretta e standard è 'What size?'. Le altre opzioni sono grammaticalmente scorrette in questo contesto."
+  },
+  {
+    "id": 3,
+    "domanda": "Do all you people know where the emergency exits are? Enquired the manager.",
+    "opzioni": [ "The manager asked everyone if they knew where were the emergency exits.", "The manager asked to everyone if they did know where the emergency exits were.", "The manager asked everyone if they knew where the emergency exits were.", "The manager asked everyone did they know where were the emergency exits." ],
+    "soluzione": "The manager asked everyone if they knew where the emergency exits were.",
+    "ripasso": "Unit 49 - Reported questions",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto, la domanda diventa una frase affermativa. Si usa 'if', il tempo verbale si sposta indietro nel passato (da 'are' a 'were'), e l'ordine delle parole è soggetto + verbo ('the emergency exits were')."
+  },
+  {
+    "id": 4,
+    "domanda": "He couldn't call his parents ... his mobile phone battery was dead.",
+    "opzioni": [ "Though", "Except", "As", "So" ],
+    "soluzione": "As",
+    "ripasso": "Unit 115 - As (reason and time)",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "La congiunzione 'as' è usata qui con il significato di 'poiché' o 'siccome' per introdurre la ragione per cui non poteva telefonare."
+  },
+  {
+    "id": 5,
+    "domanda": "The surgeon washed his hands very carefully ... on his rubber gloves.",
+    "opzioni": [ "Before to put", "After put", "As put", "Before putting" ],
+    "soluzione": "Before putting",
+    "ripasso": "Unit 64 - Before/After/When + -ing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo preposizioni come 'before' e 'after', il verbo che segue deve essere nella forma in -ing (gerundio)."
+  },
+  {
+    "id": 6,
+    "domanda": "I ... but now I can make pizza, pasta, everything!",
+    "opzioni": [ "Wasn't use to cook", "Wasn't used coking", "Didn't use to cook", "Didn't used to cook" ],
+    "soluzione": "Didn't use to cook",
+    "ripasso": "Unit 36 - used to (do)",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "Per indicare un'abitudine passata che non è più vera, si usa 'used to + forma base'. La forma negativa è 'didn't use to cook'. Il contrasto è dato da 'but now I can'."
+  },
+  {
+    "id": 7,
+    "domanda": "My father is clever and ...",
+    "opzioni": [ "So is my mother", "So does my mother", "So my mother", "So my mother is" ],
+    "soluzione": "So is my mother",
+    "ripasso": "Unit 42 - So am I / Neither do I etc.",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "Per essere d'accordo con un'affermazione positiva, si usa 'So + verbo ausiliare/modale + soggetto'. Poiché la prima frase usa 'is', la risposta deve usare 'is'."
+  },
+  {
+    "id": 8,
+    "domanda": "The teacher ... their compositions.",
+    "opzioni": [ "Let his students to rewrite", "Made his students to rewrite", "Got his students rewrite", "Made his students rewrite" ],
+    "soluzione": "Made his students rewrite",
+    "ripasso": "Unit 54 - Make and let",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Il verbo 'make' nella struttura 'make somebody do something' significa 'costringere' o 'far fare' ed è seguito dalla forma base del verbo senza 'to'."
+  },
+  {
+    "id": 9,
+    "domanda": "I didn't really expect ... any money.",
+    "opzioni": [ "Them to give me", "Them give me", "That they give me", "They give me" ],
+    "soluzione": "Them to give me",
+    "ripasso": "Unit 53 - Verb + object + to ... (I want you to ...)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'expect' segue la struttura 'verbo + oggetto + infinito con to' (expect somebody to do something)."
+  },
+  {
+    "id": 10,
+    "domanda": "Wolf, there's a small chance that he ... for the role of Hamlet.",
+    "opzioni": [ "Might to be chose", "Might be choosed", "Might have chosen", "Might be chosen" ],
+    "soluzione": "Might be chosen",
+    "ripasso": "Unit 44 - Passive (be done / been done / being done)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Questa è una forma passiva con un verbo modale. La struttura è 'modale + be + participio passato'. Il participio passato di 'choose' è 'chosen'."
+  },
+  {
+    "id": 11,
+    "domanda": "If I were her, I ... him.",
+    "opzioni": [ "Will leave", "Left", "Would left", "Would leave" ],
+    "soluzione": "Would leave",
+    "ripasso": "Unit 39 - If I did ... (Conditionals Type 2)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del secondo tipo, usato per situazioni immaginarie nel presente. La struttura è 'If + Past Simple, ... would + forma base'."
+  },
+  {
+    "id": 12,
+    "domanda": "I haven't been feeling very well ...",
+    "opzioni": [ "Nowadays", "Recently", "Last week", "Now" ],
+    "soluzione": "Recently",
+    "ripasso": "Unit 7 - Present Perfect (Signal words)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Il Present Perfect ('I haven't been') è spesso usato con avverbi di tempo che indicano un periodo recente non ancora concluso, come 'recently' o 'lately'."
+  },
+  {
+    "id": 13,
+    "domanda": "It's no use ... about such a small point.",
+    "opzioni": [ "To trouble", "Of troubling", "For trouble", "Troubling" ],
+    "soluzione": "Troubling",
+    "ripasso": "Unit 58 - It's no use -ing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "L'espressione 'It's no use' (è inutile) è sempre seguita dalla forma in -ing del verbo."
+  },
+  {
+    "id": 14,
+    "domanda": "Kenneth ... a moustache since he was eighteen years old.",
+    "opzioni": [ "Has been having", "Has", "Have had", "Has had" ],
+    "soluzione": "Has had",
+    "ripasso": "Unit 11 - For and Since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Con 'since' si usa il Present Perfect per descrivere un'azione o uno stato iniziato nel passato e che continua nel presente. 'Have' è un verbo di stato e non si usa nella forma progressiva ('has been having')."
+  },
+  {
+    "id": 15,
+    "domanda": "I ... my hair permed every three months.",
+    "opzioni": [ "Make", "Do", "Let", "Have" ],
+    "soluzione": "Have",
+    "ripasso": "Unit 46 - Have something done (Causative)",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Si usa la struttura causativa 'have something done' per indicare che si organizza affinché qualcun altro (il parrucchiere) faccia qualcosa per noi."
+  },
+  {
+    "id": 16,
+    "domanda": "He'll tell you when he ... for sure.",
+    "opzioni": [ "Will be know", "Will know", "Know", "Knows" ],
+    "soluzione": "Knows",
+    "ripasso": "Unit 25 - When I do / When I've done (Time clauses)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Nelle frasi temporali introdotte da 'when', 'as soon as', ecc., che si riferiscono al futuro, si usa il Present Simple, non il futuro con 'will'."
+  },
+  {
+    "id": 17,
+    "domanda": "Jenny ...",
+    "opzioni": [ "Lent her bike at her brother", "Lent her bike to her brother", "Lent to her brother her bike", "Lent at her brother her bike" ],
+    "soluzione": "Lent her bike to her brother",
+    "ripasso": "Unit 51 - Verb + object + preposition (lend something to somebody)",
+    "categoria": "Prepositions",
+    "spiegazione": "Il verbo 'lend' (prestare) usa la preposizione 'to' per introdurre la persona che riceve. La struttura è 'lend something to somebody'."
+  },
+  {
+    "id": 18,
+    "domanda": "Tom and Mary ... for 25 years.",
+    "opzioni": [ "Have been marrying", "Are married", "Have been married", "Are marrying" ],
+    "soluzione": "Have been married",
+    "ripasso": "Unit 11 - Present Perfect with for/since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "'To be married' è uno stato. Per descrivere uno stato che è iniziato nel passato e continua nel presente, usando 'for', si utilizza il Present Perfect ('have been married')."
+  },
+  {
+    "id": 19,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If it wouldn't have been so heavy, I wouldn't have dropped it", "If it hasn't been so heavy, I wouldn't have dropped it", "If it weren't been so heavy, I wouldn't have dropped it", "If it hadn't been so heavy, I wouldn't have dropped it" ],
+    "soluzione": "If it hadn't been so heavy, I wouldn't have dropped it",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questa è un'ipotesi irreale nel passato (terzo condizionale). La struttura corretta è 'If + Past Perfect (hadn't been), ... would have + participio passato (wouldn't have dropped)'."
+  },
+  {
+    "id": 20,
+    "domanda": "Lots of people watched the workmen ... the bridge.",
+    "opzioni": [ "Built", "To build", "Building", "Build" ],
+    "soluzione": "Building",
+    "ripasso": "Unit 66 - See somebody do / see somebody doing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo verbi di percezione come 'watch', si usa la forma in -ing ('building') per indicare che si è vista l'azione in corso di svolgimento."
+  },
+  {
+    "id": 21,
+    "domanda": "If you had been prepared enough, you ... the test.",
+    "opzioni": [ "Would pass", "Would have passed", "Would passed", "Would have pass" ],
+    "soluzione": "Would have passed",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del terzo tipo. La frase principale (apodosi) richiede 'would have + participio passato' ('would have passed')."
+  },
+  {
+    "id": 22,
+    "domanda": "She went into the bathroom to brush ...",
+    "opzioni": [ "Her the hair", "Herself the hair", "Her hair", "Herself" ],
+    "soluzione": "Her hair",
+    "ripasso": "Unit 85 - Possessive determiners (my/your/her etc.)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "In inglese, a differenza dell'italiano, quando ci si riferisce a parti del corpo o oggetti personali, si usa l'aggettivo possessivo ('her') invece del pronome riflessivo."
+  },
+  {
+    "id": 23,
+    "domanda": "We stayed in a ...",
+    "opzioni": [ "Country cottage little and comfortable", "Little and comfortable country cottage", "Comfortable little country cottage", "Little comfortable country cottage" ],
+    "soluzione": "Comfortable little country cottage",
+    "ripasso": "Unit 99 - Adjective order",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "Gli aggettivi in inglese seguono un ordine specifico: opinione ('comfortable'), dimensione ('little'), tipo/origine ('country')."
+  },
+  {
+    "id": 24,
+    "domanda": "In Britain it is rarely ... to wear a swimsuit.",
+    "opzioni": [ "Warm enough", "Enough warm", "Very warm", "Too much warm" ],
+    "soluzione": "Warm enough",
+    "ripasso": "Unit 100 - Adjectives and adverbs (enough)",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "L'avverbio 'enough' (abbastanza) si posiziona sempre dopo l'aggettivo o l'avverbio a cui si riferisce ('warm enough')."
+  },
+  {
+    "id": 25,
+    "domanda": "I want ... money so I can buy a castle!",
+    "opzioni": [ "Plenty", "Many", "Lots", "A lot of" ],
+    "soluzione": "A lot of",
+    "ripasso": "Unit 88 - Much, many, little, few, a lot, plenty",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'A lot of' è un quantificatore usato sia con nomi numerabili che non numerabili. 'Lots' richiederebbe 'of' ('lots of money'). 'Plenty' richiederebbe 'of' ('plenty of money'). 'Many' si usa con i numerabili."
+  },
+  {
+    "id": 26,
+    "domanda": "For years the tombs of the ancient Pharaohs were ...",
+    "opzioni": [ "Indiscovered", "Non-discovering", "Undiscovered", "Uncoverable" ],
+    "soluzione": "Undiscovered",
+    "ripasso": "Appendix 1 - Regular and irregular verbs (Past participle form)",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Undiscovered' è l'aggettivo corretto che significa 'non scoperto'. Il prefisso 'un-' è usato per creare l'opposto di molti aggettivi."
+  },
+  {
+    "id": 27,
+    "domanda": "From the big wheel you can get a wonderful ... of London.",
+    "opzioni": [ "View", "Sight", "Look", "Aspect" ],
+    "soluzione": "Sight",
+    "ripasso": "Vocabulary: view vs. sight",
+    "categoria": "Vocabulary",
+    "spiegazione": "Anche se 'view' è più comune per 'panorama', 'sight' si usa per indicare qualcosa di notevole o famoso da vedere (spesso al plurale 'sights'). In questo contesto, entrambe potrebbero essere accettabili, ma 'sight' è una scelta comune. *Nota: Molti madrelingua preferirebbero 'view' qui.*"
+  },
+  {
+    "id": 28,
+    "domanda": "Choose the synonym:",
+    "opzioni": [ "Pelvis", "Lake", "Basket", "Bowl" ],
+    "soluzione": "Lake",
+    "ripasso": "Vocabulary: Synonyms (This is an error in the original test; no synonym is correct. 'Lake' is likely the intended but incorrect answer)",
+    "categoria": "Vocabulary",
+    "spiegazione": "La domanda è incompleta e errata, poiché manca la parola di cui trovare il sinonimo. Non c'è una relazione di sinonimia chiara tra le opzioni."
+  },
+  {
+    "id": 29,
+    "domanda": "... do you go to the barber's?",
+    "opzioni": [ "How often", "How much", "Haw many", "What for" ],
+    "soluzione": "How often",
+    "ripasso": "Unit 47 - Question words",
+    "categoria": "Question Formation",
+    "spiegazione": "Per chiedere la frequenza con cui si compie un'azione, si usa la question word 'How often?'."
+  },
+  {
+    "id": 30,
+    "domanda": "Yes, there's a seat free on flight 307.",
+    "opzioni": [ "She assured him there was a seat free", "She pleaded there was a seat free", "She suggested there was a seat free", "She told there was a seat free" ],
+    "soluzione": "She assured him there was a seat free",
+    "ripasso": "Unit 48 - Reporting verbs",
+    "categoria": "Reported Speech",
+    "spiegazione": "Il verbo 'assure' (assicurare, rassicurare) è il più adatto per riportare una risposta affermativa e rassicurante a una probabile richiesta di disponibilità."
+  },
+  {
+    "id": 31,
+    "domanda": "How many ounces does this packet contain? The customer asked.",
+    "opzioni": [ "The customer asked how many ounces did the packet contain", "The customer asked how many ounces the packet did contain", "The customer asked how many ounces contained the packet", "The customer asked how many ounces the packet contained" ],
+    "soluzione": "The customer asked how many ounces the packet contained",
+    "ripasso": "Unit 49 - Reported questions",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto, una domanda con 'wh-' mantiene la 'wh-word', ma l'ordine delle parole diventa quello di una frase affermativa (soggetto + verbo: 'the packet contained')."
+  },
+  {
+    "id": 32,
+    "domanda": "Did you ... hide-and-seek as a child?",
+    "opzioni": [ "Use playing", "Use to play", "Used to playing", "Used to play" ],
+    "soluzione": "Use to play",
+    "ripasso": "Unit 36 - used to (do) - question form",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "Nella forma interrogativa di 'used to', l'ausiliare 'did' prende la forma passata, quindi 'use' rimane alla forma base ('did you use to...')."
+  },
+  {
+    "id": 33,
+    "domanda": "Harry won't be there and ...",
+    "opzioni": [ "Nor will Dan", "Nor won't Dan", "Nor Dan won't", "Nor Dan will" ],
+    "soluzione": "Nor Dan won't",
+    "ripasso": "Unit 42 - Neither/Nor",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "ERRORE NEL TEST: La soluzione corretta è 'Nor will Dan'. Per essere d'accordo con una frase negativa, si usa 'Nor/Neither + ausiliare affermativo + soggetto'. La soluzione fornita nel test è grammaticalmente errata a causa del doppio negativo."
+  },
+  {
+    "id": 34,
+    "domanda": "You say you're 115 years old! You ... serious!",
+    "opzioni": [ "Can't be", "Can't being", "Can't to be", "Musten't be" ],
+    "soluzione": "Can't be",
+    "ripasso": "Unit 29 - Must and can't (deduction)",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "'Can't' è usato per esprimere una deduzione negativa, ovvero qualcosa che si ritiene impossibile o quasi certamente non vero."
+  },
+  {
+    "id": 35,
+    "domanda": "These letters ... yesterday!",
+    "opzioni": [ "Were be sent", "Were to have sent", "Were to have been sent", "Were to have be sent" ],
+    "soluzione": "Were to have been sent",
+    "ripasso": "Unit 45 - (be) supposed to do, (be) to do",
+    "categoria": "Passive Voice",
+    "spiegazione": "La struttura 'be to have been + participio passato' si usa per esprimere un'azione che doveva essere completata nel passato ma non lo è stata. È una forma passiva ('le lettere dovevano essere spedite')."
+  },
+  {
+    "id": 36,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "Jane would have won if she'd answered the last question right", "Jane won if she would have answered the last question right", "Jane would have won if she would have answered the last question right", "Jane would won if she would answer the last question right" ],
+    "soluzione": "Jane would have won if she'd answered the last question right",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del terzo tipo. La struttura corretta è 'If + Past Perfect (she had answered), ... would have + participio passato (would have won)'."
+  },
+  {
+    "id": 37,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "They'd go if the tickets was cheaper", "They went if the tickets would be cheaper", "They'd go if the tickets would be cheaper", "They'd go if the tickets were cheaper" ],
+    "soluzione": "They'd go if the tickets were cheaper",
+    "ripasso": "Unit 39 - If I did ... (Conditionals Type 2)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del secondo tipo. La struttura è 'If + Past Simple, ... would + forma base'. Per 'if' con il verbo 'be', si usa 'were' per tutte le persone."
+  },
+  {
+    "id": 38,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I need a new piece of forniture for my room", "I need some new arredament for my room", "I need a new forniture for my room", "I need some new fornitures for my room" ],
+    "soluzione": "I need a new piece of forniture for my room",
+    "ripasso": "Unit 70 - Countable and uncountable nouns (piece of)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Furniture' è un nome non numerabile e non ha la forma plurale. Per riferirsi a un singolo elemento, si usa l'espressione 'a piece of furniture'."
+  },
+  {
+    "id": 39,
+    "domanda": "Last summer I spent three weeks climbing in ...",
+    "opzioni": [ "Rocky Mountains", "The Mountains Rocky", "The Rocky Mountains", "Mountains Rocky" ],
+    "soluzione": "The Rocky Mountains",
+    "ripasso": "Unit 77 - The (geographical names)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "L'articolo determinativo 'the' è usato con i nomi di catene montuose, come 'the Rocky Mountains' o 'the Alps'."
+  },
+  {
+    "id": 40,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "This informations is wrong", "This information are wrong", "This piece of information is wrong", "These informations are wrong" ],
+    "soluzione": "This piece of information is wrong",
+    "ripasso": "Unit 70 - Countable and uncountable nouns (piece of)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Information' è un nome non numerabile, quindi è sempre singolare e non può essere preceduto da 'these'. Per contarlo, si usa 'a piece of information'."
+  },
+  {
+    "id": 41,
+    "domanda": "Did you actually hear the bomb ... in the airport?",
+    "opzioni": [ "Explodes", "To esplode", "Esplode", "Exploding" ],
+    "soluzione": "Exploding",
+    "ripasso": "Unit 66 - See somebody do / see somebody doing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo verbi di percezione come 'hear', si può usare la forma in -ing ('exploding') per enfatizzare l'azione in corso di svolgimento."
+  },
+  {
+    "id": 42,
+    "domanda": "I had a nightmare in which I dreamed ... surrounded by snakes!",
+    "opzioni": [ "To be", "Being", "I was", "I was been" ],
+    "soluzione": "I was",
+    "ripasso": "Unit 63 - Verb + -ing (dream of/about)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo 'dreamed', si può usare una frase introdotta da 'that' (spesso omesso), seguita da soggetto e verbo. L'opzione 'dreamed of being' sarebbe stata corretta."
+  },
+  {
+    "id": 43,
+    "domanda": "My father won't ... his new car.",
+    "opzioni": [ "Let me drive", "Let me to drive", "Get me drive", "Make me driving" ],
+    "soluzione": "Let me drive",
+    "ripasso": "Unit 54 - Make and let",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Il verbo 'let' (permettere) nella struttura 'let somebody do something' è seguito dalla forma base del verbo senza 'to'."
+  },
+  {
+    "id": 44,
+    "domanda": "Mark is thinking ... at Stanford University.",
+    "opzioni": [ "Of enrolling", "To enrol", "Enrolling", "He enrol" ],
+    "soluzione": "Of enrolling",
+    "ripasso": "Unit 63 - Verb + preposition + -ing (think of)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "'To think of' o 'to think about' (considerare, prendere in considerazione l'idea di) è seguito dalla forma in -ing."
+  },
+  {
+    "id": 45,
+    "domanda": "I really must ... my hair cut.",
+    "opzioni": [ "Do", "Let", "Make", "Have" ],
+    "soluzione": "Have",
+    "ripasso": "Unit 46 - Have something done (Causative)",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Per esprimere la necessità di farsi tagliare i capelli da qualcun altro, si usa la struttura causativa 'have something done'."
+  },
+  {
+    "id": 46,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I'll tell you the results as soon as i'll find out", "I tell you the results as soon as I would find out", "I tell you the results as soon as I'll find out", "I'll tell you the results as soon as I find out" ],
+    "soluzione": "I'll tell you the results as soon as I find out",
+    "ripasso": "Unit 25 - When I do / as soon as I do",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Nelle frasi temporali future introdotte da 'as soon as', si usa il Present Simple ('I find out'), mentre la frase principale usa il futuro ('I'll tell')."
+  },
+  {
+    "id": 47,
+    "domanda": "This sweater is made of ... wool.",
+    "opzioni": [ "Real", "Pure", "Actual", "True" ],
+    "soluzione": "Pure",
+    "ripasso": "Vocabulary: material quality",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Pure' è l'aggettivo corretto per descrivere un materiale non mischiato con altre sostanze, come in 'pure wool' (pura lana)."
+  },
+  {
+    "id": 48,
+    "domanda": "The number of ... joining the worker's unions increasing every year.",
+    "opzioni": [ "Employers", "Employees", "Employment", "Employments" ],
+    "soluzione": "Employees",
+    "ripasso": "Vocabulary: Work-related nouns",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Employees' sono i dipendenti o lavoratori. 'Employers' sono i datori di lavoro. 'Employment' è l'occupazione (non numerabile)."
+  },
+  {
+    "id": 49,
+    "domanda": "I'll come and pick you ...",
+    "opzioni": [ "On", "With", "Up", "Out" ],
+    "soluzione": "Up",
+    "ripasso": "Unit 139 - Phrasal verbs (pick up)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to pick somebody up' significa 'passare a prendere qualcuno' (solitamente in auto)."
+  },
+  {
+    "id": 50,
+    "domanda": "He put down his beach towel and ... down on the sand.",
+    "opzioni": [ "Lain", "Laid", "Lay", "Lied" ],
+    "soluzione": "Laid",
+    "ripasso": "Vocabulary: Lie vs. Lay",
+    "categoria": "Vocabulary",
+    "spiegazione": "ERRORE NEL TEST: Il verbo corretto è 'lay', il passato di 'lie' (giacere, sdraiarsi). 'Lay - Laid - Laid' significa 'posare'. Quindi, 'he lay down'. La soluzione fornita, 'laid', è il passato di 'lay', che è un verbo transitivo (es. 'he laid the towel down')."
+  },
+  {
+    "id": 51,
+    "domanda": "Could you look ... my cat while I'm away?",
+    "opzioni": [ "For", "After", "To", "At" ],
+    "soluzione": "After",
+    "ripasso": "Unit 138 - Phrasal verbs (look after)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to look after' significa 'prendersi cura di, badare a'."
+  },
+  {
+    "id": 52,
+    "domanda": "I don't like to see young children ... black.",
+    "opzioni": [ "Dressing", "Dressed of", "Dressed in", "Dressed with" ],
+    "soluzione": "Dressed in",
+    "ripasso": "Unit 132 - Prepositions of state (dressed in)",
+    "categoria": "Prepositions",
+    "spiegazione": "L'espressione corretta per indicare il colore di un abito che qualcuno indossa è 'dressed in + colore'."
+  },
+  {
+    "id": 53,
+    "domanda": "If you can't lift it, ...",
+    "opzioni": [ "Get Tom to help", "Make Tom to help", "Let Tom to help", "Get Tom help" ],
+    "soluzione": "Get Tom to help",
+    "ripasso": "Unit 54 - Get somebody to do something",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Il verbo 'get' nella struttura 'get somebody to do something' significa 'convincere' o 'far sì che qualcuno faccia qualcosa' ed è seguito dall'infinito con 'to'."
+  },
+  {
+    "id": 54,
+    "domanda": "I hate spiders!",
+    "opzioni": [ "Neither do I", "Do you? I do", "I don't like them either", "I don't like them too" ],
+    "soluzione": "I don't like them either",
+    "ripasso": "Unit 42 - So am I / Neither do I / either",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "Per essere d'accordo con una frase negativa, si può usare 'either' alla fine di un'altra frase negativa. 'Neither do I' sarebbe anche corretto. 'Too' si usa con frasi affermative."
+  },
+  {
+    "id": 55,
+    "domanda": "When I finally got there it was so late that dessert ...",
+    "opzioni": [ "Was being served", "Was been served", "Has been served", "Was serving" ],
+    "soluzione": "Was being served",
+    "ripasso": "Unit 44 - Passive (Past continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Qui serve il Past Continuous passivo ('was/were being + participio passato') per descrivere un'azione passiva che era in corso in un momento specifico del passato."
+  },
+  {
+    "id": 56,
+    "domanda": "Who did you send the final report ...?",
+    "opzioni": [ "In", "By", "At", "To" ],
+    "soluzione": "To",
+    "ripasso": "Unit 51 - Verb + preposition (send to)",
+    "categoria": "Prepositions",
+    "spiegazione": "La preposizione richiesta dal verbo 'send' è 'to', come in 'send something to somebody'. Qui la preposizione è alla fine perché l'oggetto ('who') è all'inizio."
+  },
+  {
+    "id": 57,
+    "domanda": "I don't like ... lies.",
+    "opzioni": [ "The children tell", "The children of tell", "The children told", "The children to tell" ],
+    "soluzione": "The children to tell",
+    "ripasso": "Unit 53 - Verb + object + to ... (like somebody to do something)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "La struttura 'like somebody to do something' esprime una preferenza riguardo all'azione di qualcun altro. La forma corretta è 'like + oggetto + infinito con to'."
+  },
+  {
+    "id": 58,
+    "domanda": "I don't think ... him now.",
+    "opzioni": [ "It's any good calling", "It's any good call", "It's any good to call", "It's any good of call" ],
+    "soluzione": "It's any good calling",
+    "ripasso": "Unit 58 - It's no good / It's no use -ing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "L'espressione 'It's no good' o 'It's not any good' (non serve a niente) è seguita dalla forma in -ing."
+  },
+  {
+    "id": 59,
+    "domanda": "When the police arrived they found that nothing ...",
+    "opzioni": [ "Was been stolen", "Had been stolen", "Was be stolen", "Was stealing" ],
+    "soluzione": "Had been stolen",
+    "ripasso": "Unit 15 - Past Perfect",
+    "categoria": "Passive Voice",
+    "spiegazione": "Serve il Past Perfect passivo ('had been + participio passato') per descrivere un'azione (il furto) accaduta prima di un'altra azione passata (l'arrivo della polizia)."
+  },
+  {
+    "id": 60,
+    "domanda": "... see the shark?",
+    "opzioni": [ "Can you", "Do you can", "Are you able", "Are you can" ],
+    "soluzione": "Can you",
+    "ripasso": "Unit 26 - Can, could and (be) able to",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "Per formare una domanda con 'can', si inverte il modale e il soggetto ('Can you...?'). Non si usa l'ausiliare 'do'."
+  },
+  {
+    "id": 61,
+    "domanda": "Where on earth were you coming ...?",
+    "opzioni": [ "To", "At", "In", "From" ],
+    "soluzione": "From",
+    "ripasso": "Unit 122 - Prepositions of place (from)",
+    "categoria": "Prepositions",
+    "spiegazione": "Il verbo 'come' richiede la preposizione 'from' per indicare l'origine o il punto di partenza (provenire da)."
+  },
+  {
+    "id": 62,
+    "domanda": "Nobody ... into the theatre after the show starts.",
+    "opzioni": [ "Can be admitted", "Can have admitted", "Can admit", "Can to be admitted" ],
+    "soluzione": "Can be admitted",
+    "ripasso": "Unit 43 - Passive + modals",
+    "categoria": "Passive Voice",
+    "spiegazione": "Questa è una forma passiva con il modale 'can'. La struttura è 'can + be + participio passato' ('can be admitted' = può essere ammesso)."
+  },
+  {
+    "id": 63,
+    "domanda": "A big skyscraper ... beside the river.",
+    "opzioni": [ "Is building", "Is being built", "Is built", "Is been built" ],
+    "soluzione": "Is being built",
+    "ripasso": "Unit 44 - Passive (Present continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Si usa il Present Continuous passivo ('is being + participio passato') per descrivere un'azione passiva che è in corso di svolgimento in questo momento."
+  },
+  {
+    "id": 64,
+    "domanda": "Lyli never gets any fatter ... much she eats.",
+    "opzioni": [ "For the", "Whatever", "As", "However" ],
+    "soluzione": "However",
+    "ripasso": "Unit 114 - However / Whatever etc.",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'However' seguito da un aggettivo o avverbio ('however much') significa 'non importa quanto'."
+  },
+  {
+    "id": 65,
+    "domanda": "Muslims cannot eat, drink or smoke from sunrise to sunset ... the holy month of Ramadan.",
+    "opzioni": [ "While", "As long as", "For", "During" ],
+    "soluzione": "During",
+    "ripasso": "Unit 119 - During and while",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'During' (durante) è una preposizione usata prima di un sostantivo ('the holy month') per indicare quando qualcosa accade."
+  },
+  {
+    "id": 66,
+    "domanda": "Make sure the children wash their hands ...",
+    "opzioni": [ "Before of eat", "Before eating", "Before the eating", "Before to eat" ],
+    "soluzione": "Before eating",
+    "ripasso": "Unit 64 - Before/After + -ing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "La preposizione 'before' è seguita dalla forma del verbo in -ing (gerundio)."
+  },
+  {
+    "id": 67,
+    "domanda": "I wish you ... my shoes without asking me!",
+    "opzioni": [ "Won't borrow", "Haven't borrowed", "Don't borrow", "Wouldn't borrow" ],
+    "soluzione": "Wouldn't borrow",
+    "ripasso": "Unit 41 - I wish...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Si usa 'I wish + soggetto + would/wouldn't + forma base' per esprimere fastidio o lamentarsi del comportamento di qualcuno."
+  },
+  {
+    "id": 68,
+    "domanda": "Sheila refused to go to bed ... she was very tired.",
+    "opzioni": [ "As if", "As", "Even", "Although" ],
+    "soluzione": "Although",
+    "ripasso": "Unit 113 - In spite of / Despite / Although / Even though",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'Although' (sebbene, nonostante) è una congiunzione usata per introdurre una frase che esprime un contrasto."
+  },
+  {
+    "id": 69,
+    "domanda": "I won't have time to do it today, Mr Brown said Mr West.",
+    "opzioni": [ "Mr West told Mr Brown he won't have time to do it that day", "Mr West told Mr Brown he woulden't have time to do it that day", "Mr West told Mr Brown he wouldn't had time to do it today", "Mr West told Mr Brown he wouldn't have had time to do it that day" ],
+    "soluzione": "Mr West told Mr Brown he wouldn't have had time to do it that day",
+    "ripasso": "Unit 48 - Reported speech (tense changes)",
+    "categoria": "Reported Speech",
+    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, 'will' diventa 'would'. 'Today' diventa 'that day'. La soluzione corretta dovrebbe essere: 'Mr West told Mr Brown he wouldn't have time to do it that day'."
+  },
+  {
+    "id": 70,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "What plant is linen made in?", "What plant is linen made by?", "What plant is linen made from?", "What plant is linen made of?" ],
+    "soluzione": "What plant is linen made from?",
+    "ripasso": "Unit 131 - Prepositions (made of/from)",
+    "categoria": "Prepositions",
+    "spiegazione": "Si usa 'made from' quando il materiale originale viene trasformato e non è più riconoscibile nel prodotto finale (il lino dalla pianta). Si usa 'made of' quando il materiale è ancora riconoscibile (a table made of wood)."
+  },
+  {
+    "id": 71,
+    "domanda": "Some research ... at the moment on genes.",
+    "opzioni": [ "Is doing", "Is being done", "Is been done", "Is done" ],
+    "soluzione": "Is being done",
+    "ripasso": "Unit 44 - Passive (Present continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "'At the moment' segnala l'uso del Present Continuous. Poiché la ricerca 'viene fatta' (subisce l'azione), si usa la forma passiva: 'is being done'."
+  },
+  {
+    "id": 72,
+    "domanda": "Did you like Greece?",
+    "opzioni": [ "Yes, I liked", "Yes, I did", "YES, I did like", "Yes, it liked me" ],
+    "soluzione": "Yes, I did",
+    "ripasso": "Unit 42 - Short answers (Yes, I did)",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "Nelle risposte brevi (short answers), si riprende il verbo ausiliare usato nella domanda. Poiché la domanda inizia con 'Did...?', la risposta breve affermativa è 'Yes, I did'."
+  },
+  {
+    "id": 73,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "You will tell where to go", "It will tell where to go to you", "You will be told where to go", "It will be told to you where to go" ],
+    "soluzione": "You will be told where to go",
+    "ripasso": "Unit 43 - Passive",
+    "categoria": "Passive Voice",
+    "spiegazione": "Questa è la forma passiva corretta. La frase attiva sarebbe '(Someone) will tell you where to go'. Nella forma passiva, 'you' diventa il soggetto e il verbo diventa 'will be told'."
+  },
+  {
+    "id": 74,
+    "domanda": "I ... ten years.",
+    "opzioni": [ "Have been knowing him for", "Have known him since", "Have know him for", "Know him for" ],
+    "soluzione": "Have been knowing him for",
+    "ripasso": "Unit 10 - Present perfect continuous",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "ERRORE NEL TEST: Il verbo 'know' è un verbo di stato e di norma non si usa nella forma continua. La risposta corretta è 'I have known him for ten years'."
+  },
+  {
+    "id": 75,
+    "domanda": "I'm still not ... alone.",
+    "opzioni": [ "Used to living", "Get used to living", "Use to live", "Used to live" ],
+    "soluzione": "Used to live",
+    "ripasso": "Unit 61 - (be/get) used to something",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "ERRORE NEL TEST: La struttura corretta per 'essere abituati a' è 'be used to + -ing'. La risposta corretta dovrebbe essere 'used to living'. La soluzione fornita è grammaticalmente errata."
+  },
+  {
+    "id": 76,
+    "domanda": "I ... so quickly to catch the bus as in the end it turned up ten minutes late.",
+    "opzioni": [ "Hadn't to run", "Needn't have run", "Mustn't have run", "Didn't need to run" ],
+    "soluzione": "Didn't need to run",
+    "ripasso": "Unit 34 - Needn't have (done) vs. didn't need to (do)",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "'Didn't need to run' significa che non era necessario correre e (probabilmente) non l'ho fatto. 'Needn't have run' significa che ho corso, ma dopo ho scoperto che non era necessario."
+  },
+  {
+    "id": 77,
+    "domanda": "You may ... to work at weekends too.",
+    "opzioni": [ "Asked", "Will be asked", "Be asked", "To be asked" ],
+    "soluzione": "Be asked",
+    "ripasso": "Unit 43 - Passive + modals",
+    "categoria": "Passive Voice",
+    "spiegazione": "Dopo un verbo modale come 'may', il verbo che segue è alla forma base. Nella forma passiva, questo diventa 'be + participio passato' ('be asked')."
+  },
+  {
+    "id": 78,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "She would have stopped if she would have seen the cat", "She had stopped if she would have seen the cat", "She would stopped if she had seen the cat", "She would have stopped if she had seen the cat" ],
+    "soluzione": "She would have stopped if she had seen the cat",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del terzo tipo (irrealtà nel passato). La struttura corretta è 'would have + participio passato' nella frase principale e 'If + Past Perfect' nella frase ipotetica."
+  },
+  {
+    "id": 79,
+    "domanda": "I haven't been feeling very well ...",
+    "opzioni": [ "Nowadays", "Recently", "Now", "Last week" ],
+    "soluzione": "Recently",
+    "ripasso": "Unit 7 - Present Perfect (Signal words)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Il Present Perfect ('I haven't been') è comunemente usato con avverbi che si riferiscono a un passato recente, come 'recently'. 'Last week' richiederebbe il Past Simple."
+  },
+  {
+    "id": 80,
+    "domanda": "Would you mind ... the door for me, please?",
+    "opzioni": [ "Open", "Opened", "Opening", "To open" ],
+    "soluzione": "Opening",
+    "ripasso": "Unit 56 - Verb + -ing (mind -ing)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "L'espressione 'Would you mind...?' (Ti dispiacerebbe...?) è sempre seguita dalla forma in -ing del verbo."
+  },
+  {
+    "id": 81,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "Tom felpe her if she'd asked him", "Tom would have helped her if she would have asked him", "Tom would have helped her if she would asked him", "Tom would have helped her if she'd asked him" ],
+    "soluzione": "Tom would have helped her if she'd asked him",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del terzo tipo. La struttura corretta è 'If + Past Perfect (if she had asked)', '...would have + participio passato (would have helped)'."
+  },
+  {
+    "id": 82,
+    "domanda": "You can go out tonight ... you are back by midnight!",
+    "opzioni": [ "While", "Provided", "Unless", "Although" ],
+    "soluzione": "Provided",
+    "ripasso": "Unit 117 - Providing/provided",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "'Provided' o 'providing that' significa 'a condizione che', 'purché' e introduce una condizione necessaria."
+  },
+  {
+    "id": 83,
+    "domanda": "She always ignores me ... I ask her something.",
+    "opzioni": [ "Some time", "Each time", "All times", "Whenever" ],
+    "soluzione": "Whenever",
+    "ripasso": "Unit 114 - However / Whatever / Whenever etc.",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'Whenever' significa 'ogni volta che', 'in qualsiasi momento che' ed è la scelta migliore per collegare le due frasi."
+  },
+  {
+    "id": 84,
+    "domanda": "... homework does your teacher give you?",
+    "opzioni": [ "How often", "How many", "How long", "How much" ],
+    "soluzione": "How much",
+    "ripasso": "Unit 88 - Much, many for uncountable nouns",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Homework' è un nome non numerabile (uncountable). Per chiedere la quantità di qualcosa di non numerabile, si usa 'How much?'."
+  },
+  {
+    "id": 85,
+    "domanda": "John wishes he ... a more muscular body!",
+    "opzioni": [ "Have", "Has", "Would have", "Had" ],
+    "soluzione": "Had",
+    "ripasso": "Unit 41 - I wish I had...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Per esprimere un desiderio su una situazione presente che vorremmo fosse diversa, si usa 'wish + Past Simple'."
+  },
+  {
+    "id": 86,
+    "domanda": "Sshh! I've got to talk very softly.",
+    "opzioni": [ "He said he had to shout", "He said he had to stutter", "He said he had to whisper", "He said he had to speak" ],
+    "soluzione": "He said he had to whisper",
+    "ripasso": "Unit 48 - Reported speech (statements)",
+    "categoria": "Reported Speech",
+    "spiegazione": "'To whisper' (sussurrare) è il verbo che meglio descrive l'azione di 'parlare molto a bassa voce' (talk very softly)."
+  },
+  {
+    "id": 87,
+    "domanda": "Sorry but I can't come tonight, Rose said to Fred.",
+    "opzioni": [ "Fred told Rose he was sorry but he can't come tonight", "Fred told Rose he was sorry but he wouldn't could come that night", "Fred told Rose he was sorry but he can't have come that night", "Fred told Rose he was sorry but he couldn't come that night" ],
+    "soluzione": "Fred told Rose he was sorry but he couldn't come that night",
+    "ripasso": "Unit 48 - Reported speech (tense and modal changes)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto, 'can't' diventa 'couldn't' e 'tonight' diventa 'that night'."
+  },
+  {
+    "id": 88,
+    "domanda": "Do you know where the public library is? He asked the lady.",
+    "opzioni": [ "He asked the lady whether she knew where the public library was", "He asked the lady whether she knew where is the public library", "He asked the lady does she know where the public library is", "He asked the lady whether she knew where was the public library" ],
+    "soluzione": "He asked the lady whether she knew where the public library was",
+    "ripasso": "Unit 49 - Reported questions",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel riportare una domanda, il tempo verbale si sposta indietro ('know' -> 'knew', 'is' -> 'was') e la struttura della frase diventa affermativa ('the public library was')."
+  },
+  {
+    "id": 89,
+    "domanda": "He read the manual ... exactly what to do.",
+    "opzioni": [ "So that to know", "So that he know", "So he know", "So to know" ],
+    "soluzione": "So that he know",
+    "ripasso": "Unit 116 - In order to / so that",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "ERRORE NEL TEST: La congiunzione 'so that' (in modo che, affinché) è usata per esprimere uno scopo ed è seguita da una frase con un modale (es. 'can', 'could', 'would'). La risposta più plausibile sarebbe 'so that he would know' o 'so that he knew'. Tra le opzioni, nessuna è perfetta."
+  },
+  {
+    "id": 90,
+    "domanda": "Kevin walked in and sat down at the head of the table ... he owned the place.",
+    "opzioni": [ "Although", "Like", "As if", "As" ],
+    "soluzione": "As if",
+    "ripasso": "Unit 118 - as / like / as if",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'As if' (come se) è usato per fare un paragone con una situazione immaginaria o irreale."
+  },
+  {
+    "id": 91,
+    "domanda": "I ... so much when I was younger.",
+    "opzioni": [ "Didn't use to read", "Hasn't used to read", "Wasn't used to read", "Didn't use to reading" ],
+    "soluzione": "Didn't use to read",
+    "ripasso": "Unit 36 - used to (do)",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "Per negare un'abitudine passata, si usa la forma 'didn't use to + forma base del verbo'."
+  },
+  {
+    "id": 92,
+    "domanda": "My brother ... in Canada for the last thirty years.",
+    "opzioni": [ "Is living", "Has lived", "Lives", "Has been lived" ],
+    "soluzione": "Has lived",
+    "ripasso": "Unit 8 - Present Perfect (1)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "L'espressione 'for the last thirty years' indica una durata che dal passato arriva al presente. Si usa il Present Perfect ('has lived'). Anche 'has been living' sarebbe corretto."
+  },
+  {
+    "id": 93,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I would like you better if you were nicer to me", "I liked you better if you would have been nicer to me", "I'd have liked you better if you were nicer to me", "I would like you better if you are nicer to me" ],
+    "soluzione": "I would like you better if you were nicer to me",
+    "ripasso": "Unit 39 - If I did ... (Conditionals Type 2)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del secondo tipo, che esprime una condizione presente non reale. Struttura: 'would + forma base' nella principale, 'if + Past Simple' nella secondaria (con 'were' per 'be')."
+  },
+  {
+    "id": 94,
+    "domanda": "He promised ... her everything.",
+    "opzioni": [ "Telling", "Of telling", "Tell", "To tell" ],
+    "soluzione": "To tell",
+    "ripasso": "Unit 52 - Verb + to... (promise to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'promise' (promettere) è seguito dall'infinito con 'to'."
+  },
+  {
+    "id": 95,
+    "domanda": "... is the tallest mountain in Europe.",
+    "opzioni": [ "A Mont Blanc", "The Mont Blanc", "An Mont Blanc", "Mont Blanc" ],
+    "soluzione": "Mont Blanc",
+    "ripasso": "Unit 77 - The (geographical names)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Non si usa l'articolo 'the' con i nomi di singole montagne (Mont Blanc, Mount Everest), ma si usa con le catene montuose (the Alps)."
+  },
+  {
+    "id": 96,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "What you read in the paper were nonsenses!", "What you read in the paper was nonsense!", "What you read in the paper was nonsenses!", "What you read in the paper was a nonsense!" ],
+    "soluzione": "What you read in the paper was nonsense!",
+    "ripasso": "Unit 70 - Countable and uncountable nouns",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Nonsense' (sciocchezza) è un nome non numerabile, quindi è singolare ('was') e non ha la forma plurale."
+  },
+  {
+    "id": 97,
+    "domanda": "Did you ... at the party?",
+    "opzioni": [ "Enjoy you", "Enjoy it", "Enjoy", "Enjoy yourself" ],
+    "soluzione": "Enjoy yourself",
+    "ripasso": "Unit 84 - Reflexive pronouns (myself/yourself etc.)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Il verbo 'enjoy' in questo contesto è riflessivo e richiede un pronome riflessivo. 'Divertersi' si traduce con 'enjoy oneself'."
+  },
+  {
+    "id": 98,
+    "domanda": "My friend Bill has ...",
+    "opzioni": [ "A sports car red and big", "A big and red sports car", "A red, big sports car", "A big, red sports car" ],
+    "soluzione": "A big, red sports car",
+    "ripasso": "Unit 99 - Adjective order",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "L'ordine corretto degli aggettivi è: dimensione ('big'), colore ('red'), tipo ('sports'). Gli aggettivi della stessa categoria sono separati da una virgola."
+  },
+  {
+    "id": 99,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "This is a bad publicity for our film", "This is bad publicity for our film", "This is bad publicities four our film", "These are bad publicities for our film" ],
+    "soluzione": "This is bad publicity for our film",
+    "ripasso": "Unit 70 - Countable and uncountable nouns",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Publicity' (pubblicità, nel senso di attenzione mediatica) è un nome non numerabile e quindi non può essere preceduto dall'articolo indeterminativo 'a' né usato al plurale."
+  },
+  {
+    "id": 100,
+    "domanda": "Wendy ...",
+    "opzioni": [ "Has just made a tooth extracted", "Has just had a tooth entracte", "Has just got a tooth extract", "Has just had extracted a tooth" ],
+    "soluzione": "Has just got a tooth extract",
+    "ripasso": "Unit 46 - Have/get something done (Causative)",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "ERRORE NEL TEST: La struttura causativa è 'get something done' (con il participio passato). La risposta corretta sarebbe 'has just got a tooth extracted'. La soluzione fornita usa la forma base 'extract' invece del participio."
+  },
+  {
+    "id": 101,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "Why have you switched the computer off for?", "For why have you switched off the computer?", "What have you switched the computer off for?", "What reason have you switched off the computer?" ],
+    "soluzione": "What have you switched the computer off for?",
+    "ripasso": "Unit 47 - Question words",
+    "categoria": "Question Formation",
+    "spiegazione": "La domanda 'What ... for?' è un modo informale per chiedere 'Why?'. La struttura 'What + ausiliare + soggetto + verbo + for?' è corretta."
+  },
+  {
+    "id": 102,
+    "domanda": "Two million years before the first humans, the dinosaurs ... extinct by a giant asteroid.",
+    "opzioni": [ "Has been made", "Were been made", "Had been made", "Is been made" ],
+    "soluzione": "Had been made",
+    "ripasso": "Unit 44 - Passive (Past perfect passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Serve il Past Perfect Passivo ('had been + participio passato') perché l'evento (l'estinzione) è accaduto prima di un altro punto di riferimento nel passato (la comparsa dei primi umani)."
+  },
+  {
+    "id": 103,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "You'll hurt yourself if you'll do that", "You would hurt yourself if you do that", "You hurt yourself if you will do that", "You'll hurt yourself if you do that" ],
+    "soluzione": "You'll hurt yourself if you do that",
+    "ripasso": "Unit 38 - If I do... (Conditionals Type 1)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico del primo tipo (condizione reale o probabile nel futuro). La struttura è 'If + Present Simple', '... will + forma base'."
+  },
+  {
+    "id": 104,
+    "domanda": "Let me ...",
+    "opzioni": [ "Explain to you the problem", "Explain the problem to you", "Explain the problem you", "Explain you the problem" ],
+    "soluzione": "Explain the problem to you",
+    "ripasso": "Unit 51 - Verb + object + preposition (explain something to somebody)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'explain' segue la struttura 'explain something TO somebody', non 'explain somebody something'."
+  },
+  {
+    "id": 105,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I wouldn't have hit him if he didn't hit me first!", "I wouldn't have hit him if he hadn't hit me first!", "I wouldn't had hit him if he hadn't hit me first!", "I wouldn't have him if he wouldn't have hit me first!" ],
+    "soluzione": "I wouldn't have hit him if he hadn't hit me first!",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del terzo tipo. La struttura corretta è 'wouldn't have + participio passato' nella frase principale e 'if + Past Perfect' nella frase ipotetica."
+  },
+  {
+    "id": 106,
+    "domanda": "George is working hard so has little free time ...",
+    "opzioni": [ "In these days", "Presently", "These days", "In this moment" ],
+    "soluzione": "In these days",
+    "ripasso": "Vocabulary: Time expressions",
+    "categoria": "Vocabulary",
+    "spiegazione": "'These days' e 'nowadays' sono espressioni comuni per dire 'in questo periodo', 'di questi tempi'."
+  },
+  {
+    "id": 107,
+    "domanda": "I'd rather stay at home as I'm ... tired today.",
+    "opzioni": [ "Fair", "Enough", "Very much", "Fairly" ],
+    "soluzione": "Fairly",
+    "ripasso": "Unit 102 - Quite and rather",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "'Fairly' (piuttosto, abbastanza) è un avverbio di grado che si usa prima di un aggettivo. 'Rather' sarebbe anche possibile, spesso con una connotazione più negativa."
+  },
+  {
+    "id": 108,
+    "domanda": "A lot of tourists go to ... to gamble in Las Vegas.",
+    "opzioni": [ "The America", "A United States", "United States", "The United States" ],
+    "soluzione": "The United States",
+    "ripasso": "Unit 77 - The (geographical names)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Si usa l'articolo 'the' con i nomi di paesi che sono al plurale o che contengono parole come 'Republic', 'Kingdom' o 'States'."
+  },
+  {
+    "id": 109,
+    "domanda": "I can't buy the car. I don't have ... money.",
+    "opzioni": [ "Not enough", "Enough", "Too little", "Many" ],
+    "soluzione": "Enough",
+    "ripasso": "Unit 100 - Adjectives and adverbs (enough)",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "'Enough' (abbastanza) si posiziona prima di un nome. La frase 'I don't have enough money' significa 'non ho abbastanza soldi'."
+  },
+  {
+    "id": 110,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "We need a new furniture for our living-room", "We need some new furnitures for our living-room", "We need new furnitures for our living-room", "We need some new furniture for our living room" ],
+    "soluzione": "We need some new furniture for our living room",
+    "ripasso": "Unit 70 - Countable and uncountable nouns",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Furniture' è un nome non numerabile. Si usa 'some' per indicarne una quantità indefinita e non ha la forma plurale."
+  },
+  {
+    "id": 111,
+    "domanda": "He walked up the ...",
+    "opzioni": [ "Staircase long, winding spiral", "Winding. Spiral long staircase", "Winding, spiral, long staircase", "Long, winding spiral staircase" ],
+    "soluzione": "Long, winding spiral staircase",
+    "ripasso": "Unit 99 - Adjective order",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "L'ordine standard degli aggettivi è: dimensione ('long'), forma ('winding'), tipo ('spiral')."
+  },
+  {
+    "id": 112,
+    "domanda": "I'm afraid ...",
+    "opzioni": [ "These advice are terrible", "These advices are terrible", "This advice is terrible", "You've given me a terrible advice" ],
+    "soluzione": "This advice is terrible",
+    "ripasso": "Unit 70 - Countable and uncountable nouns",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Advice' (consiglio/i) è un nome non numerabile. Pertanto, è sempre singolare, non può avere la forma plurale né essere preceduto da 'a/an'."
+  },
+  {
+    "id": 113,
+    "domanda": "There's no news ...",
+    "opzioni": [ "For the moment", "For this moment", "In the moment", "In this moment" ],
+    "soluzione": "For the moment",
+    "ripasso": "Unit 129 - Prepositions of time (at/for the moment)",
+    "categoria": "Prepositions",
+    "spiegazione": "L'espressione fissa per dire 'per ora' o 'al momento' è 'at the moment' o 'for the moment'."
+  },
+  {
+    "id": 114,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If you had bought a jacket, you won't be so cold", "If you would bought a jacket, you wouldn't be so cold", "If you'd bought a jacket, you wouldn't be so cold", "If you would have bought a jacket, you wouldn't be so cold" ],
+    "soluzione": "If you'd bought a jacket, you wouldn't be so cold",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questo è un periodo ipotetico misto: la condizione è nel passato ('If you had bought'), ma il risultato è nel presente ('you wouldn't be')."
+  },
+  {
+    "id": 115,
+    "domanda": "He expected ... obey.",
+    "opzioni": [ "Us to", "That we", "Us", "We to" ],
+    "soluzione": "Us to",
+    "ripasso": "Unit 53 - Verb + object + to ... (expect somebody to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'expect' usa la struttura 'verbo + pronome oggetto (us) + infinito con to'. Il verbo 'obey' è sottinteso."
+  },
+  {
+    "id": 116,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If I would be you, I wouldn't have done so", "If I'd been you, I wouldn't have done so", "If I were been you, I wouldn't have done so", "If I would have been you, I wouldn't have done so" ],
+    "soluzione": "If I'd been you, I wouldn't have done so",
+    "ripasso": "Unit 40 - Mixed Conditionals (unreal past condition, unreal past result)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Questa è un'espressione ipotetica del terzo tipo ('If I had been you...' = se fossi stato in te), usata per dare un consiglio su un'azione passata."
+  },
+  {
+    "id": 117,
+    "domanda": "The next meeting ... in the town hall.",
+    "opzioni": [ "Is going to be held", "Will to be held", "Will have held", "Is holding" ],
+    "soluzione": "Is going to be held",
+    "ripasso": "Unit 43 - Passive + be going to",
+    "categoria": "Passive Voice",
+    "spiegazione": "Per parlare di un evento futuro pianificato, si può usare 'be going to'. Poiché la riunione 'sarà tenuta' (subisce l'azione), si usa la forma passiva: 'is going to be held'."
+  },
+  {
+    "id": 118,
+    "domanda": "The murderer ... to thirty years in jail.",
+    "opzioni": [ "Is been sentenced", "Has being sentenced", "Has been sentenced", "Has sentenced" ],
+    "soluzione": "Has been sentenced",
+    "ripasso": "Unit 43 - Passive (Present perfect passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Si usa il Present Perfect passivo ('has been + participio passato') per parlare di un'azione recente o passata che ha un risultato nel presente. L'assassino 'è stato condannato'."
+  },
+  {
+    "id": 119,
+    "domanda": "Where is the milk? It ...by the kids.",
+    "opzioni": [ "Must has been drunk", "Must toh ave drunk", "Must be drunk", "Must have been drunk" ],
+    "soluzione": "Must have been drunk",
+    "ripasso": "Unit 29 - Must have done (deduction about the past)",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "Per fare una deduzione logica su un evento passato, si usa 'must have + participio passato'. Qui, in forma passiva, diventa 'must have been drunk'."
+  },
+  {
+    "id": 120,
+    "domanda": "He saw that his name ... on the door.",
+    "opzioni": [ "Had be written", "Was been written", "Was writing", "Had been written" ],
+    "soluzione": "Had been written",
+    "ripasso": "Unit 44 - Passive (Past perfect passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Si usa il Past Perfect passivo ('had been + participio passato') perché l'azione di scrivere il nome è avvenuta prima dell'azione di vederlo."
+  },
+  {
+    "id": 121,
+    "domanda": "If you go to the local pub ... Bill Brown.",
+    "opzioni": [ "You're sure to see", "You're sure seeing", "You'll be surely to see", "You're sure see" ],
+    "soluzione": "You're sure to see",
+    "ripasso": "Unit 59 - (be) sure to do",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "L'espressione 'to be sure to do something' significa 'sicuramente farai qualcosa' ed è seguita dall'infinito con 'to'."
+  },
+  {
+    "id": 122,
+    "domanda": "... since 3 o'clock.",
+    "opzioni": [ "I've been here", "I'm here", "I'm being here", "I've here been" ],
+    "soluzione": "I've been here",
+    "ripasso": "Unit 11 - For and Since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Con 'since' (che indica il punto di inizio di un'azione/stato), si usa il Present Perfect ('I have been') per indicare che lo stato continua fino ad ora."
+  },
+  {
+    "id": 123,
+    "domanda": "I must ... it's so long.",
+    "opzioni": [ "Have my hair cut", "Have cut my hair", "Have my hair to cut", "Have my hair cutting" ],
+    "soluzione": "Have my hair cut",
+    "ripasso": "Unit 46 - Have something done (Causative)",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "La struttura causativa 'have something done' (in questo caso 'have my hair cut') indica che qualcun altro compie l'azione per noi."
+  },
+  {
+    "id": 124,
+    "domanda": "We ought to leave now, it's getting late said Mr and Mrs Black.",
+    "opzioni": [ "Mr and Mrs Black said they ought to leave then as it was getting late", "Mr and Mrs Black said they ought to have left then as it was getting late", "Mr and Mrs Black said they ought leave then as it was getting late", "Mr and Mrs Black said they ought to leave now as it was getting late" ],
+    "soluzione": "Mr and Mrs Black said they ought to leave then as it was getting late",
+    "ripasso": "Unit 48 - Reported speech (reporting modals)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto, il modale 'ought to' rimane invariato. 'Now' diventa 'then' e 'is' diventa 'was'."
+  },
+  {
+    "id": 125,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "There were many problems when the US presidential elections in the year 2000", "There were many problems as the US presidential elections last year", "There were many problems while the US presidential elections in the year 2000", "There were many problems during the US presidential elections in the year 2000" ],
+    "soluzione": "There were many problems during the US presidential elections in the year 2000",
+    "ripasso": "Unit 119 - During and while",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'During' è una preposizione che si usa prima di un sostantivo (the elections) per indicare il periodo in cui qualcosa è accaduto. 'While' è una congiunzione e richiederebbe una frase con soggetto e verbo."
+  },
+  {
+    "id": 126,
+    "domanda": "Mike must work harder or he won't pass the exam said the teacher.",
+    "opzioni": [ "The teacher said that Mike would have to work harder or he wouldn't pass the exam", "The teacher said that Mike would have to work harder or he wouldn't have passed the exam", "The teacher said that Mike would have to work harder or he won't pass the exam", "The teacher said that Mike must have worked harder or he wouldn't pass the exam" ],
+    "soluzione": "The teacher said that Mike would have to work harder or he wouldn't have passed the exam",
+    "ripasso": "Unit 48 - Reported speech (reporting modals)",
+    "categoria": "Reported Speech",
+    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, 'must' per obbligo può diventare 'had to'. 'Will' diventa 'would'. La risposta corretta sarebbe '...Mike had to work harder or he wouldn't pass the exam'. 'Would have to' è una delle opzioni, ma la seconda parte della soluzione ('wouldn't have passed') è sbagliata."
+  },
+  {
+    "id": 127,
+    "domanda": "He's very sociable and so he makes friends ... he goes.",
+    "opzioni": [ "Where else", "All places", "Wherever", "Any places" ],
+    "soluzione": "Wherever",
+    "ripasso": "Unit 114 - However / Whatever / Wherever etc.",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'Wherever' significa 'in qualunque posto', 'ovunque' e si adatta perfettamente al contesto della frase."
+  },
+  {
+    "id": 128,
+    "domanda": "Jane wishes she ... so fat!",
+    "opzioni": [ "Isn't", "Wouldn't be", "Weren't", "Wouldn't have been" ],
+    "soluzione": "Weren't",
+    "ripasso": "Unit 41 - I wish I were...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Per esprimere un desiderio su una situazione presente che vorremmo fosse diversa, si usa 'wish + Past Simple'. Con il verbo 'be', si preferisce la forma 'were' per tutte le persone."
+  },
+  {
+    "id": 129,
+    "domanda": "All files ... on floppy disk.",
+    "opzioni": [ "Should be saved", "Should have saved", "Should to be saved", "Should be save" ],
+    "soluzione": "Should be saved",
+    "ripasso": "Unit 43 - Passive + modals (should be done)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Questa è una forma passiva con il modale 'should'. La struttura è 'should + be + participio passato'. I file 'dovrebbero essere salvati'."
+  },
+  {
+    "id": 130,
+    "domanda": "Do you like my hair? I've just ...",
+    "opzioni": [ "Got cut", "Done it cut", "Had it cut", "Made it cut" ],
+    "soluzione": "Had it cut",
+    "ripasso": "Unit 46 - Have something done (Causative)",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Si usa la struttura causativa 'have something done' ('had it cut') per dire che qualcun altro (il parrucchiere) ha eseguito l'azione per noi."
+  },
+  {
+    "id": 131,
+    "domanda": "I'm tired because I've been studying ... nearly five hours.",
+    "opzioni": [ "Ago", "For", "From", "Since" ],
+    "soluzione": "For",
+    "ripasso": "Unit 11 - For and Since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "'For' si usa con il Present Perfect Continuous per indicare la durata di un'azione che è iniziata nel passato e continua fino ad ora."
+  },
+  {
+    "id": 132,
+    "domanda": "You can leave as soon as your name ...",
+    "opzioni": [ "Was being called", "Is been called", "Has been called", "Has called" ],
+    "soluzione": "Has been called",
+    "ripasso": "Unit 25 - When I do / as soon as I've done (in passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Nelle frasi temporali future (introdotte da 'as soon as'), si usa un tempo presente. Qui, il Present Perfect Passivo ('has been called') indica che si può uscire dopo che l'azione di chiamare il nome è stata completata."
+  },
+  {
+    "id": 133,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If the film weren't so long, I wouldn't have fallen asleep", "If the film wouldn't have been so long, I woulden't have fallen asleep", "If the film hasn't been so long, I wouldn't have fallen asleep", "If the film hadn't been so long, I wouldn't have fallen asleep" ],
+    "soluzione": "If the film hadn't been so long, I wouldn't have fallen asleep",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del terzo tipo, che descrive una situazione passata irreale e la sua conseguenza passata irreale. Struttura: 'If + Past Perfect', '...would have + participio passato'."
+  },
+  {
+    "id": 134,
+    "domanda": "Choose the word/phrase that is in a different category:",
+    "opzioni": [ "Wavy", "Curly", "Ear", "Straight" ],
+    "soluzione": "Ear",
+    "ripasso": "Vocabulary: Word categories (Adjectives of hair vs. Body part)",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Wavy' (ondulati), 'curly' (ricci) e 'straight' (lisci) sono aggettivi per descrivere i capelli. 'Ear' (orecchio) è una parte del corpo."
+  },
+  {
+    "id": 135,
+    "domanda": "I'm very thirsty, I could ... a drink.",
+    "opzioni": [ "Seem like", "Want for", "Have on", "Do with" ],
+    "soluzione": "Do with",
+    "ripasso": "Vocabulary: Idioms (could do with)",
+    "categoria": "Vocabulary",
+    "spiegazione": "L'espressione idiomatica 'could do with something' significa 'avere bisogno di' o 'volere' qualcosa, specialmente cibo o bevande."
+  },
+  {
+    "id": 136,
+    "domanda": "Oh no! I've split my coffee. Could you ... me a cloth, please?",
+    "opzioni": [ "Take", "Carry", "Put", "Bring" ],
+    "soluzione": "Bring",
+    "ripasso": "Vocabulary: Bring vs. Take",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Bring' si usa per il movimento verso chi parla (portare qui). 'Take' si usa per il movimento lontano da chi parla (portare via)."
+  },
+  {
+    "id": 137,
+    "domanda": "Thieves ... a vulnerable painting from the museum.",
+    "opzioni": [ "Picked", "Stole", "Robbed", "Stealed" ],
+    "soluzione": "Stole",
+    "ripasso": "Vocabulary: Rob vs. Steal",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Steal' (past 'stole') si usa per l'oggetto che viene rubato ('steal something'). 'Rob' si usa per la persona o il luogo che viene derubato ('rob a person/a bank')."
+  },
+  {
+    "id": 138,
+    "domanda": "Choose the synonym: elderly.",
+    "opzioni": [ "Older", "Ancient", "The oldest", "Old" ],
+    "soluzione": "Old",
+    "ripasso": "Vocabulary: Synonyms",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Elderly' è un modo più formale e cortese per dire 'old' (anziano), specialmente quando ci si riferisce a persone."
+  },
+  {
+    "id": 139,
+    "domanda": "Anne looks older than she is because she ... a middle-aged women.",
+    "opzioni": [ "Wears like", "Dresses similar", "Dresses as" ],
+    "soluzione": "Dresses as",
+    "ripasso": "Unit 118 - as / like / as if",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "Si usa 'dress like' (vestirsi come) per fare un paragone. La frase corretta sarebbe 'dresses like a middle-aged woman'. Le opzioni sono formulate in modo strano."
+  },
+  {
+    "id": 140,
+    "domanda": "The street was crowed ... tourists.",
+    "opzioni": [ "In", "With", "On", "Of" ],
+    "soluzione": "With",
+    "ripasso": "Unit 133 - Adjective + preposition (crowded with)",
+    "categoria": "Prepositions",
+    "spiegazione": "L'aggettivo 'crowded' (affollato) è seguito dalla preposizione 'with' per specificare da chi o cosa è affollato un luogo."
+  },
+  {
+    "id": 141,
+    "domanda": "I would like ... me.",
+    "opzioni": [ "Them answer", "They answered", "Them to answer", "That they answer" ],
+    "soluzione": "Them to answer",
+    "ripasso": "Unit 53 - Verb + object + to ... (would like somebody to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "La struttura 'would like somebody to do something' è usata per esprimere un desiderio sull'azione di qualcun altro. Richiede pronome oggetto ('them') + infinito con 'to'."
+  },
+  {
+    "id": 142,
+    "domanda": "I hope ... this test!",
+    "opzioni": [ "Being passed", "Passing", "Pass", "To pass" ],
+    "soluzione": "To pass",
+    "ripasso": "Unit 52 - Verb + to... (hope to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'hope' (sperare) è seguito dall'infinito con 'to'."
+  },
+  {
+    "id": 143,
+    "domanda": "A new stadium ... in the center of town.",
+    "opzioni": [ "Is constructed", "Is been constructed", "Is be constructed", "Is being constructed" ],
+    "soluzione": "Is being constructed",
+    "ripasso": "Unit 44 - Passive (Present continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Per descrivere un'azione passiva (lo stadio 'viene costruito') in corso di svolgimento in questo periodo, si usa il Present Continuous passivo ('is being + participio passato')."
+  },
+  {
+    "id": 144,
+    "domanda": "I don't speak French well as I haven't been studying it ...",
+    "opzioni": [ "Since much time", "For long", "Since long", "For a long time" ],
+    "soluzione": "For a long time",
+    "ripasso": "Unit 11 - For and Since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Con frasi negative al Present Perfect, si usa l'espressione 'for a long time' (per molto tempo). 'For long' è meno comune e più informale."
+  },
+  {
+    "id": 145,
+    "domanda": "Have you heard from your friends in Tunis ...?",
+    "opzioni": [ "On late", "On recent", "Of recent", "Lately" ],
+    "soluzione": "Lately",
+    "ripasso": "Unit 7 - Present Perfect (Signal words)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "'Lately' (ultimamente, di recente) è un avverbio di tempo comunemente usato con il Present Perfect, specialmente in domande e frasi negative."
+  },
+  {
+    "id": 146,
+    "domanda": "I've never drunk sangria and ...",
+    "opzioni": [ "Nor Fred hasn't", "Nor hasn't Fred", "So hasn't Fred", "Nor has Fred" ],
+    "soluzione": "Nor has Fred",
+    "ripasso": "Unit 42 - Neither/Nor",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "Per essere d'accordo con una frase negativa, si usa 'Nor/Neither + ausiliare affermativo + soggetto'. L'ausiliare di 'I have never...' è 'have', quindi la risposta è 'Nor has Fred'."
+  },
+  {
+    "id": 147,
+    "domanda": "It ... a fine day Tomorrow.",
+    "opzioni": [ "Is likely being", "Is likely to be", "Is surely to be", "Is probable to be" ],
+    "soluzione": "Is likely to be",
+    "ripasso": "Unit 59 - (be) likely to do",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "L'espressione 'to be likely to do something' (essere probabile che faccia qualcosa) è usata per parlare di probabilità ed è seguita dall'infinito con 'to'."
+  },
+  {
+    "id": 148,
+    "domanda": "There's a lift in the building, so you ... climb the stairs.",
+    "opzioni": [ "Have to", "Must", "Mustn't", "Don't have to" ],
+    "soluzione": "Don't have to",
+    "ripasso": "Unit 32 - Mustn't and don't need to / don't have to",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "'Don't have to' esprime una mancanza di obbligo (non è necessario). 'Mustn't' esprime un divieto (è proibito)."
+  },
+  {
+    "id": 149,
+    "domanda": "If I ... you, I wouldn't go in the pool immediately after lunch.",
+    "opzioni": [ "Would be", "Would have been", "Am", "Were" ],
+    "soluzione": "Were",
+    "ripasso": "Unit 39 - If I were you... (Conditionals Type 2)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "L'espressione 'If I were you' è una forma fissa del secondo condizionale usata per dare consigli."
+  },
+  {
+    "id": 150,
+    "domanda": "People ... personal computers at home.",
+    "opzioni": [ "Didn't use to have", "Weren't used to have", "Weren't used having", "Didn't used toh ave" ],
+    "soluzione": "Weren't used to have",
+    "ripasso": "Unit 61 - (be/get) used to something",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "ERRORE NEL TEST: Per parlare di un'abitudine passata, la risposta corretta è 'didn't use to have'. La soluzione fornita ('Weren't used to have') è grammaticalmente errata, poiché 'be used to' richiede la forma -ing."
+  },
+  {
+    "id": 151,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "He seems his mind to have changed", "He seems to have changed his mind", "It seems his mind is been changed", "Is seems he have changed his mind" ],
+    "soluzione": "He seems to have changed his mind",
+    "ripasso": "Unit 59 - Seem to be/do",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'seem' è seguito dall'infinito con 'to'. Per parlare di un'azione passata, si usa il perfect infinitive: 'to have + participio passato'."
+  },
+  {
+    "id": 152,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I would better to go now. It's pretty late", "I had better go now. It's pretty late", "I'd better going now. It's pretty late", "I'd better to go now. It's pretty late" ],
+    "soluzione": "I had better go now. It's pretty late",
+    "ripasso": "Unit 35 - had better",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "L'espressione 'had better' ('d better) è usata per dare un consiglio forte ed è seguita dalla forma base del verbo senza 'to'."
+  },
+  {
+    "id": 153,
+    "domanda": "I'd hate ... by what I said.",
+    "opzioni": [ "You to be offended", "That you are offended", "You being offended", "You be offended" ],
+    "soluzione": "You to be offended",
+    "ripasso": "Unit 53 - Verb + object + to ... (hate someone to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "La struttura 'hate + oggetto + infinito con to' esprime avversione per l'azione di qualcun altro. Qui, l'infinito è passivo ('to be offended')."
+  },
+  {
+    "id": 154,
+    "domanda": "Ken isn't ... a lorry, just a small van.",
+    "opzioni": [ "Used to driving", "Use drive", "Use to driving", "Use to drive" ],
+    "soluzione": "Used to driving",
+    "ripasso": "Unit 61 - (be/get) used to something",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "La struttura 'be used to' (essere abituati a) è seguita dalla forma in -ing. La frase significa 'Ken non è abituato a guidare un camion'."
+  },
+  {
+    "id": 155,
+    "domanda": "It is not available ...",
+    "opzioni": [ "In present", "At present", "In the present" ],
+    "soluzione": "At present",
+    "ripasso": "Unit 129 - Prepositions of time (at present)",
+    "categoria": "Prepositions",
+    "spiegazione": "'At present' è un'espressione fissa che significa 'attualmente', 'al momento'."
+  },
+  {
+    "id": 156,
+    "domanda": "Could you tell me the return rail ... to York, please?",
+    "opzioni": [ "Fare", "Price", "Money", "Rafe (Rale?)" ],
+    "soluzione": "Fare",
+    "ripasso": "Vocabulary: Price vs. Fare",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Fare' è la parola usata per il costo di un viaggio su un mezzo di trasporto (treno, autobus, aereo). 'Price' è per beni e servizi."
+  },
+  {
+    "id": 157,
+    "domanda": "I tried to phone you but I couldn't ...",
+    "opzioni": [ "Get in", "Ring up", "Get through", "Come across" ],
+    "soluzione": "Get through",
+    "ripasso": "Unit 142 - Phrasal verbs (get through)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to get through' significa 'riuscire a mettersi in contatto telefonico con qualcuno'."
+  },
+  {
+    "id": 158,
+    "domanda": "A ... of bread.",
+    "opzioni": [ "Slice", "Pane", "Splinter", "Grain" ],
+    "soluzione": "Slice",
+    "ripasso": "Unit 71 - Countable nouns with a/an and some (a slice of)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'A slice of' (una fetta di) è il partitivo corretto per 'bread' (pane)."
+  },
+  {
+    "id": 159,
+    "domanda": "Why don't you ... and see me some time?",
+    "opzioni": [ "Drop out", "Drop in", "Call about", "Call off" ],
+    "soluzione": "Drop in",
+    "ripasso": "Unit 145 - Phrasal verbs (drop in)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to drop in' significa 'fare una breve visita senza preavviso', 'passare a trovare'."
+  },
+  {
+    "id": 160,
+    "domanda": "You look very nice when you're ...",
+    "opzioni": [ "Dressed in blue", "Wearing in blue", "Dressing blue", "Dressed of blue" ],
+    "soluzione": "Dressed in blue",
+    "ripasso": "Unit 132 - Prepositions of state (dressed in)",
+    "categoria": "Prepositions",
+    "spiegazione": "L'espressione corretta per descrivere come è vestita una persona è 'dressed in + colore'."
+  },
+  {
+    "id": 161,
+    "domanda": "I watched my grandmother ... a sweater for my grandad.",
+    "opzioni": [ "To knit", "Knitted", "Knit", "Knitting" ],
+    "soluzione": "Knitting",
+    "ripasso": "Unit 66 - See somebody do / see somebody doing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo un verbo di percezione come 'watch', si usa la forma in -ing ('knitting') per indicare che si è osservata l'azione mentre era in corso."
+  },
+  {
+    "id": 162,
+    "domanda": "There were papers all over the room ... a hurricane had hit it.",
+    "opzioni": [ "As far as", "Through", "As if", "Because of" ],
+    "soluzione": "As if",
+    "ripasso": "Unit 118 - as / like / as if",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'As if' (come se) introduce un paragone con una situazione ipotetica per spiegare l'apparenza di qualcosa."
+  },
+  {
+    "id": 163,
+    "domanda": "They were humbly sorry for the mistake.",
+    "opzioni": [ "They apologized for the mistake", "They derived the mistake", "They were regret for the mistake", "They objected to the mistake" ],
+    "soluzione": "They apologized for the mistake",
+    "ripasso": "Unit 51 - Verb + preposition (apologise for)",
+    "categoria": "Reported Speech",
+    "spiegazione": "'To be sorry for' è sinonimo di 'to apologize for' (scusarsi per). Questa domanda testa la capacità di parafrasare usando un verbo di resoconto."
+  },
+  {
+    "id": 164,
+    "domanda": "The emperor is arriving tonight: said the message.",
+    "opzioni": [ "The message told the Emperor was arriving that night", "The message told that the Emperor is arriving that night", "The message said that the Emperor is arriving that night", "The message sad that Emperor was arriving that night" ],
+    "soluzione": "The message said that the Emperor is arriving that night",
+    "ripasso": "Unit 48 - Reported speech (say vs. tell)",
+    "categoria": "Reported Speech",
+    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, 'is arriving' diventa 'was arriving' e 'tonight' diventa 'that night'. La soluzione corretta sarebbe 'The message said that the Emperor was arriving that night'."
+  },
+  {
+    "id": 165,
+    "domanda": "If only he ... me!",
+    "opzioni": [ "Have called", "Had called", "Would have called", "Will call" ],
+    "soluzione": "Had called",
+    "ripasso": "Unit 41 - If only...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Per esprimere un rimpianto per qualcosa che non è accaduto nel passato, si usa la struttura 'If only + Past Perfect'."
+  },
+  {
+    "id": 166,
+    "domanda": "I would love ... Richard Gere.",
+    "opzioni": [ "Meeting", "Having meet", "Meet", "To meet" ],
+    "soluzione": "To meet",
+    "ripasso": "Unit 52 - Verb + to... (would love to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "L'espressione 'would love' (mi piacerebbe molto) è seguita dall'infinito con 'to'."
+  },
+  {
+    "id": 167,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "Tarek doesn't eat pork and nor does Hassan", "Tarek doesn't eat pork and so doesn't Hassan", "Tarek doesn't eat pork and neither Hassan eats", "Tarek doesn't eat pork and not does Hassan" ],
+    "soluzione": "Tarek doesn't eat pork and nor does Hassan",
+    "ripasso": "Unit 42 - Neither/Nor",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "Per concordare con una frase negativa, si usa 'nor' o 'neither' seguito dalla struttura 'ausiliare affermativo + soggetto'. Dato che la prima parte usa il Present Simple ('doesn't eat'), l'ausiliare è 'does'."
+  },
+  {
+    "id": 168,
+    "domanda": "How long ... Japanese?",
+    "opzioni": [ "Have you been studying", "Have you study", "Do you study", "Are you studying" ],
+    "soluzione": "Have you been studying",
+    "ripasso": "Unit 10 - Present perfect continuous",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "La domanda 'How long...?' per chiedere da quanto tempo dura un'azione che continua ancora, richiede il Present Perfect Continuous."
+  },
+  {
+    "id": 169,
+    "domanda": "I wore ...",
+    "opzioni": [ "A dress bright green", "Bright green dress", "A bright green dress", "A green bright dress" ],
+    "soluzione": "A bright green dress",
+    "ripasso": "Unit 99 - Adjective order",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "Gli aggettivi precedono il nome a cui si riferiscono. 'Bright green' funziona come un unico aggettivo di colore. Serve l'articolo 'a' prima dell'aggettivo."
+  },
+  {
+    "id": 170,
+    "domanda": "London is a ... bigger city than Edimburgh.",
+    "opzioni": [ "Farly", "Too", "Very", "Much" ],
+    "soluzione": "Much",
+    "ripasso": "Unit 106 - Comparatives (much bigger)",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "Per intensificare un aggettivo comparativo (come 'bigger'), si usano avverbi come 'much', 'a lot', 'far', 'a little', ma non 'very'."
+  },
+  {
+    "id": 171,
+    "domanda": "I love ... so informative!",
+    "opzioni": [ "The new. It is", "The news. It is", "The new. They are", "The news. They are" ],
+    "soluzione": "The news. It is",
+    "ripasso": "Unit 72 - Countable and uncountable nouns (news is singular)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "La parola 'news' (notizie) in inglese è un nome non numerabile e singolare, quindi è seguito dal verbo 'is' e dal pronome 'it'."
+  },
+  {
+    "id": 172,
+    "domanda": "Chamonix is in ...",
+    "opzioni": [ "French Alps", "Alps French", "The French Alps", "The Alps French" ],
+    "soluzione": "The French Alps",
+    "ripasso": "Unit 77 - The (geographical names)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Si usa l'articolo 'the' con i nomi delle catene montuose ('the Alps'). L'aggettivo di nazionalità ('French') precede il nome."
+  },
+  {
+    "id": 173,
+    "domanda": "How ...?",
+    "opzioni": [ "Long have you waiting", "Long have you been waiting", "Long time have you been waiting", "Long are you waiting" ],
+    "soluzione": "Long have you been waiting",
+    "ripasso": "Unit 10 - Present perfect continuous",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "La domanda 'How long...?' per chiedere da quanto tempo un'azione è in corso richiede il Present Perfect Continuous ('have/has been + -ing')."
+  },
+  {
+    "id": 174,
+    "domanda": "Why do you ... him speak to you so rudely?",
+    "opzioni": [ "Make", "Let", "Have", "Get" ],
+    "soluzione": "Let",
+    "ripasso": "Unit 54 - Make and let",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "'Let' significa 'permettere'. La struttura è 'let somebody do something' (con la forma base senza 'to')."
+  },
+  {
+    "id": 175,
+    "domanda": "When we got there, dinner ...",
+    "opzioni": [ "Was been served", "Was being serve", "Was serving", "Was being served" ],
+    "soluzione": "Was being served",
+    "ripasso": "Unit 44 - Passive (Past continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Si usa il Past Continuous Passivo ('was being + participio passato') per indicare che un'azione passiva era in corso quando un'altra azione è avvenuta."
+  },
+  {
+    "id": 176,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If he saw the hole, he wouldn't have fallen", "If he would have seen the hole, he wouldn't have fallen", "If he would see the hole, he hadn't fallen", "If he has seen the hole, he wouldn't fallen" ],
+    "soluzione": "If he saw the hole, he wouldn't have fallen",
+    "ripasso": "Unit 40 - Mixed Conditionals (unreal present condition, unreal past result)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "ERRORE NEL TEST: La frase è un condizionale misto. La soluzione fornita usa 'if + past, would have + p.p'. Un condizionale misto più comune è 'if + past perfect, would + base form'. Nessuna opzione è perfetta, ma la C. Type 3 'If he had seen..., he wouldn't have fallen' sarebbe la più logica."
+  },
+  {
+    "id": 177,
+    "domanda": "Where on earth were you coming ...?",
+    "opzioni": [ "In", "At", "To", "From" ],
+    "soluzione": "From",
+    "ripasso": "Unit 122 - Prepositions of place (from)",
+    "categoria": "Prepositions",
+    "spiegazione": "Il verbo 'come' richiede la preposizione 'from' per indicare il luogo di provenienza."
+  },
+  {
+    "id": 178,
+    "domanda": "Let's go ...?",
+    "opzioni": [ "Are we?", "Let we?", "Shall we?", "Will we?" ],
+    "soluzione": "Shall we?",
+    "ripasso": "Unit 50 - Question tags",
+    "categoria": "Question Formation",
+    "spiegazione": "La question tag che segue un'esortazione introdotta da 'Let's...' è sempre 'shall we?'."
+  },
+  {
+    "id": 179,
+    "domanda": "Most people have a car ...",
+    "opzioni": [ "In this moment", "In these days", "On Today", "Nowadays" ],
+    "soluzione": "Nowadays",
+    "ripasso": "Vocabulary: Time expressions",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Nowadays' (al giorno d'oggi, oggigiorno) è un avverbio di tempo usato per parlare di abitudini e situazioni attuali."
+  },
+  {
+    "id": 180,
+    "domanda": "This bill... 31/12",
+    "opzioni": [ "I sto paid", "Is to have paid", "Is to be paid", "Is to pay" ],
+    "soluzione": "Is to be paid",
+    "ripasso": "Unit 45 - (be) to do / (be) to be done",
+    "categoria": "Passive Voice",
+    "spiegazione": "La struttura 'be to be + participio passato' è una forma passiva formale per esprimere un obbligo o un'istruzione. Significa 'deve essere pagata'."
+  },
+  {
+    "id": 181,
+    "domanda": "Tony is thinking ... Bergamo.",
+    "opzioni": [ "To have left", "Leave", "To leave", "Of leaving" ],
+    "soluzione": "Of leaving",
+    "ripasso": "Unit 63 - Verb + preposition + -ing (think of)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Quando 'think' significa 'prendere in considerazione', è seguito dalla preposizione 'of' o 'about' e dalla forma in -ing."
+  },
+  {
+    "id": 182,
+    "domanda": "They would have a lot of fun if they ...",
+    "opzioni": [ "Will come", "Come", "Would come", "Came" ],
+    "soluzione": "Came",
+    "ripasso": "Unit 39 - If I did ... (Conditionals Type 2)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del secondo tipo. La frase principale ha 'would + forma base', quindi la frase con 'if' richiede il Past Simple."
+  },
+  {
+    "id": 183,
+    "domanda": "They ... for nearly 50 years.",
+    "opzioni": [ "Are marrying", "Have married", "Are married", "Have been married" ],
+    "soluzione": "Have been married",
+    "ripasso": "Unit 11 - Present Perfect with for/since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Si usa il Present Perfect per descrivere uno stato ('to be married') che dura da un certo periodo di tempo ('for nearly 50 years') fino al presente."
+  },
+  {
+    "id": 184,
+    "domanda": "I will never forget ... my very first glass of champagne.",
+    "opzioni": [ "To drink", "Drink", "To have drink", "Drinking" ],
+    "soluzione": "Drinking",
+    "ripasso": "Unit 57 - remember/forget + -ing (past) vs. to do (future)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "'Forget + -ing' si usa per parlare di un ricordo di un'azione passata. 'Forget + to' si usa per un'azione che si doveva fare."
+  },
+  {
+    "id": 185,
+    "domanda": "Despite several attempts, I couldn't ...",
+    "opzioni": [ "Let it work", "Get it work", "Have it worked", "Make it work" ],
+    "soluzione": "Make it work",
+    "ripasso": "Unit 54 - Make and let",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "'Make something work' significa 'farlo funzionare'. 'Get' richiederebbe 'to work'."
+  },
+  {
+    "id": 186,
+    "domanda": "You can't go in while the patient ...",
+    "opzioni": [ "Is be x-rayed", "Is x-rayed", "Is been x-rayed", "Is being x-rayed" ],
+    "soluzione": "Is being x-rayed",
+    "ripasso": "Unit 44 - Passive (Present continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "'While' introduce un'azione in corso. Poiché l'azione è subita dal paziente, si usa il Present Continuous passivo ('is being + participio passato')."
+  },
+  {
+    "id": 187,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If you jump from that height, you would break your leg", "If you will jump from that height, you would break your leg", "If you jumped from that height, you'll break your leg", "If you jump from that height, you'll break your leg" ],
+    "soluzione": "If you jump from that height, you'll break your leg",
+    "ripasso": "Unit 38 - If I do... (Conditionals Type 1)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del primo tipo, che esprime una conseguenza molto probabile di un'azione. Struttura: 'If + Present Simple', '... will + forma base'."
+  },
+  {
+    "id": 188,
+    "domanda": "This e-mail ... today",
+    "opzioni": [ "Must to be sent", "Must be sent", "Must send", "Must have sent" ],
+    "soluzione": "Must be sent",
+    "ripasso": "Unit 43 - Passive + modals (must be done)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Forma passiva con un modale. 'Must' è seguito da 'be + participio passato'. L'e-mail 'deve essere inviata'."
+  },
+  {
+    "id": 189,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "Jill told Mary that John had phoned her the night before", "Jill told to Mary that John had phoned her the night before", "Jill said Mary that John had phoned her the night before", "Jill told Mary that John has phoned her the night before" ],
+    "soluzione": "Jill told Mary that John had phoned her the night before",
+    "ripasso": "Unit 48 - Reported speech (say vs. tell)",
+    "categoria": "Reported Speech",
+    "spiegazione": "'Tell' richiede un oggetto indiretto ('told Mary'), mentre 'say' no ('said that...'). I tempi si spostano indietro ('phoned' -> 'had phoned', 'last night' -> 'the night before')."
+  },
+  {
+    "id": 190,
+    "domanda": "He wished he ...",
+    "opzioni": [ "Had never said that", "Never said that", "Would never have said that", "Has never said that" ],
+    "soluzione": "Had never said that",
+    "ripasso": "Unit 41 - I wish I had done...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Per esprimere un rimpianto per un'azione passata, si usa la struttura 'wish + Past Perfect'."
+  },
+  {
+    "id": 191,
+    "domanda": "They're all correct ... I can see.",
+    "opzioni": [ "So", "As far as", "So that", "That" ],
+    "soluzione": "As far as",
+    "ripasso": "Vocabulary: Fixed phrases",
+    "categoria": "Vocabulary",
+    "spiegazione": "L'espressione fissa 'as far as I can see/tell/know' significa 'per quanto ne so', 'a quanto pare'."
+  },
+  {
+    "id": 192,
+    "domanda": "... the letter, John realized that the address was wrong.",
+    "opzioni": [ "After he has posted", "After he had posted", "After to post", "After post" ],
+    "soluzione": "After he had posted",
+    "ripasso": "Unit 64 - After + past perfect",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Per indicare che un'azione passata ('posting') è avvenuta prima di un'altra ('realized'), si usa 'after + Past Perfect'."
+  },
+  {
+    "id": 193,
+    "domanda": "Can you tell me what Peter's surname is, Ken what Harry",
+    "opzioni": [ "Harry asked Ken what Peter's surname was", "Harry asked Ken what was Peter's surname", "Harry asked to Ken what was Peter's surname", "Harry asked to Ken what Peter's surname was" ],
+    "soluzione": "Harry asked Ken what was Peter's surname",
+    "ripasso": "Unit 49 - Reported questions",
+    "categoria": "Reported Speech",
+    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, l'ordine delle parole deve essere affermativo (soggetto + verbo). La risposta corretta è 'Harry asked Ken what Peter's surname was'."
+  },
+  {
+    "id": 194,
+    "domanda": "... shoes do you generally wear?",
+    "opzioni": [ "What size", "How much big", "How big", "How size" ],
+    "soluzione": "What size",
+    "ripasso": "Unit 47 - What...?, Which...?, How...?",
+    "categoria": "Question Formation",
+    "spiegazione": "Per chiedere la taglia o il numero di scarpe, si usa l'espressione 'What size?'."
+  },
+  {
+    "id": 195,
+    "domanda": "I once stayed here with my parents said Helen.",
+    "opzioni": [ "Helen said she once stayed there with her parents", "Helen told she once stayed here with her parents", "Helen told she has once stayed there with her parents", "Helen told she had once stayed there with her parents" ],
+    "soluzione": "Helen told she had once stayed there with her parents",
+    "ripasso": "Unit 48 - Reported speech (tense changes)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto: 'say' diventa 'said' (o 'told' se c'è l'interlocutore), 'stayed' (Past Simple) diventa 'had stayed' (Past Perfect), e 'here' diventa 'there'."
+  },
+  {
+    "id": 196,
+    "domanda": "Fred ice-cream must be eaten ... It can't wait!",
+    "opzioni": [ "While it is ready", "As soon as it is ready", "During it is ready", "After it is ready" ],
+    "soluzione": "As soon as it is ready",
+    "ripasso": "Unit 25 - as soon as",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "'As soon as' (non appena) è una congiunzione temporale che si adatta perfettamente al senso di urgenza della frase."
+  },
+  {
+    "id": 197,
+    "domanda": "If you're tired of driving, I'll ...",
+    "opzioni": [ "Take on", "Take from", "Take up", "Take over" ],
+    "soluzione": "Take over",
+    "ripasso": "Unit 145 - Phrasal verbs (take over)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to take over' significa 'prendere il controllo', 'subentrare', in questo caso alla guida."
+  },
+  {
+    "id": 198,
+    "domanda": "Keep pedalling! You mustn't ... so near the end of the race.",
+    "opzioni": [ "Give back", "Give down", "Give up", "Give on" ],
+    "soluzione": "Give up",
+    "ripasso": "Unit 139 - Phrasal verbs (give up)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to give up' significa 'arrendersi', 'mollare'."
+  },
+  {
+    "id": 199,
+    "domanda": "The police are still ... the unsolved murder.",
+    "opzioni": [ "Looking through", "Looking into", "Looking for", "Looking at" ],
+    "soluzione": "Looking into",
+    "ripasso": "Unit 138 - Phrasal verbs (look into)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to look into' significa 'indagare', 'investigare'."
+  },
+  {
+    "id": 200,
+    "domanda": "Wing is to bird as fin is to ...",
+    "opzioni": [ "Fish", "Butterfly", "Man", "Cat" ],
+    "soluzione": "Fish",
+    "ripasso": "Vocabulary: Analogies",
+    "categoria": "Vocabulary",
+    "spiegazione": "Questa è un'analogia: l'ala ('wing') sta all'uccello ('bird') come la pinna ('fin') sta al pesce ('fish')."
+  },
+  {
+    "id": 201,
+    "domanda": "I'm afraid there are several ... in this newspaper article.",
+    "opzioni": [ "Imprints", "Unprints", "Disprints", "Misprints" ],
+    "soluzione": "Misprints",
+    "ripasso": "Vocabulary: Prefixes (mis-)",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Misprint' (errore di stampa) è la parola corretta. Il prefisso 'mis-' indica qualcosa fatto in modo errato."
+  },
+  {
+    "id": 202,
+    "domanda": "He's got a good salary, he ... £1.500 a month.",
+    "opzioni": [ "Eams", "Wins", "Takes", "Gains" ],
+    "soluzione": "Gains",
+    "ripasso": "Vocabulary: Earn vs. Win vs. Gain",
+    "categoria": "Vocabulary",
+    "spiegazione": "ERRORE NEL TEST: Il verbo corretto per 'guadagnare' uno stipendio è 'to earn'. 'Gains' è solitamente usato per profitti o aumenti. La risposta corretta dovrebbe essere 'earns'."
+  },
+  {
+    "id": 203,
+    "domanda": "She generally ... old clothes when she does the house work.",
+    "opzioni": [ "Wears", "Carries", "Dresses", "Puts" ],
+    "soluzione": "Wears",
+    "ripasso": "Vocabulary: Clothes (wear)",
+    "categoria": "Vocabulary",
+    "spiegazione": "'To wear' è il verbo generico per 'indossare' abiti."
+  },
+  {
+    "id": 204,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "What telephone number did you ring to?", "What telephone number did you you ring at?", "What telephone number did you ring?", "What telephone number did you ring for?" ],
+    "soluzione": "What telephone number did you ring?",
+    "ripasso": "Unit 135 - Prepositions at the end of questions",
+    "categoria": "Prepositions",
+    "spiegazione": "Il verbo 'ring' (telefonare a) è transitivo e non richiede una preposizione in questo contesto."
+  },
+  {
+    "id": 205,
+    "domanda": "They ... fifty years.",
+    "opzioni": [ "Have married for", "Have been marrying for", "Are married for", "Have been married for" ],
+    "soluzione": "Have been married for",
+    "ripasso": "Unit 11 - Present Perfect with for/since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Si usa il Present Perfect ('have been married') con 'for' per indicare la durata di uno stato (essere sposati) che continua nel presente."
+  },
+  {
+    "id": 206,
+    "domanda": "The police ... in the end.",
+    "opzioni": [ "Got the man confess", "Made the man confess", "Had the man to confess", "Made the man to confess" ],
+    "soluzione": "Made the man confess",
+    "ripasso": "Unit 54 - Make somebody do something",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "La struttura 'make somebody do something' ('made the man confess') significa 'costringere qualcuno a fare qualcosa' ed è seguita dalla forma base senza 'to'."
+  },
+  {
+    "id": 207,
+    "domanda": "Tony is thinking ... Bergamo.",
+    "opzioni": [ "Of leaving", "To leave", "Leave", "To have left" ],
+    "soluzione": "Of leaving",
+    "ripasso": "Unit 63 - Verb + preposition + -ing (think of)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Per esprimere l'idea di 'prendere in considerazione', si usa 'think of/about + -ing'."
+  },
+  {
+    "id": 208,
+    "domanda": "Several mistakes ... in the report",
+    "opzioni": [ "Had been made", "Had be made", "Had being made", "Had made" ],
+    "soluzione": "Had been made",
+    "ripasso": "Unit 44 - Passive (Past perfect passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "Si usa il Past Perfect Passivo ('had been + participio passato') per un'azione passiva avvenuta prima di un'altra azione o momento nel passato."
+  },
+  {
+    "id": 209,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "He asked if her out if he would be less shy", "He'd ask her out if he is less shy", "He'd ask her out if he were less shy", "He'd ask her out if he would be less shy" ],
+    "soluzione": "He'd ask her out if he were less shy",
+    "ripasso": "Unit 39 - If I were... (Conditionals Type 2)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del secondo tipo per una situazione immaginaria presente. Struttura: 'would + forma base' nella principale, 'if + Past Simple' (con 'were') nella secondaria."
+  },
+  {
+    "id": 210,
+    "domanda": "When they turned round they saw a man ... a very big sack on his back.",
+    "opzioni": [ "To carry", "Carry", "Who carrying", "Carrying" ],
+    "soluzione": "Carrying",
+    "ripasso": "Unit 66 - See somebody doing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo verbi di percezione come 'see', si usa la forma in -ing per descrivere un'azione vista in corso di svolgimento."
+  },
+  {
+    "id": 211,
+    "domanda": "Luke wanted ... to his party the following night.",
+    "opzioni": [ "Us coming", "We came", "Us to come", "That we would have come" ],
+    "soluzione": "Us to come",
+    "ripasso": "Unit 53 - Verb + object + to ... (want somebody to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'want' segue la struttura 'verbo + pronome oggetto (us) + infinito con to'."
+  },
+  {
+    "id": 212,
+    "domanda": "You won't become a top musician ... a lot.",
+    "opzioni": [ "Unless you will practice", "If you practice", "Unless you won't practice", "Unless you practice" ],
+    "soluzione": "Unless you practice",
+    "ripasso": "Unit 117 - Unless",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "'Unless' significa 'a meno che non' ed è equivalente a 'if... not'. È seguito dal Present Simple quando la frase principale è al futuro."
+  },
+  {
+    "id": 213,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "It will tell where to go to you", "You will tell where to go", "You will be told where to go", "It will be told to you where to go" ],
+    "soluzione": "You will be told where to go",
+    "ripasso": "Unit 43 - Passive",
+    "categoria": "Passive Voice",
+    "spiegazione": "Questa è la forma passiva di '(Someone) will tell you...'. Il soggetto della frase passiva è 'You', e il verbo diventa 'will be told'."
+  },
+  {
+    "id": 214,
+    "domanda": "I ... last week.",
+    "opzioni": [ "Had my car be repaired", "Had my car repaired", "Had repair my car", "Had my car repair" ],
+    "soluzione": "Had my car repaired",
+    "ripasso": "Unit 46 - Have something done (Causative)",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "La struttura causativa al passato è 'had + oggetto + participio passato' e indica che si è fatto fare qualcosa da qualcun altro."
+  },
+  {
+    "id": 215,
+    "domanda": "When they got married, Paul ... his girlfriend for five years.",
+    "opzioni": [ "Knew", "Had been knowing", "Has known", "Had known" ],
+    "soluzione": "Had known",
+    "ripasso": "Unit 15 - Past Perfect",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Si usa il Past Perfect ('had known') per un'azione/stato che è avvenuto prima di un altro momento nel passato ('when they got married')."
+  },
+  {
+    "id": 216,
+    "domanda": "I ... so quickly to catch the bus as in the end it turned up ten minutes late.",
+    "opzioni": [ "Hadn't to run", "Didn't need to run", "Needn't have run", "Mustn't have run" ],
+    "soluzione": "Didn't need to run",
+    "ripasso": "Unit 34 - Needn't have (done) vs. didn't need to (do)",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "'Didn't need to run' significa che non era necessario correre. 'Needn't have run' implica che la persona ha corso, ma poi ha scoperto che non era necessario."
+  },
+  {
+    "id": 217,
+    "domanda": "... shoes do you take?",
+    "opzioni": [ "How much", "What size", "What big", "How long" ],
+    "soluzione": "What size",
+    "ripasso": "Unit 47 - What...?, Which...?, How...?",
+    "categoria": "Question Formation",
+    "spiegazione": "Per chiedere il numero (la taglia) delle scarpe, l'espressione corretta è 'What size?'."
+  },
+  {
+    "id": 218,
+    "domanda": "He wouldn't tell me how much ...",
+    "opzioni": [ "His car cost", "Cost his car", "Did his car cost", "Was his car cost" ],
+    "soluzione": "His car cost",
+    "ripasso": "Unit 49 - Reported questions (word order)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Questa è una domanda indiretta. Dopo la question word ('how much'), si usa l'ordine delle parole di una frase affermativa: soggetto ('his car') + verbo ('cost')."
+  },
+  {
+    "id": 219,
+    "domanda": "She used to be a lot thinner ... six kids!",
+    "opzioni": [ "Before she has", "Before to have", "Before she had", "Before had" ],
+    "soluzione": "Before she had",
+    "ripasso": "Unit 64 - Before + subject + verb",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "La congiunzione 'before' è seguita da una frase con soggetto e verbo. Poiché l'azione è nel passato, si usa il Past Simple ('she had')."
+  },
+  {
+    "id": 220,
+    "domanda": "He gave me some money ... I could pay the bills.",
+    "opzioni": [ "So that", "As to", "For", "Ao as" ],
+    "soluzione": "So that",
+    "ripasso": "Unit 116 - So that (purpose)",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'So that' (affinché, in modo che) è una congiunzione usata per introdurre una frase che esprime lo scopo o la finalità di un'azione."
+  },
+  {
+    "id": 221,
+    "domanda": "'It might be a fine day next Saturday but I doubt it' said Cathy.",
+    "opzioni": [ "Cathy said it might be a fine day the following Saturday but she doubted it", "Cathy said it might have been a fine day next Saturday but she doubted it", "Cathy said it may have been a fine day the following Saturday but she doubted it", "Cathy said it might have been a fine day the following Saturday but she doubted it" ],
+    "soluzione": "Cathy said it might have been a fine day the following Saturday but she doubted it",
+    "ripasso": "Unit 48 - Reported speech (reporting modals)",
+    "categoria": "Reported Speech",
+    "spiegazione": "ERRORE NEL TEST: Il modale 'might' di solito non cambia nel discorso indiretto. La risposta corretta dovrebbe essere 'Cathy said it might be a fine day the following Saturday but she doubted it'."
+  },
+  {
+    "id": 222,
+    "domanda": "He ran out of petrol so he stopped ... some.",
+    "opzioni": [ "Having got", "To get", "Getting", "Get" ],
+    "soluzione": "To get",
+    "ripasso": "Unit 65 - Verb + to... (purpose)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "'Stop + infinito con to' significa fermarsi per fare qualcosa (esprimere uno scopo). 'Stop + -ing' significa smettere di fare qualcosa."
+  },
+  {
+    "id": 223,
+    "domanda": "I haven't seen any of my old friends ...",
+    "opzioni": [ "In the last few months", "In last months", "In the latest few months", "In the last months" ],
+    "soluzione": "In the last few months",
+    "ripasso": "Unit 7 - Present Perfect (time expressions)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "L'espressione 'in the last/past few months' è una comune collocazione temporale usata con il Present Perfect."
+  },
+  {
+    "id": 224,
+    "domanda": "Two years earlier Mr Grey ... from his job.",
+    "opzioni": [ "Had been dismissed", "Is been dismissed", "Was been dismissed", "Has been dismissed" ],
+    "soluzione": "Had been dismissed",
+    "ripasso": "Unit 44 - Passive (Past perfect passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "L'avverbio 'earlier' indica un'azione accaduta prima di un'altra nel passato, richiedendo il Past Perfect. L'azione è passiva ('era stato licenziato'), quindi si usa il Past Perfect Passivo."
+  },
+  {
+    "id": 225,
+    "domanda": "If you ... him, you'll be unhappy.",
+    "opzioni": [ "Would marry", "Married", "Will marry", "Marry" ],
+    "soluzione": "Marry",
+    "ripasso": "Unit 38 - If I do... (Conditionals Type 1)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del primo tipo. La frase con 'if' richiede il Present Simple ('marry') quando la principale è al futuro ('you'll be')."
+  },
+  {
+    "id": 226,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "If it will rain, we wouldn't eat in the garden", "If it would rain, we didn't eat in the garden", "If it would rain, we hadn't eat in the garden", "If it rained, we wouldn't eat in the garden" ],
+    "soluzione": "If it rained, we wouldn't eat in the garden",
+    "ripasso": "Unit 40 - Mixed Conditionals (real past, unreal present)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del secondo tipo, che descrive una situazione immaginaria ('se piovesse'). Struttura: 'If + Past Simple', '...wouldn't + forma base'."
+  },
+  {
+    "id": 227,
+    "domanda": "The new building ... by Queen Elizabeth.",
+    "opzioni": [ "Will be open", "Is been opened", "Is going be opened", "Will be opened" ],
+    "soluzione": "Will be opened",
+    "ripasso": "Unit 43 - Passive + will",
+    "categoria": "Passive Voice",
+    "spiegazione": "Per un'azione futura passiva, si usa 'will be + participio passato'. Il nuovo edificio 'sarà inaugurato'."
+  },
+  {
+    "id": 228,
+    "domanda": "Stand up when your number ...",
+    "opzioni": [ "Will be called", "Will call", "Is called", "Calls" ],
+    "soluzione": "Is called",
+    "ripasso": "Unit 25 - When (Time clauses)",
+    "categoria": "Passive Voice",
+    "spiegazione": "In una frase temporale futura introdotta da 'when', si usa un tempo presente. Poiché il numero 'viene chiamato' (azione passiva), si usa il Present Simple passivo."
+  },
+  {
+    "id": 229,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I would have called if I had known his name", "I would have called if I will have known his name", "I had called if I would have known his name", "I would have called if I would have known his name" ],
+    "soluzione": "I would have called if I had known his name",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del terzo tipo. Struttura corretta: 'would have + participio passato' nella principale, 'if + Past Perfect' nella secondaria."
+  },
+  {
+    "id": 230,
+    "domanda": "I never ... boiled carrots as a child.",
+    "opzioni": [ "Use to like", "Used to like", "Used to liking", "Used like" ],
+    "soluzione": "Used to like",
+    "ripasso": "Unit 36 - used to (do)",
+    "categoria": "used to vs be/get used to",
+    "spiegazione": "'Used to + forma base' si usa per abitudini passate. 'Never' si può inserire per rafforzare la negazione."
+  },
+  {
+    "id": 231,
+    "domanda": "He ... but didn't want to dance.",
+    "opzioni": [ "Heard play the band", "Listened to the band playing", "Listened the band playing", "Heard playing the band" ],
+    "soluzione": "Listened to the band playing",
+    "ripasso": "Unit 66 - listen to somebody doing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "'Listen' richiede la preposizione 'to'. Come altri verbi di percezione, può essere seguito da 'oggetto + forma in -ing' per descrivere un'azione in corso."
+  },
+  {
+    "id": 232,
+    "domanda": "We've got to ...",
+    "opzioni": [ "Have another phone to put in", "Make another phone put in", "Get another phone to put in", "Have another phone put in" ],
+    "soluzione": "Get another phone to put in",
+    "ripasso": "Unit 54 - Get somebody/something to do",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "ERRORE NEL TEST: La struttura corretta per 'far installare' è quella causativa: 'have/get another phone put in' (con il participio passato). Nessuna opzione è perfetta. 'Get somebody to do something' è una struttura diversa."
+  },
+  {
+    "id": 233,
+    "domanda": "I don't like tea.",
+    "opzioni": [ "I don't too", "Neither I do", "So do I", "Neither do I" ],
+    "soluzione": "Neither do I",
+    "ripasso": "Unit 42 - Neither do I",
+    "categoria": "Agreement & Disagreement (So/Neither)",
+    "spiegazione": "Per essere d'accordo con una frase negativa, si usa 'Neither/Nor + ausiliare affermativo + soggetto'. L'ausiliare di 'I don't like' è 'do'."
+  },
+  {
+    "id": 234,
+    "domanda": "Don't ... what you're doing.",
+    "opzioni": [ "Let them to see", "Have them seen", "Get them see", "Let them see" ],
+    "soluzione": "Let them see",
+    "ripasso": "Unit 54 - Let somebody do",
+    "categoria": "Causative Structures (have/get/make/let)",
+    "spiegazione": "Il verbo 'let' (lasciare, permettere) è seguito da 'oggetto + forma base del verbo' (senza 'to')."
+  },
+  {
+    "id": 235,
+    "domanda": "It was very dark in the room and so we ... anything.",
+    "opzioni": [ "Can't see", "Can't to see", "Couldn't see", "Mustn't see" ],
+    "soluzione": "Couldn't see",
+    "ripasso": "Unit 26 - could/couldn't (past ability)",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "Per esprimere abilità o possibilità nel passato, si usa 'could' o 'couldn't'. Il contesto è al passato ('It was...')."
+  },
+  {
+    "id": 236,
+    "domanda": "'When did you last see your father, Bill?' asked Vic.",
+    "opzioni": [ "Vic asked Bill when had he last seen his father", "Vis asked Bill when saw he last his father", "Vic asked Bill when he had last seen his father", "Vic asked Bill when did he last see his father" ],
+    "soluzione": "Vic asked Bill when he had last seen his father",
+    "ripasso": "Unit 49 - Reported questions (tense changes)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel riportare una domanda: il Past Simple ('did see') diventa Past Perfect ('had seen'), e l'ordine delle parole diventa affermativo ('when he had last seen')."
+  },
+  {
+    "id": 237,
+    "domanda": "Have you ever wished you ... someone else?",
+    "opzioni": [ "Would have been", "Were", "Are", "Would be" ],
+    "soluzione": "Were",
+    "ripasso": "Unit 41 - I wish I were...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Per esprimere un desiderio su una situazione presente irreale, si usa 'wish + Past Simple'. Con il verbo 'be', si usa la forma 'were' per tutte le persone."
+  },
+  {
+    "id": 238,
+    "domanda": "I won't leave until ...",
+    "opzioni": [ "You phone me", "You would phone me", "You phoned me", "You'll phone me" ],
+    "soluzione": "You phone me",
+    "ripasso": "Unit 25 - until (time clauses)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Nelle frasi temporali future introdotte da 'until', si usa il Present Simple, non 'will'."
+  },
+  {
+    "id": 239,
+    "domanda": "The boat started to sink ... five hundred yards.",
+    "opzioni": [ "Before it has travelled", "Before it had travelled", "Before it would travel", "Befor it travelling" ],
+    "soluzione": "Before it had travelled",
+    "ripasso": "Unit 64 - Before + subject + verb",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Si usa il Past Perfect ('had travelled') con 'before' per chiarire che un'azione era stata completata prima di un'altra nel passato ('started to sink')."
+  },
+  {
+    "id": 240,
+    "domanda": "Fred went straight upstairs ... he had done many times before.",
+    "opzioni": [ "As", "So", "Like", "As if" ],
+    "soluzione": "As",
+    "ripasso": "Unit 118 - as (in the way that)",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'As' come congiunzione può significare 'nello stesso modo in cui'."
+  },
+  {
+    "id": 241,
+    "domanda": "'I've got to tell him next weekend' said Olivia.",
+    "opzioni": [ "Olivia said she should have told him the following weekend", "Olivia said she had got to tell him the following weekend", "Olivia said she would have got to tell him the following weekend", "Olivia said she must have told him the following weekend" ],
+    "soluzione": "Olivia said she had got to tell him the following weekend",
+    "ripasso": "Unit 48 - Reported speech (have got to -> had got to)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto, 'have got to' diventa 'had got to' e 'next weekend' diventa 'the following weekend'."
+  },
+  {
+    "id": 242,
+    "domanda": "The concert was ... long that we left before the end.",
+    "opzioni": [ "So", "Enough", "Too", "Quite" ],
+    "soluzione": "So",
+    "ripasso": "Unit 101 - So and such",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "Si usa la struttura 'so + aggettivo/avverbio + that' per esprimere una conseguenza. Il concerto era così lungo che siamo andati via."
+  },
+  {
+    "id": 243,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "This spaghetti are overcooked!", "These spaghettis are overcooked!", "This spaghetti is overcooked!", "These spaghetti are overcooked!" ],
+    "soluzione": "These spaghetti are overcooked!",
+    "ripasso": "Unit 72 - Plural nouns (spaghetti)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "ERRORE NEL TEST: 'Spaghetti', come 'news', è un nome non numerabile in inglese e richiede il verbo singolare. La risposta corretta è 'This spaghetti is overcooked!'."
+  },
+  {
+    "id": 244,
+    "domanda": "Kevin ... very ill when he woke up.",
+    "opzioni": [ "Felt oneself", "Felt", "Felt him", "Felt himself" ],
+    "soluzione": "Felt",
+    "ripasso": "Unit 4 - Present simple (verbs of feeling)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Il verbo 'feel' (sentirsi) in questo senso non è riflessivo in inglese. Si dice semplicemente 'he felt ill'."
+  },
+  {
+    "id": 245,
+    "domanda": "I went biking in ... year.",
+    "opzioni": [ "The Apennines", "The Apennine", "An Apennines", "Apennines" ],
+    "soluzione": "The Apennines",
+    "ripasso": "Unit 77 - The (geographical names)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Si usa l'articolo 'the' con i nomi di catene montuose (che sono plurali), come 'the Apennines'."
+  },
+  {
+    "id": 246,
+    "domanda": "He gave me a ...",
+    "opzioni": [ "Wooden pretty little box", "Wooden little pretty box", "Pretty little wooden box", "Little pretty wooden box" ],
+    "soluzione": "Pretty little wooden box",
+    "ripasso": "Unit 99 - Adjective order",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "L'ordine corretto degli aggettivi è: opinione ('pretty'), dimensione ('little'), materiale ('wooden')."
+  },
+  {
+    "id": 247,
+    "domanda": "The airline has ... in South America somewhere.",
+    "opzioni": [ "Lost my luggage", "Lost a luggage", "Lost piece luggage", "Lost my luggages" ],
+    "soluzione": "Lost my luggage",
+    "ripasso": "Unit 70 - Countable and uncountable nouns (luggage)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Luggage' (o 'baggage') è un nome non numerabile, quindi non ha plurale e non può essere preceduto da 'a'."
+  },
+  {
+    "id": 248,
+    "domanda": "He sent ... his soup as there was a hair in it.",
+    "opzioni": [ "Away", "For", "Off", "Back" ],
+    "soluzione": "Back",
+    "ripasso": "Unit 145 - Phrasal verbs (send back)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to send something back' significa 'rimandare indietro' qualcosa (es. al ristorante)."
+  },
+  {
+    "id": 249,
+    "domanda": "Harriet ... to take his front door key.",
+    "opzioni": [ "Reminded Jim", "Remembered Jim", "Remembered to Jim" ],
+    "soluzione": "Reminded Jim",
+    "ripasso": "Unit 57 - Remind",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "'Remind' significa 'ricordare a qualcuno di fare qualcosa' (remind somebody to do something). 'Remember' significa 'ricordarsi'."
+  },
+  {
+    "id": 250,
+    "domanda": "Lots of young American teenagers are ... because they eat junk food.",
+    "opzioni": [ "Overweight", "Too much heavy", "Too much weight", "Overheavy" ],
+    "soluzione": "Overweight",
+    "ripasso": "Vocabulary: Describing people",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Overweight' è l'aggettivo corretto per dire 'in sovrappeso'."
+  },
+  {
+    "id": 251,
+    "domanda": "His voice is absolutely ...",
+    "opzioni": [ "Unmistakeable", "Inmistakeable", "Unmistakeful", "Dismistakeable" ],
+    "soluzione": "Unmistakeable",
+    "ripasso": "Vocabulary: Adjectives with prefixes/suffixes",
+    "categoria": "Vocabulary",
+    "spiegazione": "L'aggettivo corretto, che significa 'inconfondibile', è 'unmistakable'. Il prefisso negativo è 'un-'."
+  },
+  {
+    "id": 252,
+    "domanda": "I think he acted in a very ... way.",
+    "opzioni": [ "Childing", "Childy", "Childful", "Childish" ],
+    "soluzione": "Childish",
+    "ripasso": "Vocabulary: Adjective formation",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Childish' (infantile) è l'aggettivo corretto derivato da 'child', usato spesso con una connotazione negativa."
+  },
+  {
+    "id": 253,
+    "domanda": "Your new perfume ... lovely.",
+    "opzioni": [ "Feels", "Smells", "Odours", "Tastes" ],
+    "soluzione": "Smells",
+    "ripasso": "Unit 4 - Verbs of the senses",
+    "categoria": "Vocabulary",
+    "spiegazione": "Per parlare dell'odore o del profumo di qualcosa, si usa il verbo 'to smell' (avere un odore/profumo)."
+  },
+  {
+    "id": 254,
+    "domanda": "Choose the synonym: PAIN",
+    "opzioni": [ "Bread", "Window", "Suffer", "Ache" ],
+    "soluzione": "Suffer",
+    "ripasso": "Vocabulary: Synonyms",
+    "categoria": "Vocabulary",
+    "spiegazione": "ERRORE NEL TEST: 'Pain' (dolore) è un nome. 'Suffer' (soffrire) è un verbo. 'Ache' (dolore, fitta) è un nome e quindi il sinonimo migliore. La soluzione fornita è di una categoria grammaticale diversa."
+  },
+  {
+    "id": 255,
+    "domanda": "Last year our dog got run ... by a lorry.",
+    "opzioni": [ "In", "Into", "Over", "Through" ],
+    "soluzione": "Over",
+    "ripasso": "Unit 140 - Phrasal verbs (run over)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to run over' (spesso in forma passiva 'to get/be run over') significa 'investire' con un veicolo."
+  },
+  {
+    "id": 256,
+    "domanda": "What did you do such a stupid thing ...?",
+    "opzioni": [ "By", "To", "In", "For" ],
+    "soluzione": "For",
+    "ripasso": "Unit 135 - Prepositions at the end of questions (what...for?)",
+    "categoria": "Prepositions",
+    "spiegazione": "La domanda 'What ... for?' è un modo comune e informale per chiedere 'Why?' (per quale motivo?)."
+  },
+  {
+    "id": 257,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I can you as soon as will I get back", "I'll call you as soon as I will get back", "I call you as soon as I will get back", "I'll call you as soon as I get back" ],
+    "soluzione": "I'll call you as soon as I get back",
+    "ripasso": "Unit 25 - as soon as (time clauses)",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Nelle frasi temporali che si riferiscono al futuro (introdotte da 'as soon as'), si usa il Present Simple, mentre nella frase principale si usa il futuro con 'will'."
+  },
+  {
+    "id": 258,
+    "domanda": "My parents ...",
+    "opzioni": [ "Don't want that I'm smoking", "Don't want that I smoke", "Don't want me smoke", "Don't want me to smoke" ],
+    "soluzione": "Don't want me to smoke",
+    "ripasso": "Unit 53 - Verb + object + to ... (want someone to do)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "La struttura corretta è 'want + oggetto + infinito con to' per esprimere ciò che si vuole che un'altra persona faccia."
+  },
+  {
+    "id": 259,
+    "domanda": "I ... the same car for nearly ten years",
+    "opzioni": [ "Have", "Have been having", "Have had", "Am having" ],
+    "soluzione": "Have had",
+    "ripasso": "Unit 11 - Present Perfect with for/since",
+    "categoria": "Tenses (inclusi for/since, time clauses)",
+    "spiegazione": "Si usa il Present Perfect ('have had') per parlare di uno stato di possesso che è iniziato nel passato e continua nel presente. 'Have' come possesso è un verbo di stato e non si usa alla forma continua."
+  },
+  {
+    "id": 260,
+    "domanda": "When they got there, the second race ...",
+    "opzioni": [ "Was already been run", "Was already being run", "Was already ran", "Was already run" ],
+    "soluzione": "Was already being run",
+    "ripasso": "Unit 44 - Passive (Past continuous passive)",
+    "categoria": "Passive Voice",
+    "spiegazione": "ERRORE NEL TEST: Se la gara era già finita, si dovrebbe usare il Past Perfect Passivo: 'had already been run'. Se era in corso, 'was already being run'. Il contesto non è chiaro, ma la soluzione fornita indica un'azione in corso."
+  },
+  {
+    "id": 261,
+    "domanda": "When I arrived I could hear someone ... the piano.",
+    "opzioni": [ "To play", "Who playing", "Play", "Playing" ],
+    "soluzione": "Playing",
+    "ripasso": "Unit 66 - hear somebody doing",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Dopo 'hear', si usa la forma in -ing per un'azione in corso ('sentivo qualcuno che stava suonando') o la forma base per un'azione completata ('sentii qualcuno suonare')."
+  },
+  {
+    "id": 262,
+    "domanda": "If it had known it was such a difficult subject, I ... it.",
+    "opzioni": [ "Would never have chosen", "Had never chosen", "Never would choose", "Would never choose" ],
+    "soluzione": "Would never have chosen",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "ERRORE NEL TEST: Il soggetto della prima frase dovrebbe essere 'I' (If I had known...). Comunque, la struttura è quella del terzo condizionale: 'If + Past Perfect', '...would have + participio passato'."
+  },
+  {
+    "id": 263,
+    "domanda": "The door is wide open. You ... it properly.",
+    "opzioni": [ "Mustn't have closed", "Can't have closed", "Needn't have closed", "Mightn't have closed" ],
+    "soluzione": "Can't have closed",
+    "ripasso": "Unit 29 - Can't have done (deduction about the past)",
+    "categoria": "Modals & Related Structures",
+    "spiegazione": "Si usa 'can't have + participio passato' per una deduzione negativa sul passato, per dire che qualcosa è quasi impossibile che sia accaduta."
+  },
+  {
+    "id": 264,
+    "domanda": "People wear safety belts to avoid ... in car crashes",
+    "opzioni": [ "Be injured", "To be injured", "Being injured", "Injuring" ],
+    "soluzione": "Being injured",
+    "ripasso": "Unit 63 - Preposition + -ing (avoid being injured)",
+    "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
+    "spiegazione": "Il verbo 'avoid' (evitare) è seguito dalla forma in -ing. In questo caso, serve una forma passiva ('being injured' = essere feriti) perché le persone vogliono evitare di subire l'azione."
+  },
+  {
+    "id": 265,
+    "domanda": "If I had had enough money, I ... it",
+    "opzioni": [ "Would bought", "Would have bought", "Would have buy", "Would buy" ],
+    "soluzione": "Would have bought",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Periodo ipotetico del terzo tipo. La frase ipotetica è al Past Perfect ('had had'), quindi la principale richiede 'would have + participio passato'."
+  },
+  {
+    "id": 266,
+    "domanda": "Jane went on a cruise to forget her husband but she thought of him ... she went.",
+    "opzioni": [ "Whenever", "Whatever", "Whoever", "Wherever" ],
+    "soluzione": "Wherever",
+    "ripasso": "Unit 114 - However / Whatever / Wherever etc.",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'Wherever' (ovunque) è la parola corretta per indicare che pensava a lui in ogni luogo in cui andava."
+  },
+  {
+    "id": 267,
+    "domanda": "The maid burnt her hand ... she was ironing his shirts",
+    "opzioni": [ "While", "During", "If", "As long as" ],
+    "soluzione": "While",
+    "ripasso": "Unit 119 - During and while",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'While' (mentre) è una congiunzione usata per collegare due azioni che accadono contemporaneamente. È seguita da una frase con soggetto e verbo."
+  },
+  {
+    "id": 268,
+    "domanda": "I'll see you Tomorrow, Bill said Jane",
+    "opzioni": [ "Jane told to Bill she would see him the following day", "Jane told Bill she would see him the following day", "Jane told Bill she would have seen him the following day", "Jane told Bill she will see him the following day" ],
+    "soluzione": "Jane told Bill she would see him the following day",
+    "ripasso": "Unit 48 - Reported speech (say vs. tell, tense changes)",
+    "categoria": "Reported Speech",
+    "spiegazione": "Nel discorso indiretto: 'tell' richiede un oggetto ('told Bill'), 'will' diventa 'would', e 'tomorrow' diventa 'the following day'."
+  },
+  {
+    "id": 269,
+    "domanda": "... I sit from London to Glasgow in miles?",
+    "opzioni": [ "What size", "How big", "How long", "How far" ],
+    "soluzione": "How far",
+    "ripasso": "Unit 47 - Question words (How far)",
+    "categoria": "Question Formation",
+    "spiegazione": "Per chiedere una distanza, si usa la question word 'How far?'."
+  },
+  {
+    "id": 270,
+    "domanda": "I wish I ...",
+    "opzioni": [ "Had never been born", "Have never been born", "Was never born", "Am never born" ],
+    "soluzione": "Had never been born",
+    "ripasso": "Unit 41 - I wish I had done...",
+    "categoria": "Conditionals & Wishes",
+    "spiegazione": "Per esprimere un rimpianto o un desiderio irrealizzabile riferito al passato, si usa la struttura 'wish + Past Perfect'."
+  },
+  {
+    "id": 271,
+    "domanda": "Thank you, you've been very ...",
+    "opzioni": [ "Helpage", "Helpful", "Helping", "Helpable" ],
+    "soluzione": "Helpful",
+    "ripasso": "Vocabulary: Adjective formation",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Helpful' (d'aiuto, utile) è l'aggettivo corretto derivato dal nome/verbo 'help'."
+  },
+  {
+    "id": 272,
+    "domanda": "Mrs Blck is ... a baby",
+    "opzioni": [ "Waiting", "Awaiting", "Attending", "Expecting" ],
+    "soluzione": "Expecting",
+    "ripasso": "Vocabulary: Expect vs. Wait",
+    "categoria": "Vocabulary",
+    "spiegazione": "L'espressione 'to be expecting a baby' è la forma idiomatica corretta per dire che una donna è incinta."
+  },
+  {
+    "id": 273,
+    "domanda": "A ... of people",
+    "opzioni": [ "Swarm", "Crowd", "Set", "Herd" ],
+    "soluzione": "Crowd",
+    "ripasso": "Unit 73 - Collective nouns (a crowd of people)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "'Crowd' è il nome collettivo corretto per un gruppo di persone. 'Swarm' è per gli insetti, 'herd' per animali come le mucche."
+  },
+  {
+    "id": 274,
+    "domanda": "Don't leave those sweet papers on the floor! ...!",
+    "opzioni": [ "Lift them up", "Get them up", "Take them up", "Pick them up" ],
+    "soluzione": "Pick them up",
+    "ripasso": "Unit 139 - Phrasal verbs (pick up)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to pick up' significa 'raccogliere', 'sollevare da terra'."
+  },
+  {
+    "id": 275,
+    "domanda": "I was amazed at her ... to help me",
+    "opzioni": [ "Refusal", "Refuser", "Refusement", "Refusation" ],
+    "soluzione": "Refusal",
+    "ripasso": "Unit 133 - Noun + preposition (amazed at)",
+    "categoria": "Vocabulary",
+    "spiegazione": "'Refusal' (il rifiuto) è il nome corretto derivato dal verbo 'to refuse'."
+  },
+  {
+    "id": 276,
+    "domanda": "Could you ... the TV please? It's too loud!",
+    "opzioni": [ "Put off", "Turn down", "Put down", "Turn in" ],
+    "soluzione": "Turn down",
+    "ripasso": "Unit 141 - Phrasal verbs (turn down)",
+    "categoria": "Phrasal Verbs",
+    "spiegazione": "Il verbo frasale 'to turn down' significa 'abbassare il volume'."
+  },
+  {
+    "id": 277,
+    "domanda": "A lot of people go to ... to scuba - dive",
+    "opzioni": [ "The Red sea", "A Red sea", "Red sea", "The sea of Red" ],
+    "soluzione": "The Red sea",
+    "ripasso": "Unit 77 - The (geographical names)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Si usa l'articolo 'the' con i nomi di mari, oceani e fiumi (es. the Mediterranean Sea, the Atlantic Ocean, the Nile)."
+  },
+  {
+    "id": 278,
+    "domanda": "I've just bought a ...",
+    "opzioni": [ "Big leather black bag", "Black big leather bag", "Black leather big bag", "Big black leather bag" ],
+    "soluzione": "Big black leather bag",
+    "ripasso": "Unit 99 - Adjective order",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "L'ordine corretto degli aggettivi è: dimensione ('big'), colore ('black'), materiale ('leather')."
+  },
+  {
+    "id": 279,
+    "domanda": "She is ... to travel by herself",
+    "opzioni": [ "So old", "Very old", "Old enough", "Enough old" ],
+    "soluzione": "Old enough",
+    "ripasso": "Unit 100 - Adjectives and adverbs (enough)",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "'Enough' si posiziona dopo l'aggettivo a cui si riferisce ('old enough') e significa 'abbastanza grande/vecchia'."
+  },
+  {
+    "id": 280,
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "I did it all by myself", "I did it all on myself", "I did it all by me", "I did it all on my own" ],
+    "soluzione": "I did it all by myself",
+    "ripasso": "Unit 84 - Reflexive pronouns (by myself)",
+    "categoria": "Nouns, Pronouns & Determiners",
+    "spiegazione": "Le espressioni 'by myself' e 'on my own' sono entrambe corrette e significano 'da solo', senza aiuto. La prima opzione è una delle due corrette."
+  },
+  {
+    "id": 281,
+    "domanda": "I've earned ... this year than I did last year",
+    "opzioni": [ "Much of more", "So more", "Very more", "A little more" ],
+    "soluzione": "A little more",
+    "ripasso": "Unit 106 - Comparatives (a bit / a little)",
+    "categoria": "Adjectives & Adverbs",
+    "spiegazione": "Per modificare un comparativo ('more'), si possono usare espressioni come 'a little', 'a bit', 'much', 'far', 'a lot'. 'A little more' significa 'un po' di più'."
+  }
+]
