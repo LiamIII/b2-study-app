@@ -231,3 +231,22 @@ h1, h2, h3, h4, h5, h6 {
 #dashboard-view.d-none ~ #map-view #sort-dropdown {
     display: none;
 }
+
+/* --- Stili Simulazione Esame Avanzata --- */
+#confidence-container {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-confidence {
+    border-radius: 99px; /* Pulsanti a pasticca */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-confidence.active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
