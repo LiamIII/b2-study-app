@@ -66,7 +66,7 @@ async function initializeQuiz() {
         if (questionsToAsk.length === 0) { handleFatalError("Nessuna domanda in scadenza per il ripasso oggi. Ottimo lavoro!"); return; }
     } else if (mode === 'errors') {
         quizTitle = "Allenamento sugli Errori";
-        const errorDeckIds = await common.getErrorDeck(); // Ora auth.currentUser è garantito che esista
+        const errorDeckIds = await common.getErrorDeck(); // Recupera il Mazzo degli Errori
         questionsToAsk = allQuestions.filter(q => errorDeckIds.includes(q.id));
         if (questionsToAsk.length === 0) { handleFatalError("Il tuo 'Mazzo degli Errori' è vuoto. Complimenti!"); return; }
     } else if (categoryName) {
