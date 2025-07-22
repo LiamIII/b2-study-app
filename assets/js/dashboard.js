@@ -52,30 +52,50 @@ document.addEventListener('DOMContentLoaded', () => {
 async function initializeDashboard() {
     const mainDashboard = document.getElementById('main-dashboard');
     const placementTestView = document.getElementById('placement-test-view');
-    const headerControls = document.querySelector('.header-controls');
-    if (!mainDashboard || !placementTestView || !headerControls) return;
+    const progressLink = document.querySelector('a[href="progress.html"]');
+
+    // Sicurezza: controlla che gli elementi esistano
+    if (!mainDashboard || !placementTestView || !progressLink) {
+        console.error("Errore di struttura HTML: mancano elementi fondamentali come #main-dashboard, #placement-test-view o il link a progress.html.");
+        return;
+    }
 
     try {
         const [questionsData] = await loadData();
         const userProgress = await getUserProgress();
 
         if (!userProgress.placementTest || !userProgress.placementTest.isComplete) {
+            // FASE 1: L'utente deve completare il setup
             mainDashboard.classList.add('d-none');
-            headerControls.classList.add('d-none');
             placementTestView.classList.remove('d-none');
+            
+            // Nascondiamo solo il link ai progressi
+            progressLink.classList.add('d-none');
+            
+            // La funzione di rendering ora non deve più preoccuparsi di nascondere l'header
             renderPlacementTestPrompt(placementTestView, userProgress.placementTest?.completedIds?.length || 0, questionsData.length);
             setupUploadListeners(questionsData);
         } else {
+            // FASE 2: L'utente ha completato il setup, mostra la dashboard
             mainDashboard.classList.remove('d-none');
-            headerControls.classList.remove('d-none');
             placementTestView.classList.add('d-none');
+            
+            // Assicuriamoci che il link "I Miei Progressi" sia di nuovo visibile
+            progressLink.classList.remove('d-none');
+            
             const errorDeck = userProgress.errorDeck || [];
-            allQuestionsGlobally = questionsData.map(question => ({ ...question, isCorrect: !errorDeck.includes(question.id) }));
+            allQuestionsGlobally = questionsData.map(question => ({
+                ...question,
+                isCorrect: !errorDeck.includes(question.id)
+            }));
+
             fullCategoryStats = calculateCategoryStats(allQuestionsGlobally);
             const maxPriority = Math.max(...fullCategoryStats.map(cat => cat.priorityScore), 0);
+            
             localStorage.setItem('allQuestions', JSON.stringify(allQuestionsGlobally));
             localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats));
             localStorage.setItem('errorDeck_cache', JSON.stringify(errorDeck));
+            
             await generateAndRenderDailyPlan();
             renderDashboardList('priorityScore', maxPriority);
             renderStrategicMap(fullCategoryStats);
@@ -84,15 +104,14 @@ async function initializeDashboard() {
             enableActionButtons();
         }
     } catch (error) {
-        console.error("Errore durante l'inizializzazione:", error);
-        document.querySelector('main.container').innerHTML = '<div class="alert alert-danger">Si è verificato un errore critico.</div>';
+        console.error("Errore durante l'inizializzazione della dashboard:", error);
+        document.querySelector('main.container').innerHTML = '<div class="alert alert-danger">Si è verificato un errore critico. Riprova più tardi.</div>';
     }
 }
 
-// --- SEZIONE SETUP INIZIALE ---
-
 /**
  * Renderizza la UI per la scelta tra test interattivo e upload CSV.
+ * Questa versione non nasconde più l'header, lasciando il compito a initializeDashboard.
  */
 function renderPlacementTestPrompt(container, completed, total) {
     const progressPercent = total > 0 ? (completed / total) * 100 : 0;
@@ -103,6 +122,7 @@ function renderPlacementTestPrompt(container, completed, total) {
             <div class="card-body p-4 p-md-5">
                 <h2 class="card-title">Benvenuta! Iniziamo.</h2>
                 <p class="lead text-muted">Scegli come impostare la tua performance iniziale.</p>
+                
                 <div class="mt-4">
                     <p class="fw-bold">Opzione 1: Fai il test nell'app</p>
                     <p>Rispondi alle domande una per una. Puoi fermarti e riprendere quando vuoi.</p>
@@ -116,9 +136,11 @@ function renderPlacementTestPrompt(container, completed, total) {
                         <i class="bi bi-play-circle-fill"></i> ${completed > 0 ? 'Continua il Test' : 'Inizia il Test'} (${questionsRemaining} rimaste)
                     </a>
                 </div>
+
                 <div class="d-flex align-items-center my-4">
                     <hr class="flex-grow-1"><span class="mx-3 text-muted">OPPURE</span><hr class="flex-grow-1">
                 </div>
+
                 <div class="mt-2">
                     <p class="fw-bold">Opzione 2: Carica un file CSV</p>
                     <p>Se hai già risposto alle domande, carica un file CSV con i tuoi risultati.</p>
