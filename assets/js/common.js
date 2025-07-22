@@ -10,8 +10,8 @@
 async function loadData() {
     try {
         const [questionsResponse, performanceResponse] = await Promise.all([
-            fetch('/data/questions.json'),
-            fetch('/data/performance.csv')
+            fetch('data/questions.json'),
+            fetch('data/performance.csv')
         ]);
         if (!questionsResponse.ok || !performanceResponse.ok) {
             throw new Error("Errore nel caricamento dei file di dati.");
