@@ -47,21 +47,45 @@ async function initializeApp() {
         return;
     }
     
+    // Processiamo i dati iniziali come sempre
     allQuestionsGlobally = common.processAndGetAllQuestions(questionsData, performanceCSV);
     fullCategoryStats = common.calculateCategoryStats(allQuestionsGlobally);
 
-    // Salvataggio su localStorage rimane utile come cache veloce per le altre pagine
+    // ========================================================================
+    // NUOVA LOGICA DI INIZIALIZZAZIONE DATI UTENTE
+    // ========================================================================
+    const userProgress = await common.getUserProgress();
+    // Controlliamo se 'errorDeck' esiste o se è la prima volta che l'utente usa l'app
+    // Usiamo una proprietà di controllo, es. 'initialSetupDone'
+    if (!userProgress.initialSetupDone) {
+        console.log("Prima esecuzione per questo utente. Inizializzo l'Error Deck...");
+        
+        // Creiamo il primo mazzo degli errori basandoci sul file performance.csv
+        const initialErrorDeck = allQuestionsGlobally
+            .filter(q => !q.isCorrect) // Filtra per le domande sbagliate
+            .map(q => q.id);           // Prendi solo gli ID
+            
+        // Salviamo questo mazzo iniziale su Firestore e marchiamo la configurazione come completata
+        await common.saveUserProgress({
+            errorDeck: initialErrorDeck,
+            initialSetupDone: true // Flag per non ripetere questa operazione
+        });
+        
+        console.log(`Mazzo degli errori inizializzato con ${initialErrorDeck.length} domande.`);
+    }
+    // ========================================================================
+
+    // Salvataggio su localStorage per le altre pagine (cache)
     localStorage.setItem('allQuestions', JSON.stringify(allQuestionsGlobally));
     localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats));
     
     renderDashboardList('priorityScore'); 
     renderStrategicMap(fullCategoryStats);
     setupDashboardEventListeners();
-    await updateUiCounters(); // Deve essere 'await' perché ora legge da Firestore
+    await updateUiCounters();
     enableActionButtons();
     console.log("Dati caricati. UI abilitata.");
 }
-
 
 // ========================================================================
 // FUNZIONI DI GESTIONE DELLA UI
