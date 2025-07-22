@@ -1,6 +1,7 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { auth } from './firebase-init.js';
 import * as common from './common.js'; // Importa TUTTO come 'common'
+import { tagDictionary } from './common.js'; // Import diretto per sicurezza
 
 let patternGlossary = {};
 
@@ -29,6 +30,10 @@ async function initializeProgressPage() {
     
     // Il calcolo e il rendering dei pattern ora avvengono qui
     const patterns = common.analyzeErrorPatterns(allQuestions, errorDeck);
+    
+    // Debug per GitHub Pages
+    console.log("common.tagDictionary exists:", !!common.tagDictionary);
+    console.log("patterns found:", patterns.length);
     
     updateStatCards(profile, srsData, allQuestions);
     renderActivityChart(history);
@@ -60,10 +65,20 @@ function renderErrorPatterns(patterns) {
 
     let htmlContent = ''; // Usiamo un nome di variabile diverso per chiarezza
     
-    patterns.slice(0, 5).forEach(pattern => {
+    // Filtriamo i pattern che hanno almeno 2 tag validi
+    const validPatterns = patterns.filter(pattern => 
+        pattern.tags && Array.isArray(pattern.tags) && pattern.tags.length >= 2
+    );
+    
+    validPatterns.slice(0, 5).forEach(pattern => {
         const patternKey = [...pattern.tags].sort().join('|');
-        const tag1 = common.tagDictionary[pattern.tags[0]] || pattern.tags[0].replace(/-/g, ' ');
-        const tag2 = common.tagDictionary[pattern.tags[1]] || pattern.tags[1].replace(/-/g, ' ');
+        const dictionary = common.tagDictionary || tagDictionary || {};
+        
+        // Protezione aggiuntiva per evitare errori su GitHub Pages
+        const tag1 = (pattern.tags[0] && dictionary[pattern.tags[0]]) || 
+                     (pattern.tags[0] ? pattern.tags[0].replace(/-/g, ' ') : 'Tag Sconosciuto');
+        const tag2 = (pattern.tags[1] && dictionary[pattern.tags[1]]) || 
+                     (pattern.tags[1] ? pattern.tags[1].replace(/-/g, ' ') : 'Tag Sconosciuto');
         const quizUrl = `quiz.html?mode=custom&ids=${encodeURIComponent(JSON.stringify(pattern.questionIds))}`;
 
         // *** QUESTA È LA LOGICA HTML CHE MANCAVA ***
