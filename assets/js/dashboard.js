@@ -1,57 +1,71 @@
 /**
- * dashboard.js - VERSIONE FINALE E CORRETTA
+ * dashboard.js - VERSIONE FINALE E FUNZIONANTE CON FIREBASE
  *
- * - Corregge il bug delle virgolette nei popover.
- * - Assicura che la logica del modal sia robusta.
- * - Mantiene tutte le funzionalità precedenti.
+ * - Integra la logica di autenticazione per proteggere la pagina.
+ * - Risolve i problemi di caricamento asincrono con `onAuthStateChanged`.
+ * - Aggiorna le chiamate a `common.js` per usare la sintassi del modulo.
+ * - Include la logica per il logout.
  */
 
-// Variabili a livello di modulo per i dati
+// Importa tutto ciò che serve dai moduli
+import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { auth } from './firebase-init.js';
+import * as common from './common.js'; // Importa TUTTE le funzioni da common.js come un oggetto 'common'
+
+// Variabili globali per i dati, accessibili in tutto il file
 let fullCategoryStats = [];
 let allQuestionsGlobally = [];
+const categoryDescriptions = common.parseDescriptions(common.categoriesDescriptionsString); // Usa la funzione e la stringa da common.js
 
-// Stringa e funzione per le descrizioni delle categorie
-const categoriesDescriptionsString = `
-Modals & Related Structures ::: Include i verbi modali (can, must, should, may, might) e le strutture simili (have to, be able to) usati per esprimere abilità, obbligo, permesso, probabilità o deduzione.
-Question Formation ::: Si concentra sulla corretta struttura grammaticale delle domande, incluso l'uso delle question words (what, where, how), l'inversione soggetto-verbo e le question tags.
-Reported Speech ::: Riguarda le regole per riportare ciò che qualcun altro ha detto (discorso indiretto). Ciò implica cambiamenti nei tempi verbali, pronomi e avverbi di tempo e luogo.
-Conjunctions & Connectors ::: Include le parole e le espressioni usate per collegare frasi o parti di una frase. Testano la capacità di esprimere causa (as, because), contrasto (although, despite), tempo (while, during) e modo (as if).
-Verb Patterns (Gerundi, Infiniti, etc.) ::: Questa categoria riguarda le regole su quale forma verbale (infinito con o senza to, o la forma in -ing) debba seguire un determinato verbo, aggettivo o preposizione. Include anche costruzioni come "vedere qualcuno fare qualcosa" (see somebody do/doing).
-used to vs be/get used to ::: Una categoria specifica per distinguere tra used to + verbo (un'abitudine passata non più vera) e be/get used to + -ing (essere/diventare abituati a qualcosa).
-Agreement & Disagreement (So/Neither) ::: Riguarda le brevi risposte usate per essere d'accordo con un'affermazione positiva (So am I) o negativa (Neither do I), e le risposte brevi alle domande (Yes, I did).
-Causative Structures (have/get/make/let) ::: Si concentra sull'uso dei verbi "causativi" per indicare che qualcuno fa fare qualcosa a qualcun altro. La struttura grammaticale varia a seconda del verbo usato.
-Passive Voice ::: Si concentra sull'uso della forma passiva, dove il soggetto della frase subisce l'azione anziché compierla. Le domande testano la capacità di formare il passivo in vari tempi verbali (presente, passato, futuro) e con i verbi modali.
-Conditionals & Wishes ::: Copre tutti i periodi ipotetici (1°, 2°, 3° e misto) che esprimono condizioni reali, possibili o irreali e le loro conseguenze. Include anche le espressioni di desiderio o rimpianto come I wish (vorrei/avrei voluto) e If only (se solo).
-Tenses (inclusi for/since, time clauses) ::: Riguarda l'uso corretto dei tempi verbali (es. Present Perfect, Past Simple, Past Perfect) per esprimere il momento in cui un'azione si svolge. Include l'uso corretto di indicatori temporali come for, since, recently e la costruzione di frasi temporali con when, as soon as, after, ecc.
-Prepositions ::: Testa l'uso corretto delle preposizioni (es. in, on, at, for, with) per indicare tempo, luogo, direzione o per completare espressioni fisse (es. verbo/aggettivo + preposizione).
-Nouns, Pronouns & Determiners ::: Questa categoria si occupa di nomi (numerabili e non), pronomi (personali, possessivi, riflessivi) e determinanti (articoli, dimostrativi, quantificatori come much, many, enough).
-Adjectives & Adverbs ::: Riguarda l'uso e la posizione di aggettivi e avverbi. Include l'ordine corretto degli aggettivi, le forme comparative e superlative, e l'uso di avverbi di grado come enough, too, so, rather.
-Vocabulary ::: Questa categoria testa la conoscenza di singole parole, sinonimi, contrari e il loro uso corretto nel contesto. Include la scelta tra parole simili (es. rob vs steal), la formazione di parole (prefissi e suffissi), e frasi idiomatiche.
-Phrasal Verbs ::: I verbi frasali sono verbi composti da un verbo più un avverbio o una preposizione, che insieme assumono un nuovo significato. Questa categoria verifica la conoscenza del significato di questi verbi.
-`;
-const categoryDescriptions = parseDescriptions(categoriesDescriptionsString);
+// ========================================================================
+// FLUSSO PRINCIPALE DELL'APPLICAZIONE
+// ========================================================================
+document.addEventListener('DOMContentLoaded', () => {
+    // onAuthStateChanged è il nostro "guardiano". Si attiva subito e ogni volta che lo stato del login cambia.
+    onAuthStateChanged(auth, async (user) => {
+        if (user) {
+            // Se l'utente è loggato, avvia l'applicazione principale
+            console.log("Utente loggato:", user.email);
+            document.getElementById('user-email').textContent = user.email; // Mostra l'email dell'utente
+            await initializeApp(); // Avvia il caricamento dei dati e il rendering della pagina
+        } else {
+            // Se l'utente NON è loggato, lo reindirizza alla pagina di login
+            console.log("Nessun utente, reindirizzamento al login.");
+            window.location.href = 'login.html';
+        }
+    });
+});
 
-
-document.addEventListener('DOMContentLoaded', async () => {
-    console.log("Dashboard script caricato. In attesa dei dati...");
-    const [questionsData, performanceCSV] = await loadData();
+/**
+ * Funzione principale che carica i dati, li processa e renderizza l'intera dashboard.
+ * Viene chiamata solo dopo che l'autenticazione è stata verificata con successo.
+ */
+async function initializeApp() {
+    const [questionsData, performanceCSV] = await common.loadData();
     if (!questionsData || !performanceCSV) {
         document.getElementById('category-list').innerHTML = '<div class="alert alert-danger">Errore critico: impossibile caricare i file di dati.</div>';
         return;
     }
-    allQuestionsGlobally = processAndGetAllQuestions(questionsData, performanceCSV);
-    fullCategoryStats = calculateCategoryStats(allQuestionsGlobally);
-    try {
-        localStorage.setItem('allQuestions', JSON.stringify(allQuestionsGlobally));
-        localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats));
-    } catch (e) { console.error("Errore nel salvataggio in localStorage:", e); }
-    renderDashboardList('priorityScore');
+    
+    allQuestionsGlobally = common.processAndGetAllQuestions(questionsData, performanceCSV);
+    fullCategoryStats = common.calculateCategoryStats(allQuestionsGlobally);
+
+    // Salvataggio su localStorage rimane utile come cache veloce per le altre pagine
+    localStorage.setItem('allQuestions', JSON.stringify(allQuestionsGlobally));
+    localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats));
+    
+    renderDashboardList('priorityScore'); 
     renderStrategicMap(fullCategoryStats);
     setupDashboardEventListeners();
-    updateUiCounters();
+    await updateUiCounters(); // Deve essere 'await' perché ora legge da Firestore
     enableActionButtons();
     console.log("Dati caricati. UI abilitata.");
-});
+}
+
+
+// ========================================================================
+// FUNZIONI DI GESTIONE DELLA UI
+// ========================================================================
 
 function enableActionButtons() {
     document.getElementById('start-exam-btn').disabled = false;
@@ -63,29 +77,20 @@ function enableActionButtons() {
     errorsBtn.classList.remove('disabled');
 }
 
-function parseDescriptions(text) {
-    const map = new Map();
-    text.trim().split('\n').forEach(line => {
-        const parts = line.split(' ::: ');
-        if (parts.length === 2) map.set(parts[0].trim(), parts[1].trim());
-    });
-    return map;
-}
-
 function renderDashboardList(sortBy = 'priorityScore') {
     const container = document.getElementById('category-list');
     const sortedStats = [...fullCategoryStats].sort((a, b) => b[sortBy] - a[sortBy]);
     container.innerHTML = '';
+    
     sortedStats.forEach(category => {
         const encodedName = encodeURIComponent(category.name);
         const description = categoryDescriptions.get(category.name) || "Nessuna descrizione.";
-        // BUG FIX: Sostituisce le virgolette con l'entità HTML " per evitare di rompere l'attributo HTML
         const safeDescription = description.replace(/"/g, '"');
         const helperIcon = `<span class="ms-2" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="${category.name}" data-bs-content="${safeDescription}"><i class="bi bi-question-circle-fill text-info"></i></span>`;
         const element = document.createElement('a');
         element.href = `quiz.html?category=${encodedName}`;
         element.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center';
-        element.innerHTML = `<div><h5 class="mb-1 d-inline-flex align-items-center">${category.name}${helperIcon}</h5><br><small>${category.incorrect} errori su ${category.total} domande</small></div><div class="text-end"><span class="badge ${getPerformanceBadge(category.errorRate)} rounded-pill fs-6">${category.errorRate.toFixed(1)}% errore</span></div>`;
+        element.innerHTML = `<div><h5 class="mb-1 d-inline-flex align-items-center">${category.name}${helperIcon}</h5><br><small>${category.incorrect} errori su ${category.total} domande</small></div><div class="text-end"><span class="badge ${common.getPerformanceBadge(category.errorRate)} rounded-pill fs-6">${category.errorRate.toFixed(1)}% errore</span></div>`;
         container.appendChild(element);
     });
     initializePopovers();
@@ -123,7 +128,7 @@ function showDetailsModal(categoryName, categoryStats) {
     } else {
         mistakesHTML = `<div class="text-center p-3"><i class="bi bi-check-circle-fill text-success fs-1"></i><h5 class="mt-2">Nessun errore registrato!</h5><p class="text-muted">Ottimo lavoro in questa categoria.</p></div>`;
     }
-    modalBody.innerHTML = `<div class="row"><div class="col-md-5 border-end"><h4 class="fw-light">Riepilogo Performance</h4><div class="d-flex justify-content-between align-items-center mt-3"><span>Tasso di errore:</span><span class="badge ${getPerformanceBadge(categoryData.errorRate)} fs-6">${categoryData.errorRate.toFixed(1)}%</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte corrette:</span><span class="fw-bold">${categoryData.correct} / ${categoryData.total}</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte sbagliate:</span><span class="fw-bold">${categoryData.incorrect} / ${categoryData.total}</span></div></div><div class="col-md-7"><h4 class="fw-light">Le domande che hai sbagliato</h4><div class="mt-3">${mistakesHTML}</div></div></div>`;
+    modalBody.innerHTML = `<div class="row"><div class="col-md-5 border-end"><h4 class="fw-light">Riepilogo Performance</h4><div class="d-flex justify-content-between align-items-center mt-3"><span>Tasso di errore:</span><span class="badge ${common.getPerformanceBadge(categoryData.errorRate)} fs-6">${categoryData.errorRate.toFixed(1)}%</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte corrette:</span><span class="fw-bold">${categoryData.correct} / ${categoryData.total}</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte sbagliate:</span><span class="fw-bold">${categoryData.incorrect} / ${categoryData.total}</span></div></div><div class="col-md-7"><h4 class="fw-light">Le domande che hai sbagliato</h4><div class="mt-3">${mistakesHTML}</div></div></div>`;
     const encodedCategoryName = encodeURIComponent(categoryName);
     modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button><a href="quiz.html?category=${encodedCategoryName}&submode=errors" class="btn btn-danger"><i class="bi bi-bullseye"></i> Allena solo Errori (${wrongQuestions.length})</a><a href="quiz.html?category=${encodedCategoryName}&submode=all" class="btn btn-primary"><i class="bi bi-arrow-clockwise"></i> Ripassa Tutta la Categoria</a>`;
     
@@ -137,6 +142,7 @@ function setupDashboardEventListeners() {
     const startExamBtn = document.getElementById('start-exam-btn');
     const srsBtn = document.getElementById('srs-quiz-btn');
     const errorsBtn = document.getElementById('error-deck-btn');
+    const logoutBtn = document.getElementById('logout-btn');
     
     viewListBtn.addEventListener('click', () => { /* ... */ });
     viewMapBtn.addEventListener('click', () => { /* ... */ });
@@ -146,6 +152,13 @@ function setupDashboardEventListeners() {
     srsBtn.addEventListener('click', (e) => showLoadingSpinner(e.currentTarget));
     errorsBtn.addEventListener('click', (e) => showLoadingSpinner(e.currentTarget));
     
+    logoutBtn.addEventListener('click', () => {
+        signOut(auth).then(() => {
+            localStorage.clear();
+            window.location.href = 'login.html';
+        }).catch(error => console.error("Errore di logout:", error));
+    });
+
     const dashboardView = document.getElementById('dashboard-view'), mapView = document.getElementById('map-view');
     viewListBtn.addEventListener('click', () => { dashboardView.classList.remove('d-none'); mapView.classList.add('d-none'); viewListBtn.classList.replace('btn-outline-primary', 'btn-primary'); viewListBtn.classList.add('active'); viewMapBtn.classList.replace('btn-primary', 'btn-outline-primary'); viewMapBtn.classList.remove('active'); });
     viewMapBtn.addEventListener('click', () => { mapView.classList.remove('d-none'); dashboardView.classList.add('d-none'); viewMapBtn.classList.replace('btn-outline-primary', 'btn-primary'); viewMapBtn.classList.add('active'); viewListBtn.classList.replace('btn-primary', 'btn-outline-primary'); viewListBtn.classList.remove('active'); });
@@ -164,28 +177,25 @@ function setupDashboardEventListeners() {
 }
 
 function showLoadingSpinner(buttonElement) {
-    if (buttonElement.tagName === 'A') {
-        buttonElement.classList.add('disabled');
-    } else {
-        buttonElement.disabled = true;
-    }
+    if (buttonElement.tagName === 'A') buttonElement.classList.add('disabled');
+    else buttonElement.disabled = true;
     buttonElement.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Caricamento...`;
 }
 
 function prepareAndStartExam() {
-    if (allQuestionsGlobally.length === 0) { alert("Dati non pronti. Riprova tra un istante."); return; }
+    if (allQuestionsGlobally.length === 0) { alert("Dati non pronti."); return; }
     const EXAM_QUESTION_COUNT = 40;
     const shuffledQuestions = [...allQuestionsGlobally].sort(() => Math.random() - 0.5);
     const examQuestions = shuffledQuestions.slice(0, EXAM_QUESTION_COUNT);
     const examQuestionIds = examQuestions.map(q => q.id);
-    if (examQuestionIds.length < EXAM_QUESTION_COUNT) { alert(`Attenzione: disponibili solo ${examQuestionIds.length} domande.`); }
+    if (examQuestionIds.length < EXAM_QUESTION_COUNT) alert(`Attenzione: disponibili solo ${examQuestionIds.length} domande.`);
     localStorage.setItem('examSession_questionIds', JSON.stringify(examQuestionIds));
     window.location.href = 'quiz.html?mode=exam';
 }
 
-function updateUiCounters() {
-    const srsData = getSrsData();
-    const errorDeck = getErrorDeck();
+async function updateUiCounters() {
+    const srsData = await common.getSrsData();
+    const errorDeck = await common.getErrorDeck();
     if (!srsData || !errorDeck) return;
     const today = new Date().toISOString().split('T')[0];
     const srsDueCount = Object.values(srsData).filter(item => item.nextReview <= today).length;

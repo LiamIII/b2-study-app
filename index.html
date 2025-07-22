@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2 Study - Dashboard</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons (LINK AGGIUNTO) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-light">
-
     <header class="container text-center my-4">
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-end align-items-center gap-2">
+            <span id="user-email" class="text-muted small"></span>
             <a href="progress.html" class="btn btn-outline-info">I Miei Progressi 🚀</a>
+            <button class="btn btn-outline-danger" id="logout-btn">Logout</button>
         </div>
         <h1 class="display-5">B2 Exam Strategic Prep</h1>
         <p class="lead">Un approccio data-driven al tuo studio.</p>
@@ -90,10 +88,10 @@
         </div>
     </div>
 
-    <!-- SCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <!-- SCRIPT ALLA FINE DEL BODY -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/common.js"></script>
-    <script src="assets/js/dashboard.js"></script>
+    <!-- Carichiamo dashboard.js come modulo, che a sua volta importerà common.js -->
+    <script type="module" src="assets/js/dashboard.js"></script>
 </body>
 </html>

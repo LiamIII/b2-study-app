@@ -1,16 +1,52 @@
 /**
  * common.js - VERSIONE FINALE E CORRETTA
- * Corregge i percorsi dei file di dati per renderli relativi.
+ * Esporta tutte le funzioni e costanti necessarie per gli altri moduli.
  */
 
+import { auth, db } from './firebase-init.js';
+import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
 // =============================================================
-// FUNZIONI DI CARICAMENTO E PROCESSO DATI
+// DATI E FUNZIONI DI BASE
 // =============================================================
 
-async function loadData() {
+// AGGIUNTO 'export'
+export const categoriesDescriptionsString = `
+Modals & Related Structures ::: Include i verbi modali (can, must, should, may, might) e le strutture simili (have to, be able to) usati per esprimere abilità, obbligo, permesso, probabilità o deduzione.
+Question Formation ::: Si concentra sulla corretta struttura grammaticale delle domande, incluso l'uso delle question words (what, where, how), l'inversione soggetto-verbo e le question tags.
+Reported Speech ::: Riguarda le regole per riportare ciò che qualcun altro ha detto (discorso indiretto). Ciò implica cambiamenti nei tempi verbali, pronomi e avverbi di tempo e luogo.
+Conjunctions & Connectors ::: Include le parole e le espressioni usate per collegare frasi o parti di una frase. Testano la capacità di esprimere causa (as, because), contrasto (although, despite), tempo (while, during) e modo (as if).
+Verb Patterns (Gerundi, Infiniti, etc.) ::: Questa categoria riguarda le regole su quale forma verbale (infinito con o senza to, o la forma in -ing) debba seguire un determinato verbo, aggettivo o preposizione. Include anche costruzioni come "vedere qualcuno fare qualcosa" (see somebody do/doing).
+used to vs be/get used to ::: Una categoria specifica per distinguere tra used to + verbo (un'abitudine passata non più vera) e be/get used to + -ing (essere/diventare abituati a qualcosa).
+Agreement & Disagreement (So/Neither) ::: Riguarda le brevi risposte usate per essere d'accordo con un'affermazione positiva (So am I) o negativa (Neither do I), e le risposte brevi alle domande (Yes, I did).
+Causative Structures (have/get/make/let) ::: Si concentra sull'uso dei verbi "causativi" per indicare che qualcuno fa fare qualcosa a qualcun altro. La struttura grammaticale varia a seconda del verbo usato.
+Passive Voice ::: Si concentra sull'uso della forma passiva, dove il soggetto della frase subisce l'azione anziché compierla. Le domande testano la capacità di formare il passivo in vari tempi verbali (presente, passato, futuro) e con i verbi modali.
+Conditionals & Wishes ::: Copre tutti i periodi ipotetici (1°, 2°, 3° e misto) che esprimono condizioni reali, possibili o irreali e le loro conseguenze. Include anche le espressioni di desiderio o rimpianto come I wish (vorrei/avrei voluto) e If only (se solo).
+Tenses (inclusi for/since, time clauses) ::: Riguarda l'uso corretto dei tempi verbali (es. Present Perfect, Past Simple, Past Perfect) per esprimere il momento in cui un'azione si svolge. Include l'uso corretto di indicatori temporali come for, since, recently e la costruzione di frasi temporali con when, as soon as, after, ecc.
+Prepositions ::: Testa l'uso corretto delle preposizioni (es. in, on, at, for, with) per indicare tempo, luogo, direzione o per completare espressioni fisse (es. verbo/aggettivo + preposizione).
+Nouns, Pronouns & Determiners ::: Questa categoria si occupa di nomi (numerabili e non), pronomi (personali, possessivi, riflessivi) e determinanti (articoli, dimostrativi, quantificatori come much, many, enough).
+Adjectives & Adverbs ::: Riguarda l'uso e la posizione di aggettivi e avverbi. Include l'ordine corretto degli aggettivi, le forme comparative e superlative, e l'uso di avverbi di grado come enough, too, so, rather.
+Vocabulary ::: Questa categoria testa la conoscenza di singole parole, sinonimi, contrari e il loro uso corretto nel contesto. Include la scelta tra parole simili (es. rob vs steal), la formazione di parole (prefissi e suffissi), e frasi idiomatiche.
+Phrasal Verbs ::: I verbi frasali sono verbi composti da un verbo più un avverbio o una preposizione, che insieme assumono un nuovo significato. Questa categoria verifica la conoscenza del significato di questi verbi.
+`;
+
+// AGGIUNTO 'export'
+export function parseDescriptions(text) {
+    const descriptionMap = new Map();
+    const lines = text.trim().split('\n');
+    lines.forEach(line => {
+        const parts = line.split(' ::: ');
+        if (parts.length === 2) {
+            descriptionMap.set(parts[0].trim(), parts[1].trim());
+        }
+    });
+    return descriptionMap;
+}
+
+// AGGIUNTO 'export'
+export async function loadData() {
     try {
         const [questionsResponse, performanceResponse] = await Promise.all([
-            // CORREZIONE: rimossi gli slash iniziali
             fetch('data/questions.json'),
             fetch('data/performance.csv')
         ]);
@@ -26,7 +62,8 @@ async function loadData() {
     }
 }
 
-function processAndGetAllQuestions(questionsData, performanceCSV) {
+// AGGIUNTO 'export'
+export function processAndGetAllQuestions(questionsData, performanceCSV) {
     const performanceMap = new Map();
     const rows = performanceCSV.trim().split('\n');
     for (let i = 1; i < rows.length; i++) {
@@ -41,7 +78,8 @@ function processAndGetAllQuestions(questionsData, performanceCSV) {
     }));
 }
 
-function calculateCategoryStats(allQuestions) {
+// AGGIUNTO 'export'
+export function calculateCategoryStats(allQuestions) {
     const stats = {};
     allQuestions.forEach(question => {
         const category = question.categoria;
@@ -67,44 +105,77 @@ function calculateCategoryStats(allQuestions) {
     });
 }
 
-function getPerformanceBadge(errorRate) {
+// AGGIUNTO 'export'
+export function getPerformanceBadge(errorRate) {
     if (errorRate > 50) return 'bg-danger';
     if (errorRate > 25) return 'bg-warning text-dark';
     return 'bg-success';
 }
 
-// =============================================================
-// FUNZIONI PER SPACED REPETITION (SRS) E MAZZO ERRORI
-// =============================================================
+// ====================================================================
+// FUNZIONI PER GESTIRE I DATI UTENTE SU FIRESTORE (già esportate)
+// ====================================================================
 
-function getSrsData() {
-    const data = localStorage.getItem('srsData');
-    return data ? JSON.parse(data) : {};
+export async function getUserProgress() {
+    const user = auth.currentUser;
+    if (!user) {
+        console.log("Nessun utente loggato per recuperare i progressi.");
+        return {};
+    }
+    const userProgressRef = doc(db, "userProgress", user.uid);
+    const docSnap = await getDoc(userProgressRef);
+    if (docSnap.exists()) {
+        return docSnap.data();
+    } else {
+        return {
+            srsData: {},
+            errorDeck: [],
+            studyHistory: {},
+            userProfile: { lastStudyDay: null, streak: 0 }
+        };
+    }
 }
 
-function saveSrsData(srsData) {
-    localStorage.setItem('srsData', JSON.stringify(srsData));
+export async function saveUserProgress(dataToSave) {
+    const user = auth.currentUser;
+    if (!user) {
+        console.error("Nessun utente loggato per salvare i progressi.");
+        return;
+    }
+    const userProgressRef = doc(db, "userProgress", user.uid);
+    await setDoc(userProgressRef, dataToSave, { merge: true });
+    console.log("Progressi salvati su Firestore:", dataToSave);
 }
 
-function getErrorDeck() {
-    const data = localStorage.getItem('errorDeck');
-    return data ? JSON.parse(data).map(id => Number(id)) : [];
+export async function getSrsData() {
+    const progress = await getUserProgress();
+    return progress.srsData || {};
 }
 
-function saveErrorDeck(errorDeck) {
-    localStorage.setItem('errorDeck', JSON.stringify(errorDeck));
+export async function getErrorDeck() {
+    const progress = await getUserProgress();
+    return progress.errorDeck || [];
 }
 
-function updateLearningState(questionId, isCorrect) {
-    const srsData = getSrsData();
-    const errorDeck = getErrorDeck();
+export async function getStudyHistory() {
+    const progress = await getUserProgress();
+    return progress.studyHistory || {};
+}
+
+export async function getUserProfile() {
+    const progress = await getUserProgress();
+    return progress.userProfile || { lastStudyDay: null, streak: 0 };
+}
+
+export async function updateLearningState(questionId, isCorrect) {
+    const srsData = await getSrsData();
+    const errorDeck = await getErrorDeck();
     if (!isCorrect) {
         if (!errorDeck.includes(questionId)) {
             errorDeck.push(questionId);
         }
     }
-    saveErrorDeck(errorDeck);
-    const intervals = [1, 3, 7, 15, 30, 60];
+    const intervals = [1, 3, 7, 15, 30, 60]; 
     let currentSrs = srsData[questionId] || { level: 0 };
     if (isCorrect) {
         currentSrs.level = Math.min(currentSrs.level + 1, intervals.length - 1);
@@ -116,33 +187,18 @@ function updateLearningState(questionId, isCorrect) {
     nextReviewDate.setDate(nextReviewDate.getDate() + daysToAdd);
     currentSrs.nextReview = nextReviewDate.toISOString().split('T')[0];
     srsData[questionId] = currentSrs;
-    saveSrsData(srsData);
+    await saveUserProgress({ srsData: srsData, errorDeck: errorDeck });
 }
 
-// =============================================================
-// FUNZIONI PER STORICO PROGRESSI E GAMIFICATION
-// =============================================================
-
-function getStudyHistory() {
-    const data = localStorage.getItem('studyHistory');
-    return data ? JSON.parse(data) : {};
-}
-
-function getUserProfile() {
-    const data = localStorage.getItem('userProfile');
-    return data ? JSON.parse(data) : { lastStudyDay: null, streak: 0 };
-}
-
-function recordStudySession(questionsStudied) {
+export async function recordStudySession(questionsStudied) {
     if (questionsStudied === 0) return;
     const todayStr = new Date().toISOString().split('T')[0];
-    const history = getStudyHistory();
+    const history = await getStudyHistory();
+    const profile = await getUserProfile();
     if (!history[todayStr]) {
         history[todayStr] = { studied: 0 };
     }
     history[todayStr].studied += questionsStudied;
-    localStorage.setItem('studyHistory', JSON.stringify(history));
-    const profile = getUserProfile();
     if (profile.lastStudyDay !== todayStr) {
         const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
@@ -153,6 +209,6 @@ function recordStudySession(questionsStudied) {
             profile.streak = 1;
         }
         profile.lastStudyDay = todayStr;
-        localStorage.setItem('userProfile', JSON.stringify(profile));
     }
+    await saveUserProgress({ studyHistory: history, userProfile: profile });
 }
