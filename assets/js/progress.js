@@ -47,9 +47,40 @@ async function initializeProgressPage() {
 
     // Crea i grafici
     renderActivityChart(history);
+renderErrorPatterns();
 
     // Attiva i tooltip per le icone di aiuto
     initializeTooltips();
+}
+
+/**
+ * NUOVA FUNZIONE
+ * Legge i pattern di errore dal localStorage e li visualizza nella UI.
+ */
+function renderErrorPatterns() {
+    const container = document.getElementById('error-patterns-container');
+    const patternsJSON = localStorage.getItem('errorPatterns');
+    const patterns = patternsJSON ? JSON.parse(patternsJSON) : [];
+
+    if (patterns.length === 0) {
+        container.innerHTML = '<p class="text-muted">Nessun pattern di errore sistematico trovato. Continua a studiare per raccogliere più dati!</p>';
+        return;
+    }
+
+    let html = '<p>Abbiamo notato alcune possibili confusioni nel tuo modo di rispondere. Potrebbe essere utile ripassare le differenze tra:</p><ul class="list-group list-group-flush">';
+    
+    // Mostriamo i primi 5 pattern più rilevanti
+    patterns.slice(0, 5).forEach(pattern => {
+        const tag1 = pattern.tags[0].replace(/-/g, ' '); // Rende i tag più leggibili
+        const tag2 = pattern.tags[1].replace(/-/g, ' ');
+
+        const message = `<strong>${tag1}</strong> e <strong>${tag2}</strong> <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill float-end mt-1">${pattern.count} errori correlati</span>`;
+
+        html += `<li class="list-group-item">${message}</li>`;
+    });
+
+    html += '</ul>';
+    container.innerHTML = html;
 }
 
 /**

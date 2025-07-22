@@ -212,3 +212,60 @@ export async function recordStudySession(questionsStudied) {
     }
     await saveUserProgress({ studyHistory: history, userProfile: profile });
 }
+
+
+// =============================================================
+// FUNZIONI PER ANALISI INTELLIGENTE DEGLI ERRORI
+// =============================================================
+
+/**
+ * Analizza tutte le domande sbagliate per trovare pattern di errore ricorrenti basati sui tag.
+ * @param {Array} allQuestions - L'array di tutte le domande, ora con i tag.
+ * @param {Array<number>} errorDeckIds - L'array degli ID delle domande sbagliate.
+ * @returns {Array} Un array di oggetti che rappresentano i pattern di errore.
+ */
+export function analyzeErrorPatterns(allQuestions, errorDeckIds) {
+    // Filtra per ottenere solo gli oggetti completi delle domande sbagliate
+    const wrongQuestions = allQuestions.filter(q => errorDeckIds.includes(q.id));
+
+    if (wrongQuestions.length < 5) {
+        // Non ha senso fare analisi su un numero esiguo di errori
+        console.log("Non ci sono abbastanza errori per un'analisi significativa.");
+        return [];
+    }
+
+    const tagPairCounts = {};
+
+    wrongQuestions.forEach(question => {
+        // Assicurati che la domanda abbia dei tag
+        if (!question.tags || question.tags.length < 2) return;
+
+        // Rimuovi eventuali duplicati e ordina per creare chiavi consistenti
+        const tags = [...new Set(question.tags)].sort();
+
+        // Genera tutte le possibili coppie di tag per questa domanda
+        for (let i = 0; i < tags.length; i++) {
+            for (let j = i + 1; j < tags.length; j++) {
+                const key = `${tags[i]}|${tags[j]}`; // Crea una chiave unica per la coppia
+                tagPairCounts[key] = (tagPairCounts[key] || 0) + 1;
+            }
+        }
+    });
+
+    // Trasforma l'oggetto delle frequenze in un array di oggetti "pattern"
+    const patterns = Object.keys(tagPairCounts)
+        .map(key => ({
+            tags: key.split('|'),
+            count: tagPairCounts[key]
+        }))
+        // Filtra per i pattern che si sono ripetuti almeno 2 volte (o più, se vuoi essere più selettivo)
+        .filter(pattern => pattern.count >= 2)
+        // Ordina per i pattern più frequenti
+        .sort((a, b) => b.count - a.count);
+
+    // Salva i risultati nel localStorage per renderli accessibili alla pagina dei progressi
+    localStorage.setItem('errorPatterns', JSON.stringify(patterns));
+    
+    console.log("Analisi dei pattern di errore completata:", patterns);
+    return patterns;
+}

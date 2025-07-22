@@ -49,37 +49,63 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// in dashboard.js
+
 async function initializeApp() {
+    // 1. Carica i dati grezzi delle domande e delle performance iniziali
     const [questionsData, performanceCSV] = await common.loadData();
-    if (!questionsData) {
+    if (!questionsData || !performanceCSV) {
         document.getElementById('category-list').innerHTML = '<div class="alert alert-danger">Errore critico: impossibile caricare i file di dati.</div>';
         return;
     }
     
+    // 2. Processa i dati statici per averli pronti
     allQuestionsGlobally = common.processAndGetAllQuestions(questionsData, performanceCSV);
     fullCategoryStats = common.calculateCategoryStats(allQuestionsGlobally);
     
+    // 3. Calcola il punteggio di priorità massimo per le barre di progresso
     const maxPriority = Math.max(...fullCategoryStats.map(cat => cat.priorityScore), 0);
 
+    // 4. Recupera i progressi dell'utente da Firestore
     const userProgress = await common.getUserProgress();
+
+    // 5. BOOTSTRAP: Se è il primo avvio, inizializza l'Error Deck dell'utente
+    //    usando i dati del file performance.csv.
     if (!userProgress.initialSetupDone) {
         console.log("Prima esecuzione per questo utente. Inizializzo l'Error Deck...");
-        const initialErrorDeck = allQuestionsGlobally.filter(q => !q.isCorrect).map(q => q.id);
-        await common.saveUserProgress({ errorDeck: initialErrorDeck, initialSetupDone: true });
+        
+        const initialErrorDeck = allQuestionsGlobally
+            .filter(q => !q.isCorrect) // Filtra per le domande sbagliate
+            .map(q => q.id);           // Prendi solo gli ID
+            
+        await common.saveUserProgress({
+            errorDeck: initialErrorDeck,
+            initialSetupDone: true // Imposta un flag per non ripetere questa operazione
+        });
+        
         console.log(`Mazzo degli errori inizializzato con ${initialErrorDeck.length} domande.`);
+        // Ricarichiamo i progressi per assicurarci di avere il deck appena creato
+        Object.assign(userProgress, { errorDeck: initialErrorDeck });
     }
 
+    // 6. ANALISI PATTERN: Esegui l'analisi degli errori in background
+    //    usando i dati delle domande e l'error deck dell'utente.
+    const errorDeck = userProgress.errorDeck || [];
+    common.analyzeErrorPatterns(allQuestionsGlobally, errorDeck);
+
+    // 7. Salvataggio in localStorage per usarlo come cache veloce nelle altre pagine
     localStorage.setItem('allQuestions', JSON.stringify(allQuestionsGlobally));
     localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats));
     
+    // 8. Renderizza tutti i componenti della dashboard
     renderDashboardList('priorityScore', maxPriority); 
     renderStrategicMap(fullCategoryStats);
     setupDashboardEventListeners(maxPriority);
-    await updateUiCounters();
+    await updateUiCounters(); // 'await' è cruciale qui
     enableActionButtons();
-    console.log("Dati caricati. UI abilitata.");
-}
 
+    console.log("Dati caricati. UI abilitata e analisi completata.");
+}
 function enableActionButtons() {
     document.getElementById('start-exam-btn').disabled = false;
     const srsBtn = document.getElementById('srs-quiz-btn');
