@@ -24,53 +24,88 @@
 
     <main class="container">
         <!-- Riquadri Statistiche Chiave -->
-        <section class="row text-center mb-5">
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Streak di Studio 🔥
-                            <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
-                                  title="Il numero di giorni consecutivi in cui hai completato almeno una sessione di studio.">
-                                <i class="bi bi-info-circle-fill text-muted"></i>
-                            </span>
-                        </h5>
-                        <p class="display-4" id="streak-count">0</p>
-                        <p class="card-text">giorni consecutivi</p>
-                    </div>
-                </div>
+      <!-- in progress.html -->
+<section class="row text-center mb-5 g-3">
+    <!-- Card Streak -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                    Streak di Studio 🔥
+                    <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
+                          title="Il numero di giorni consecutivi in cui hai completato almeno una sessione di studio.">
+                        <i class="bi bi-info-circle-fill text-muted"></i>
+                    </span>
+                </h5>
+                <p class="display-4 my-auto" id="streak-count">0</p>
+                <p class="card-text text-muted">giorni consecutivi</p>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Domande Masterizzate 🎓
-                            <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
-                                  title="Le domande a cui hai risposto correttamente così tante volte di fila che il sistema le considera apprese a lungo termine.">
-                                <i class="bi bi-info-circle-fill text-muted"></i>
-                            </span>
-                        </h5>
-                        <p class="display-4" id="mastered-count">0</p>
-                        <p class="card-text">apprese a lungo termine</p>
-                    </div>
-                </div>
+        </div>
+    </div>
+
+    <!-- NUOVA CARD: STATO MEMORIZZAZIONE SRS -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Stato Memorizzazione
+                    <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
+                          title="Suddivisione delle domande in base al loro livello nel sistema di Ripetizione Dilazionata (SRS).">
+                        <i class="bi bi-info-circle-fill text-muted"></i>
+                    </span>
+                </h5>
+                <ul class="list-group list-group-flush text-start mt-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Apprese (Liv. 0-1)
+                        <span class="badge bg-primary rounded-pill" id="srs-level-low">0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        In Consolidamento (Liv. 2-4)
+                        <span class="badge bg-info rounded-pill" id="srs-level-mid">0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Masterizzate (Liv. 5+)
+                        <span class="badge bg-success rounded-pill" id="srs-level-high">0</span>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Proficiency Iniziale 📊
-                             <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
-                                  title="La percentuale di successo basata sul tuo primo tentativo per tutte le domande (dal file performance.csv).">
-                                <i class="bi bi-info-circle-fill text-muted"></i>
-                            </span>
-                        </h5>
-                        <p class="display-4" id="proficiency-percentage">0%</p>
-                        <p class="card-text">successo al primo tentativo</p>
-                    </div>
-                </div>
+        </div>
+    </div>
+
+    <!-- Card Domande Masterizzate (ora ridondante ma la teniamo per visibilità) -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                    Domande Masterizzate 🎓
+                    <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
+                          title="Le domande a cui hai risposto correttamente così tante volte di fila che il sistema le considera apprese a lungo termine.">
+                        <i class="bi bi-info-circle-fill text-muted"></i>
+                    </span>
+                </h5>
+                <p class="display-4 my-auto" id="mastered-count">0</p>
+                <p class="card-text text-muted">apprese a lungo termine</p>
             </div>
-        </section>
+        </div>
+    </div>
+
+    <!-- Card Proficiency Iniziale -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                    Proficiency Iniziale 📊
+                     <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" 
+                          title="La percentuale di successo basata sul tuo primo tentativo per tutte le domande (dal file performance.csv).">
+                        <i class="bi bi-info-circle-fill text-muted"></i>
+                    </span>
+                </h5>
+                <p class="display-4 my-auto" id="proficiency-percentage">0%</p>
+                <p class="card-text text-muted">successo al primo tentativo</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Grafici -->
         <section class="row">

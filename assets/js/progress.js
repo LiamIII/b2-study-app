@@ -66,17 +66,43 @@ function initializeTooltips() {
  * @param {object} srsData - L'oggetto con i dati di Spaced Repetition.
  * @param {Array} allQuestions - L'array di tutte le domande.
  */
-function updateStatCards(profile, srsData, allQuestions) {
+
+/**
+ * Popola le card con le statistiche chiave, inclusa la nuova card SRS.
+ * @param {object} profile - L'oggetto profilo utente con la streak.
+ * @param {object} srsData - L'oggetto con i dati di Spaced Repetition.
+ * @param {Array} allQuestions - L'array di tutte le domande.
+ */
+async function updateStatCards(profile, srsData, allQuestions) {
     // 1. Streak
     document.getElementById('streak-count').textContent = profile.streak || 0;
 
-    // 2. Domande Masterizzate (livello SRS massimo)
+    // 2. Suddivisione Livelli SRS
+    let srsLowCount = 0;
+    let srsMidCount = 0;
+    let srsHighCount = 0;
+
     const intervals = [1, 3, 7, 15, 30, 60];
     const maxSrsLevel = intervals.length - 1;
-    const masteredCount = Object.values(srsData).filter(item => item.level === maxSrsLevel).length;
-    document.getElementById('mastered-count').textContent = masteredCount;
 
-    // 3. Proficiency Generale (basata sui dati iniziali del file .csv)
+    Object.values(srsData).forEach(item => {
+        if (item.level <= 1) {
+            srsLowCount++;
+        } else if (item.level < maxSrsLevel) {
+            srsMidCount++;
+        } else {
+            srsHighCount++;
+        }
+    });
+
+    document.getElementById('srs-level-low').textContent = srsLowCount;
+    document.getElementById('srs-level-mid').textContent = srsMidCount;
+    document.getElementById('srs-level-high').textContent = srsHighCount;
+    
+    // 3. Domande Masterizzate (ora è lo stesso valore di srsHighCount)
+    document.getElementById('mastered-count').textContent = srsHighCount;
+
+    // 4. Proficiency Generale (basata sui dati iniziali del file .csv)
     const totalCorrect = allQuestions.filter(q => q.isCorrect).length;
     const proficiency = allQuestions.length > 0 ? (totalCorrect / allQuestions.length) * 100 : 0;
     document.getElementById('proficiency-percentage').textContent = `${proficiency.toFixed(1)}%`;
