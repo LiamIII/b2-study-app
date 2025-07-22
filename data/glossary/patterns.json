@@ -1,0 +1,548 @@
+{
+  "adjective-plus-enough|enough-plus-noun": {
+    "title": "Confusione di Posizione: Enough con Aggettivi e Nomi",
+    "explanation": "La confusione nasce dalla posizione di 'enough', che cambia a seconda che modifichi un aggettivo/avverbio o un sostantivo. Ricordare l'ordine corretto è fondamentale per costruire frasi naturali.",
+    "tips": [
+      "Usa la formula: 'aggettivo/avverbio + enough' (es. He isn't tall enough).",
+      "Usa la formula: 'enough + sostantivo' (es. There isn't enough time).",
+      "Pensa: 'enough' segue la qualità (aggettivo) ma precede la quantità (sostantivo)."
+    ],
+    "references": {
+      "egu": "Unit 90",
+      "ess": "Unit 91"
+    }
+  },
+  "although|despite": {
+    "title": "Confusione: Although vs. Despite/In Spite Of",
+    "explanation": "Entrambi introducono un contrasto, ma la loro struttura grammaticale è diversa. 'Although' è seguito da una frase completa (soggetto + verbo), mentre 'despite' e 'in spite of' sono seguiti da un sostantivo o un verbo in -ing.",
+    "tips": [
+      "Usa 'although' prima di una frase: Although it was raining, we went out.",
+      "Usa 'despite' o 'in spite of' prima di un nome o un gerundio: Despite the rain, we went out. / In spite of being tired, I finished the work.",
+      "Ricorda: 'despite' non ha 'of'. 'In spite of' è la forma corretta.",
+      "Puoi usare 'the fact that' dopo 'despite/in spite of' per inserire una frase completa: Despite the fact that it was raining..."
+    ],
+    "references": {
+      "egu": "Unit 113",
+      "ess": "Unit 100"
+    }
+  },
+  "as-if|like": {
+    "title": "Confusione: As if vs. Like",
+    "explanation": "Entrambi si usano per fare paragoni, ma 'as if' (o 'as though') introduce una situazione ipotetica ed è seguito da una frase (soggetto + verbo). 'Like' è una preposizione ed è tipicamente seguito da un sostantivo o un pronome.",
+    "tips": [
+      "Usa 'as if' o 'as though' con una frase per descrivere come qualcosa appare o sembra: He acts as if he owns the place.",
+      "Usa 'like' per un paragone diretto con un nome/pronome: She sings like an angel.",
+      "Nell'inglese informale, 'like' è spesso usato al posto di 'as if', ma è bene conoscere la regola formale: He looks like he hasn't slept."
+    ],
+    "references": {
+      "egu": "Unit 118"
+    }
+  },
+  "bare-infinitive|gerund": {
+    "title": "Confusione: Gerundio vs. Infinito senza 'to' (Bare Infinitive)",
+    "explanation": "Questa confusione si verifica dopo specifici verbi. I verbi di percezione (see, hear, feel) e i verbi 'let' e 'make' (nella forma attiva) sono seguiti da un oggetto e un infinito senza 'to', non da un gerundio.",
+    "tips": [
+      "Verbi di percezione: I saw him leave. (L'ho visto andare via).",
+      "Verbo 'let': My parents let me stay out late. (Mi lasciano stare fuori fino a tardi).",
+      "Verbo 'make' (forzare): She made him apologize. (Lo ha costretto a scusarsi)."
+    ],
+    "references": {
+      "egu": "Unit 59, 68"
+    }
+  },
+  "be-used-to|used-to": {
+    "title": "Confusione: Abitudine Passata vs. Essere Abituati",
+    "explanation": "'Used to' si riferisce ad abitudini o stati passati che non sono più veri. 'Be/get used to' significa 'essere abituato a' o 'abituarsi a' qualcosa di nuovo o difficile.",
+    "tips": [
+      "Formula per il passato: 'used to + forma base del verbo' (es. I used to play football).",
+      "Formula per l'abitudine: 'be/get used to + gerundio (-ing) o sostantivo' (es. I am used to waking up early).",
+      "Pensa: 'used to' parla solo del passato. 'Be used to' descrive uno stato di familiarità nel presente."
+    ],
+    "references": {
+      "egu": "Unit 18, 61",
+      "ess": "Unit 36"
+    }
+  },
+  "cant-have-done|must-have-done": {
+    "title": "Confusione: Deduzione Modale al Passato (Can't have vs. Must have)",
+    "explanation": "Entrambi esprimono una deduzione logica su un evento passato. 'Must have' esprime una quasi certezza che qualcosa sia accaduto. 'Can't have' esprime una quasi certezza che non sia accaduto.",
+    "tips": [
+      "Usa 'must have + participio passato' per una deduzione positiva forte: The ground is wet. It must have rained.",
+      "Usa 'can't have + participio passato' per una deduzione negativa forte: He can't have passed the exam; he didn't study at all.",
+      "Non usare 'mustn't have' per la deduzione negativa. Si usa 'can't have' o 'couldn't have'."
+    ],
+    "references": {
+      "egu": "Unit 28, 30",
+      "ess": "Unit 29"
+    }
+  },
+  "causative-get-something-done|causative-have-something-done": {
+    "title": "Confusione: Causativo Passivo 'Have' vs. 'Get'",
+    "explanation": "Entrambi si usano per indicare che si fa fare qualcosa a qualcun altro (un servizio). Sono spesso intercambiabili, ma 'get' può essere più informale o suggerire uno sforzo maggiore per ottenere il servizio.",
+    "tips": [
+      "La struttura è identica: 'soggetto + have/get + oggetto + participio passato'.",
+      "Esempio con 'have': I had my car repaired.",
+      "Esempio con 'get': I got my watch fixed.",
+      "Per un livello B1/B2, puoi considerarli quasi sinonimi."
+    ],
+    "references": {
+      "egu": "Unit 46",
+      "ess": "Unit 57 (menzionato con 'have')"
+    }
+  },
+  "causative-get|causative-make": {
+    "title": "Confusione: Causativo Attivo 'Make' vs. 'Get'",
+    "explanation": "'Make' e 'get' indicano che una persona ne causa un'altra a fare qualcosa. 'Make' implica obbligo o forza. 'Get' suggerisce persuasione o incoraggiamento.",
+    "tips": [
+      "Formula con 'make': 'make + persona + forma base del verbo' (es. My boss makes me work late).",
+      "Formula con 'get': 'get + persona + to + verbo' (es. I got my sister to help me).",
+      "Ricorda: 'make' è diretto e forzato (senza 'to'). 'get' è persuasivo (con 'to')."
+    ],
+    "references": {
+      "egu": "Unit 59"
+    }
+  },
+  "conditional-type-1|conditional-type-2": {
+    "title": "Confusione: Condizionale Tipo 1 vs. Tipo 2",
+    "explanation": "La differenza sta nella probabilità. Il Tipo 1 (First Conditional) descrive una situazione futura reale e probabile. Il Tipo 2 (Second Conditional) descrive una situazione presente o futura ipotetica, improbabile o immaginaria.",
+    "tips": [
+      "Tipo 1 (Reale/Probabile): 'If + Present Simple, ... will + forma base'. Esempio: If it rains, I will take an umbrella.",
+      "Tipo 2 (Ipotetico/Improbabile): 'If + Past Simple, ... would + forma base'. Esempio: If I won the lottery, I would buy a house.",
+      "Nel Tipo 2, si usa 'were' al posto di 'was' per tutte le persone (es. If I were you...)."
+    ],
+    "references": {
+      "egu": "Units 38, 39",
+      "ess": "Units 99, 100"
+    }
+  },
+  "conditional-type-2|conditional-type-3": {
+    "title": "Confusione: Condizionale Tipo 2 vs. Tipo 3",
+    "explanation": "La confusione risiede nel tempo di riferimento. Il Tipo 2 è ipotetico e riguarda il presente/futuro. Il Tipo 3 è ipotetico e riguarda un passato che non può essere cambiato, esprimendo rimpianto.",
+    "tips": [
+      "Tipo 2 (Ipotetico Presente/Futuro): 'If + Past Simple, ... would + forma base'. Esempio: If I knew the answer, I would tell you.",
+      "Tipo 3 (Ipotetico Passato): 'If + Past Perfect, ... would have + participio passato'. Esempio: If I had studied harder, I would have passed the exam.",
+      "Chiediti: 'Sto immaginando un presente/futuro diverso o un passato diverso?'"
+    ],
+    "references": {
+      "egu": "Units 39, 40",
+      "ess": "Unit 100"
+    }
+  },
+  "conditional-type-3|conditionals-wishes": {
+    "title": "Confusione: Desideri sul Passato (I wish) vs. Condizionale Tipo 3",
+    "explanation": "Entrambe le strutture parlano di un passato irreale, ma 'I wish' esprime solo il rimpianto, mentre il Tipo 3 ne descrive anche la conseguenza ipotetica.",
+    "tips": [
+      "Usa 'I wish / If only + Past Perfect' per esprimere un rimpianto: I wish I had studied harder.",
+      "Usa il Tipo 3 per collegare il rimpianto a un risultato: If I had studied harder, I would have passed the exam.",
+      "Pensa: 'I wish' si ferma al desiderio. Il Tipo 3 aggiunge '...e allora sarebbe successo questo'."
+    ],
+    "references": {
+      "egu": "Unit 40, 41"
+    }
+  },
+  "conditional-type-3|mixed-conditional": {
+    "title": "Confusione: Condizionale Misto vs. Tipo 3",
+    "explanation": "Il Tipo 3 descrive una condizione passata con un risultato passato. Il condizionale misto collega una condizione passata irreale con un risultato presente.",
+    "tips": [
+      "Tipo 3 (Passato -> Passato): If I had taken the map, I wouldn't have got lost.",
+      "Misto (Passato -> Presente): If I had taken that job, I would be rich now.",
+      "La clausola 'if' è del Tipo 3 (if + past perfect), ma la clausola del risultato è del Tipo 2 (would + forma base)."
+    ],
+    "references": {
+      "egu": "Unit 40"
+    }
+  },
+  "countable-nouns|uncountable-nouns": {
+    "title": "Confusione: Sostantivi Contabili vs. Non Contabili",
+    "explanation": "Molti sostantivi non contabili in inglese sono contabili in italiano (advice, information, furniture, news). I non contabili non hanno plurale e non usano 'a/an'.",
+    "tips": [
+      "I non contabili indicano concetti astratti (luck), materiali (water), o categorie (furniture).",
+      "Usa 'some, any, much, a lot of' con i non contabili. Usa 'many, a few, a/an' con i contabili.",
+      "Per contare un non contabile, usa un'unità di misura: 'a piece of advice', 'an item of news'.",
+      "Ricorda: 'News' è sempre singolare: The news is good. 'Luggage/baggage' è singolare."
+    ],
+    "references": {
+      "egu": "Units 69, 70",
+      "ess": "Units 65-68",
+      "evu": "Unit 4"
+    }
+  },
+  "definite-article-the|zero-article": {
+    "title": "Confusione: Articolo Determinativo (The) vs. Articolo Zero",
+    "explanation": "L'uso di 'the' è complesso. La confusione principale è quando NON usarlo, specialmente con concetti generali o nomi di luoghi usati per la loro funzione (school, prison, church).",
+    "tips": [
+      "Usa l'articolo zero per parlare di cose in generale: I like music. / Children learn quickly.",
+      "Usa 'the' per parlare di qualcosa di specifico: The music at the party was great.",
+      "Senza 'the': go to school/hospital/prison/church (come studente/paziente/detenuto/fedele).",
+      "Con 'the': go to the school/hospital/prison/church (per visitare l'edificio)."
+    ],
+    "references": {
+      "egu": "Units 71-78",
+      "ess": "Units 69-73"
+    }
+  },
+  "didnt-need-to-do|neednt-have-done": {
+    "title": "Confusione: Mancanza di Necessità al Passato",
+    "explanation": "Entrambe indicano che qualcosa non era necessario, ma 'didn't need to do' significa che non era necessario (e non l'ho fatto). 'Needn't have done' significa che l'ho fatto, ma si è rivelato inutile.",
+    "tips": [
+      "Usa 'didn't need to + forma base': I didn't need to go to the bank. (Non era necessario, quindi non ci sono andato).",
+      "Usa 'needn't have + participio passato': I needn't have hurried. (Mi sono sbrigato, ma non ce n'era bisogno, è stato uno spreco di energie)."
+    ],
+    "references": {
+      "egu": "Unit 34"
+    }
+  },
+  "during-vs-while|prepositions": {
+    "title": "Confusione: During vs. While",
+    "explanation": "Entrambi indicano contemporaneità. 'During' è una preposizione, seguita da un sostantivo. 'While' è una congiunzione, seguita da una frase (soggetto + verbo).",
+    "tips": [
+      "Usa 'during' + sostantivo: He fell asleep during the film.",
+      "Usa 'while' + soggetto + verbo: He fell asleep while he was watching the film.",
+      "Puoi abbreviare con 'while' + gerundio: He fell asleep while watching the film."
+    ],
+    "references": {
+      "egu": "Unit 119",
+      "ess": "Unit 105"
+    }
+  },
+  "either|too": {
+    "title": "Confusione: Aggiungere Accordo (Too vs. Either)",
+    "explanation": "Entrambi significano 'anche', ma 'too' si usa per concordare con una frase affermativa, mentre 'either' si usa per concordare con una frase negativa.",
+    "tips": [
+      "Usa 'too' alla fine di una frase affermativa: A: 'I'm hungry.' B: 'I am too.'",
+      "Usa 'either' alla fine di una frase negativa: A: 'I'm not hungry.' B: 'I'm not either.'",
+      "Un errore comune è dire: 'I'm not hungry too'."
+    ],
+    "references": {
+      "egu": "Unit 51",
+      "ess": "Unit 42"
+    }
+  },
+  "forget-doing|forget-to-do": {
+    "title": "Confusione: Forget to do vs. Forget doing",
+    "explanation": "Il significato di 'forget' cambia: 'forget to do' si riferisce a un'azione che dovevi fare (ma non hai fatto). 'Forget doing' si riferisce al non avere il ricordo di un'azione passata.",
+    "tips": [
+      "Usa 'forget to do' per un dovere dimenticato: I forgot to call you yesterday.",
+      "Usa 'forget doing' per un vuoto di memoria: I'll never forget seeing that beautiful sunset.",
+      "Pensa: 'to do' = compito/futuro. 'doing' = ricordo/passato."
+    ],
+    "references": {
+      "egu": "Unit 56",
+      "ess": "Unit 52"
+    }
+  },
+  "future-simple|time-clauses": {
+    "title": "Confusione: Futuro nelle Proposizioni Temporali",
+    "explanation": "Un errore comune è usare 'will' in una proposizione temporale futura (introdotta da when, as soon as, until, etc.). In queste frasi si usa il Present Simple.",
+    "tips": [
+      "La regola è: 'Proposizione temporale con Present Simple, + Frase principale con Future (will)'.",
+      "Esempio: I will call you when I arrive. (Non: 'when I will arrive').",
+      "Esempio: Let's wait until the rain stops. (Non: 'until the rain will stop')."
+    ],
+    "references": {
+      "egu": "Unit 24",
+      "ess": "Unit 98"
+    }
+  },
+  "how-much-vs-how-many|quantifiers": {
+    "title": "Confusione: How much? vs. How many?",
+    "explanation": "La scelta dipende se il sostantivo è contabile (countable) o non contabile (uncountable). Questa distinzione, a volte diversa dall'italiano, è la fonte dell'errore.",
+    "tips": [
+      "Usa 'How many?' con sostantivi contabili plurali: How many people are coming?",
+      "Usa 'How much?' con sostantivi non contabili: How much time do we have?",
+      "Per il prezzo si usa sempre 'How much?': How much is this? / How much does it cost?"
+    ],
+    "references": {
+      "egu": "Unit 86",
+      "ess": "Unit 81",
+      "evu": "Unit 4"
+    }
+  },
+  "in-order-to|so-that": {
+    "title": "Confusione: Esprimere lo Scopo (In order to vs. So that)",
+    "explanation": "Entrambi introducono una clausola di scopo. 'In order to' (o più semplicemente 'to') è seguito da un infinito. 'So that' è seguito da una frase completa (soggetto + verbo modale).",
+    "tips": [
+      "Usa '(in order) to + forma base': I'm studying hard to pass the exam.",
+      "Usa 'so that + soggetto + can/could/will/would': I'm studying hard so that I can pass the exam.",
+      "Usa 'so that' quando i soggetti delle due frasi sono diversi: I gave him my number so that he could call me."
+    ],
+    "references": {
+      "egu": "Unit 62"
+    }
+  },
+  "made-of-vs-from|prepositions": {
+    "title": "Confusione: Made of vs. Made from",
+    "explanation": "La preposizione dipende dalla trasformazione del materiale. 'Made of' si usa se il materiale è ancora riconoscibile. 'Made from' si usa se il materiale è stato trasformato.",
+    "tips": [
+      "Usa 'made of' per materiale evidente: This ring is made of gold.",
+      "Usa 'made from' per materiale trasformato: Paper is made from wood. / Cheese is made from milk.",
+      "Usa 'made with' per gli ingredienti: This cake is made with eggs, flour and sugar."
+    ],
+    "references": {
+      "egu": "Unit 125",
+      "evu": "Unit 63"
+    }
+  },
+  "modal-cant|modal-mustnt": {
+    "title": "Confusione: Can't vs. Mustn't",
+    "explanation": "'Can't' e 'mustn't' possono essere tradotti come 'non puoi/devi', ma 'mustn't' esprime una proibizione forte (è vietato), mentre 'can't' esprime mancanza di permesso o di abilità.",
+    "tips": [
+      "Usa 'mustn't' per una proibizione: You mustn't use your phone while driving.",
+      "Usa 'can't' per mancanza di permesso o abilità: You can't park here. / I can't speak Russian.",
+      "Pensa: 'mustn't' = 'NON farlo!'. 'can't' = 'Non è permesso/possibile'."
+    ],
+    "references": {
+      "egu": "Unit 32",
+      "ess": "Unit 31"
+    }
+  },
+  "modal-dont-have-to|modal-mustnt": {
+    "title": "Confusione: Don't have to vs. Mustn't",
+    "explanation": "Falsa coppia di amici comune. 'Mustn't' significa che è proibito fare qualcosa. 'Don't have to' significa che non c'è obbligo, non è necessario farlo.",
+    "tips": [
+      "Usa 'mustn't' per una proibizione: You mustn't tell anyone, it's a secret.",
+      "Usa 'don't have to' per l'assenza di obbligo: You don't have to come to the party if you're busy.",
+      "Ricorda: 'mustn't' = è importante NON farlo. 'don't have to' = non è importante farlo."
+    ],
+    "references": {
+      "egu": "Unit 33",
+      "ess": "Unit 31, 33"
+    }
+  },
+  "neither-nor|so-am-i": {
+    "title": "Confusione: Rispondere in Accordo (So / Neither)",
+    "explanation": "Entrambe le strutture servono per esprimere accordo. 'So am I' (e simili) si usa per concordare con una frase affermativa. 'Neither am I' si usa per concordare con una frase negativa.",
+    "tips": [
+      "Accordo affermativo: A: 'I love this song.' B: 'So do I.'",
+      "Accordo negativo: A: 'I don't like horror films.' B: 'Neither do I.' (o 'Nor do I').",
+      "La struttura è 'So/Neither + verbo ausiliare/modale + soggetto'."
+    ],
+    "references": {
+      "egu": "Unit 51",
+      "ess": "Unit 42"
+    }
+  },
+  "past-simple|present-perfect": {
+    "title": "Confusione: Past Simple vs. Present Perfect",
+    "explanation": "Confusione classica. Il Past Simple descrive azioni in un tempo passato definito e concluso (ieri, l'anno scorso). Il Present Perfect descrive azioni passate con una connessione al presente (un risultato attuale, un'esperienza di vita).",
+    "tips": [
+      "Usa il Past Simple con indicatori di tempo finito: yesterday, last week, in 2010, ago.",
+      "Usa il Present Perfect con indicatori di tempo non finito o per esperienze: for, since, yet, already, ever, never.",
+      "Chiediti sempre: 'L'azione ha una rilevanza ORA?' Se sì, usa il Present Perfect.",
+      "Confronta: 'I lost my keys yesterday' (Past Simple) vs 'I have lost my keys' (Present Perfect - il risultato è che ora non le trovo)."
+    ],
+    "references": {
+      "egu": "Units 5-20",
+      "ess": "Units 11-20"
+    }
+  },
+  "phrasal-verb-look-after|phrasal-verb-look-for": {
+    "title": "Confusione Phrasal Verbs: Look after vs. Look for",
+    "explanation": "Questi phrasal verbs comuni con 'look' hanno significati diversi. 'Look after' significa 'prendersi cura di'. 'Look for' significa 'cercare'.",
+    "tips": [
+      "Usa 'look after' per 'badare a': Can you look after my dog this weekend?",
+      "Usa 'look for' per 'cercare': I'm looking for my glasses.",
+      "Associa 'after' alla cura (guardare 'dietro' a qualcuno) e 'for' alla ricerca (cercare 'per' trovare)."
+    ],
+    "references": {
+      "evu": "Unit 12"
+    }
+  },
+  "phrasal-verb-look-for|phrasal-verb-look-into": {
+    "title": "Confusione Phrasal Verbs: Look for vs. Look into",
+    "explanation": "Anche se entrambi implicano una ricerca, 'look for' significa cercare un oggetto/persona persa. 'Look into' significa 'indagare, esaminare' un problema o una situazione.",
+    "tips": [
+      "Usa 'look for' per cercare un oggetto: I'm looking for my wallet.",
+      "Usa 'look into' per investigare un problema: The manager promised to look into the complaint.",
+      "Pensa: 'for' è per un oggetto, 'into' (dentro) è per un problema."
+    ],
+    "references": {
+      "evu": "Unit 12"
+    }
+  },
+  "present-perfect|present-perfect-continuous": {
+    "title": "Confusione: Present Perfect Simple vs. Continuous",
+    "explanation": "Entrambi collegano passato e presente. Il Continuous ('have been doing') si concentra sulla durata e continuità dell'azione. Il Simple ('have done') si concentra sul risultato o completamento.",
+    "tips": [
+      "Usa il Continuous per la durata: I've been studying for three hours (e sono ancora stanco).",
+      "Usa il Simple per il risultato o la quantità: I've studied three chapters.",
+      "Il Continuous spesso spiega una situazione presente: Your eyes are red because you've been crying.",
+      "Ricorda che i verbi di stato (know, like, own) non si usano nella forma continua."
+    ],
+    "references": {
+      "egu": "Units 9, 10",
+      "ess": "Units 17, 18"
+    }
+  },
+  "reported-speech|say-vs-tell": {
+    "title": "Confusione: Say vs. Tell",
+    "explanation": "La differenza principale è nella struttura. 'Tell' deve essere seguito da una persona (un pronome oggetto). 'Say' di solito non lo è, o richiede la preposizione 'to'.",
+    "tips": [
+      "Usa 'tell + persona': He told me a joke. (Non: 'He told a joke').",
+      "Usa 'say' senza persona: She said she was tired.",
+      "Se vuoi specificare la persona con 'say', usa 'to': She said to me that she was tired.",
+      "Ricorda le espressioni fisse: tell a story, tell a lie, tell the truth; say sorry, say hello."
+    ],
+    "references": {
+      "egu": "Unit 48",
+      "ess": "Unit 50"
+    }
+  },
+  "present-perfect-continuous|state-verb": {
+    "title": "Confusione: Verbi di Stato e Tempi Progressivi",
+    "explanation": "I verbi di stato (state verbs) descrivono stati, pensieri o sentimenti (know, believe, like, own) e di solito non si usano nelle forme progressive (continuous), incluso il Present Perfect Continuous.",
+    "tips": [
+      "Con i verbi di stato, usa il Present Perfect Simple anche per la durata: I have known him for ten years. (Non: 'I have been knowing').",
+      "Anche se l'azione dura da tempo, se il verbo è di stato, la forma simple è corretta: We have had this car since 2015. (Non: 'We have been having').",
+      "Lista dei verbi di stato comuni: like, love, hate, want, need, know, understand, believe, remember, seem, own."
+    ],
+    "references": {
+      "egu": "Unit 4, 10",
+      "ess": "Unit 8"
+    }
+  },
+  "stop-doing|stop-to-do": {
+    "title": "Confusione: Stop to do vs. Stop doing",
+    "explanation": "Il significato di 'stop' cambia drasticamente. 'Stop doing' significa smettere, interrompere un'attività. 'Stop to do' significa fermarsi con lo scopo di fare qualcos'altro.",
+    "tips": [
+      "Usa 'stop doing' per cessare un'attività: He stopped smoking last year.",
+      "Usa 'stop to do' per indicare lo scopo della fermata: While driving, he stopped to smoke a cigarette.",
+      "Chiediti: 'L'azione dopo 'stop' è quella che finisce (doing) o quella che inizia (to do)?'"
+    ],
+    "references": {
+      "egu": "Unit 56",
+      "ess": "Unit 52"
+    }
+  },
+  "verb-lay|verb-lie": {
+    "title": "Confusione Verbi: Lie vs. Lay",
+    "explanation": "'Lie' (giacere, sdraiarsi) è intransitivo (non ha un oggetto). 'Lay' (mettere, posare) è transitivo (richiede un oggetto). La confusione è aggravata dal fatto che il passato di 'lie' è 'lay'.",
+    "tips": [
+      "LIE (giacere): lie, lay, lain, lying. Esempio: I'm going to lie down.",
+      "LAY (posare): lay, laid, laid, laying. Esempio: She laid the book on the table.",
+      "Memorizza i paradigmi. Chiediti sempre: 'C'è un oggetto che viene posato?' Se sì, usa 'lay'."
+    ],
+    "references": {
+      "egu": "Appendix 1",
+      "evu": "Unit 34"
+    }
+  },
+  "verb-remind|verb-remember": {
+    "title": "Confusione Verbi: Remind vs. Remember",
+    "explanation": "'Remember' è un'azione che si fa da soli (ricordare). 'Remind' è un'azione che qualcuno o qualcosa fa a te (far ricordare).",
+    "tips": [
+      "Usa 'remember' per un atto di memoria personale: I must remember to buy milk.",
+      "Usa 'remind' quando qualcuno/qualcosa ti fa ricordare: Can you remind me to buy milk? / This song reminds me of my youth.",
+      "Struttura: 'remind someone of something' o 'remind someone to do something'."
+    ],
+    "references": {
+      "egu": "Unit 58",
+      "evu": "Unit 34"
+    }
+  },
+  "word-choice-bring|word-choice-take": {
+    "title": "Confusione di Vocabolario: Bring vs. Take",
+    "explanation": "La scelta dipende dalla direzione. 'Bring' indica un movimento verso chi parla. 'Take' indica un movimento lontano da chi parla.",
+    "tips": [
+      "Usa 'bring' per il movimento verso qui/te: Please bring me that book.",
+      "Usa 'take' per il movimento lontano da qui/te: Don't forget to take your umbrella when you leave.",
+      "Pensa alla destinazione: se è dove sei tu, usa 'bring'. Se è altrove, usa 'take'."
+    ],
+    "references": {
+      "evu": "Unit 53"
+    }
+  },
+  "word-choice-earn|word-choice-win": {
+    "title": "Confusione di Vocabolario: Earn vs. Win",
+    "explanation": "'Earn' si usa per i soldi ricevuti lavorando o per qualcosa che si merita. 'Win' si usa per competizioni, giochi o lotterie.",
+    "tips": [
+      "Usa 'earn' per lo stipendio o per merito: She earns a good salary. / He earned our respect.",
+      "Usa 'win' per gare e premi: He won the match. / She won a medal.",
+      "Non puoi 'win' il tuo stipendio."
+    ],
+    "references": {
+      "evu": "Unit 44"
+    }
+  },
+  "word-choice-fare|word-choice-price": {
+    "title": "Confusione di Vocabolario: Fare vs. Price",
+    "explanation": "'Fare' è specifico per il costo di un viaggio su un mezzo di trasporto (autobus, treno, aereo). 'Price' è il termine generico per il costo di beni e servizi.",
+    "tips": [
+      "Usa 'fare' per i trasporti: The train fare to Rome is expensive.",
+      "Usa 'price' per tutto il resto: What's the price of this dress?",
+      "Pensa a 'tariffa' per 'fare'."
+    ],
+    "references": {
+      "evu": "Unit 45"
+    }
+  },
+  "word-choice-rob|word-choice-steal": {
+    "title": "Confusione di Vocabolario: Rob vs. Steal",
+    "explanation": "La differenza sta nell'oggetto del verbo. 'Steal' si focalizza sull'oggetto rubato. 'Rob' si focalizza sulla persona o sul luogo che subisce il furto.",
+    "tips": [
+      "Usa 'steal' con l'oggetto: Someone stole my bike.",
+      "Usa 'rob' con la persona o il luogo: The gang robbed a bank. / A man robbed the tourist.",
+      "Non puoi 'rob a bike', ma puoi 'steal a bike'."
+    ],
+    "references": {
+      "evu": "Unit 52"
+    }
+  },
+  "infinitive|verb-patterns": {
+    "title": "Confusione: Verbi seguiti da Infinito vs. Gerundio",
+    "explanation": "Uno degli aspetti più complessi per chi impara l'inglese è sapere se un verbo debba essere seguito da un infinito (con 'to') o da un gerundio (-ing). La scelta non segue una regola logica, ma dipende dal verbo che precede.",
+    "tips": [
+      "Verbi comuni seguiti da 'to + infinito': want, need, hope, decide, promise, offer, plan, manage (es. I decided to leave).",
+      "Verbi comuni seguiti da 'gerundio (-ing)': enjoy, finish, avoid, suggest, can't stand, admit, deny (es. He enjoys playing football).",
+      "Alcuni verbi come 'like', 'love', 'hate', 'start' possono essere seguiti da entrambi con poca differenza di significato (es. I like to swim / I like swimming).",
+      "Fai attenzione ai verbi che cambiano significato (es. remember, forget, stop, try). Controlla le voci specifiche per questi."
+    ],
+    "references": {
+      "egu": "Units 53-58",
+      "ess": "Units 51-53"
+    }
+  },
+  "passive-voice|tenses": {
+    "title": "Confusione: Formazione del Passivo nei Diversi Tempi Verbali",
+    "explanation": "La difficoltà principale nel formare il passivo è coniugare correttamente il verbo 'to be' nel tempo verbale richiesto, mantenendo il participio passato del verbo principale. Spesso si sbaglia la coniugazione di 'be'.",
+    "tips": [
+      "Ricorda la formula base: 'soggetto + verbo be (coniugato) + participio passato'.",
+      "Present Simple: The email is sent.",
+      "Past Simple: The email was sent.",
+      "Present Perfect: The email has been sent.",
+      "Future Simple: The email will be sent.",
+      "Modali: The email must be sent."
+    ],
+    "references": {
+      "egu": "Units 42-45",
+      "ess": "Unit 21"
+    }
+  },
+  "reported-speech|tense-backshift": {
+    "title": "Confusione: Backshift dei Tempi Verbali nel Discorso Indiretto",
+    "explanation": "Quando si riporta un discorso (reported speech) e il verbo introduttivo è al passato (es. 'he said'), il tempo verbale della frase originale di solito 'arretra' di un passo nel passato (backshift). Dimenticare questo passaggio è un errore comune.",
+    "tips": [
+      "Present Simple -> Past Simple: 'I am happy' -> He said he was happy.",
+      "Past Simple -> Past Perfect: 'I saw the film' -> She said she had seen the film.",
+      "Present Perfect -> Past Perfect: 'I have finished' -> He said he had finished.",
+      "Will -> Would: 'I will help' -> She said she would help.",
+      "Can -> Could: 'I can swim' -> He said he could swim."
+    ],
+    "references": {
+      "egu": "Units 47, 48",
+      "ess": "Unit 50"
+    }
+  },
+  "conditional-type-3|modal-perfect": {
+    "title": "Confusione: Modali Perfetti nel Condizionale Tipo 3",
+    "explanation": "Nella frase principale (result clause) del condizionale tipo 3, si può usare un modale perfetto (could/might have) al posto di 'would have' per esprimere una sfumatura di significato diversa, come possibilità o permesso, invece di una semplice conseguenza.",
+    "tips": [
+      "Usa 'would have' per il risultato certo/diretto: If I had had money, I would have bought the car.",
+      "Usa 'could have' per possibilità/capacità: If I had had money, I could have bought the car (ne avrei avuto la possibilità).",
+      "Usa 'might have' per una possibilità più incerta: If I had had money, I might have bought the car (forse l'avrei comprato)."
+    ],
+    "references": {
+      "egu": "Unit 40"
+    }
+  }
+}

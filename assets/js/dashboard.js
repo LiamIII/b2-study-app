@@ -6,41 +6,23 @@
  * - Mantiene tutte le funzionalità precedenti, inclusa l'autenticazione.
  */
 
-// Importa tutto ciò che serve dai moduli
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { auth } from './firebase-init.js';
-import * as common from './common.js';
+import { 
+    loadData, processAndGetAllQuestions, calculateCategoryStats, 
+    getUserProgress, saveUserProgress, getSrsData, getErrorDeck, 
+    parseDescriptions, categoriesDescriptionsString, getPerformanceBadge 
+} from './common.js';
 
 // Variabili a livello di modulo per i dati
 let fullCategoryStats = [];
 let allQuestionsGlobally = [];
-
-// Stringa e funzione per le descrizioni delle categorie
-const categoriesDescriptionsString = `
-Modals & Related Structures ::: Include i verbi modali (can, must, should, may, might) e le strutture simili (have to, be able to) usati per esprimere abilità, obbligo, permesso, probabilità o deduzione.
-Question Formation ::: Si concentra sulla corretta struttura grammaticale delle domande, incluso l'uso delle question words (what, where, how), l'inversione soggetto-verbo e le question tags.
-Reported Speech ::: Riguarda le regole per riportare ciò che qualcun altro ha detto (discorso indiretto). Ciò implica cambiamenti nei tempi verbali, pronomi e avverbi di tempo e luogo.
-Conjunctions & Connectors ::: Include le parole e le espressioni usate per collegare frasi o parti di una frase. Testano la capacità di esprimere causa (as, because), contrasto (although, despite), tempo (while, during) e modo (as if).
-Verb Patterns (Gerundi, Infiniti, etc.) ::: Questa categoria riguarda le regole su quale forma verbale (infinito con o senza to, o la forma in -ing) debba seguire un determinato verbo, aggettivo o preposizione. Include anche costruzioni come "vedere qualcuno fare qualcosa" (see somebody do/doing).
-used to vs be/get used to ::: Una categoria specifica per distinguere tra used to + verbo (un'abitudine passata non più vera) e be/get used to + -ing (essere/diventare abituati a qualcosa).
-Agreement & Disagreement (So/Neither) ::: Riguarda le brevi risposte usate per essere d'accordo con un'affermazione positiva (So am I) o negativa (Neither do I), e le risposte brevi alle domande (Yes, I did).
-Causative Structures (have/get/make/let) ::: Si concentra sull'uso dei verbi "causativi" per indicare che qualcuno fa fare qualcosa a qualcun altro. La struttura grammaticale varia a seconda del verbo usato.
-Passive Voice ::: Si concentra sull'uso della forma passiva, dove il soggetto della frase subisce l'azione anziché compierla. Le domande testano la capacità di formare il passivo in vari tempi verbali (presente, passato, futuro) e con i verbi modali.
-Conditionals & Wishes ::: Copre tutti i periodi ipotetici (1°, 2°, 3° e misto) che esprimono condizioni reali, possibili o irreali e le loro conseguenze. Include anche le espressioni di desiderio o rimpianto come I wish (vorrei/avrei voluto) e If only (se solo).
-Tenses (inclusi for/since, time clauses) ::: Riguarda l'uso corretto dei tempi verbali (es. Present Perfect, Past Simple, Past Perfect) per esprimere il momento in cui un'azione si svolge. Include l'uso corretto di indicatori temporali come for, since, recently e la costruzione di frasi temporali con when, as soon as, after, ecc.
-Prepositions ::: Testa l'uso corretto delle preposizioni (es. in, on, at, for, with) per indicare tempo, luogo, direzione o per completare espressioni fisse (es. verbo/aggettivo + preposizione).
-Nouns, Pronouns & Determiners ::: Questa categoria si occupa di nomi (numerabili e non), pronomi (personali, possessivi, riflessivi) e determinanti (articoli, dimostrativi, quantificatori come much, many, enough).
-Adjectives & Adverbs ::: Riguarda l'uso e la posizione di aggettivi e avverbi. Include l'ordine corretto degli aggettivi, le forme comparative e superlative, e l'uso di avverbi di grado come enough, too, so, rather.
-Vocabulary ::: Questa categoria testa la conoscenza di singole parole, sinonimi, contrari e il loro uso corretto nel contesto. Include la scelta tra parole simili (es. rob vs steal), la formazione di parole (prefissi e suffissi), e frasi idiomatiche.
-Phrasal Verbs ::: I verbi frasali sono verbi composti da un verbo più un avverbio o una preposizione, che insieme assumono un nuovo significato. Questa categoria verifica la conoscenza del significato di questi verbi.
-`;
-const categoryDescriptions = common.parseDescriptions(categoriesDescriptionsString);
+const categoryDescriptions = parseDescriptions(categoriesDescriptionsString);
 
 
 document.addEventListener('DOMContentLoaded', () => {
     onAuthStateChanged(auth, async (user) => {
         if (user) {
-            console.log("Utente loggato:", user.email);
             document.getElementById('user-email').textContent = user.email;
             await initializeApp();
         } else {
@@ -49,63 +31,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// in dashboard.js
-
 async function initializeApp() {
-    // 1. Carica i dati grezzi delle domande e delle performance iniziali
-    const [questionsData, performanceCSV] = await common.loadData();
-    if (!questionsData || !performanceCSV) {
-        document.getElementById('category-list').innerHTML = '<div class="alert alert-danger">Errore critico: impossibile caricare i file di dati.</div>';
-        return;
-    }
+    const [questionsData, performanceCSV] = await loadData();
+    if (!questionsData) return;
     
-    // 2. Processa i dati statici per averli pronti
-    allQuestionsGlobally = common.processAndGetAllQuestions(questionsData, performanceCSV);
-    fullCategoryStats = common.calculateCategoryStats(allQuestionsGlobally);
+    allQuestionsGlobally = processAndGetAllQuestions(questionsData, performanceCSV);
+    fullCategoryStats = calculateCategoryStats(allQuestionsGlobally);
     
-    // 3. Calcola il punteggio di priorità massimo per le barre di progresso
     const maxPriority = Math.max(...fullCategoryStats.map(cat => cat.priorityScore), 0);
+    const userProgress = await getUserProgress();
+    const errorDeck = userProgress.errorDeck || [];
 
-    // 4. Recupera i progressi dell'utente da Firestore
-    const userProgress = await common.getUserProgress();
-
-    // 5. BOOTSTRAP: Se è il primo avvio, inizializza l'Error Deck dell'utente
-    //    usando i dati del file performance.csv.
     if (!userProgress.initialSetupDone) {
-        console.log("Prima esecuzione per questo utente. Inizializzo l'Error Deck...");
-        
-        const initialErrorDeck = allQuestionsGlobally
-            .filter(q => !q.isCorrect) // Filtra per le domande sbagliate
-            .map(q => q.id);           // Prendi solo gli ID
-            
-        await common.saveUserProgress({
-            errorDeck: initialErrorDeck,
-            initialSetupDone: true // Imposta un flag per non ripetere questa operazione
-        });
-        
-        console.log(`Mazzo degli errori inizializzato con ${initialErrorDeck.length} domande.`);
-        // Ricarichiamo i progressi per assicurarci di avere il deck appena creato
-        Object.assign(userProgress, { errorDeck: initialErrorDeck });
+        const initialErrorDeck = allQuestionsGlobally.filter(q => !q.isCorrect).map(q => q.id);
+        await saveUserProgress({ errorDeck: initialErrorDeck, initialSetupDone: true });
+        errorDeck.push(...initialErrorDeck);
+
     }
 
-    // 6. ANALISI PATTERN: Esegui l'analisi degli errori in background
-    //    usando i dati delle domande e l'error deck dell'utente.
-    const errorDeck = userProgress.errorDeck || [];
-    common.analyzeErrorPatterns(allQuestionsGlobally, errorDeck);
-
-    // 7. Salvataggio in localStorage per usarlo come cache veloce nelle altre pagine
     localStorage.setItem('allQuestions', JSON.stringify(allQuestionsGlobally));
-    localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats));
+    localStorage.setItem('categoryStats', JSON.stringify(fullCategoryStats))
+        localStorage.setItem('errorDeck_cache', JSON.stringify(errorDeck));
+
     
-    // 8. Renderizza tutti i componenti della dashboard
     renderDashboardList('priorityScore', maxPriority); 
     renderStrategicMap(fullCategoryStats);
     setupDashboardEventListeners(maxPriority);
-    await updateUiCounters(); // 'await' è cruciale qui
+    await updateUiCounters();
     enableActionButtons();
-
-    console.log("Dati caricati. UI abilitata e analisi completata.");
 }
+
+
 function enableActionButtons() {
     document.getElementById('start-exam-btn').disabled = false;
     const srsBtn = document.getElementById('srs-quiz-btn');
@@ -149,7 +105,7 @@ function renderDashboardList(sortBy = 'priorityScore', maxPriority = 1) {
                 ${priorityBar}
             </div>
             <div class="text-end">
-                <span class="badge ${common.getPerformanceBadge(category.errorRate)} rounded-pill fs-6">${category.errorRate.toFixed(1)}% errore</span>
+                <span class="badge ${getPerformanceBadge(category.errorRate)} rounded-pill fs-6">${category.errorRate.toFixed(1)}% errore</span>
             </div>
         `;
         container.appendChild(element);
@@ -285,7 +241,7 @@ function showDetailsModal(categoryName, categoryStats) {
     } else {
         mistakesHTML = `<div class="text-center p-3"><i class="bi bi-check-circle-fill text-success fs-1"></i><h5 class="mt-2">Nessun errore registrato!</h5><p class="text-muted">Ottimo lavoro in questa categoria.</p></div>`;
     }
-    modalBody.innerHTML = `<div class="row"><div class="col-md-5 border-end"><h4 class="fw-light">Riepilogo Performance</h4><div class="d-flex justify-content-between align-items-center mt-3"><span>Tasso di errore:</span><span class="badge ${common.getPerformanceBadge(categoryData.errorRate)} fs-6">${categoryData.errorRate.toFixed(1)}%</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte corrette:</span><span class="fw-bold">${categoryData.correct} / ${categoryData.total}</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte sbagliate:</span><span class="fw-bold">${categoryData.incorrect} / ${categoryData.total}</span></div></div><div class="col-md-7"><h4 class="fw-light">Le domande che hai sbagliato</h4><div class="mt-3">${mistakesHTML}</div></div></div>`;
+    modalBody.innerHTML = `<div class="row"><div class="col-md-5 border-end"><h4 class="fw-light">Riepilogo Performance</h4><div class="d-flex justify-content-between align-items-center mt-3"><span>Tasso di errore:</span><span class="badge ${getPerformanceBadge(categoryData.errorRate)} fs-6">${categoryData.errorRate.toFixed(1)}%</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte corrette:</span><span class="fw-bold">${categoryData.correct} / ${categoryData.total}</span></div><div class="d-flex justify-content-between align-items-center mt-2"><span>Risposte sbagliate:</span><span class="fw-bold">${categoryData.incorrect} / ${categoryData.total}</span></div></div><div class="col-md-7"><h4 class="fw-light">Le domande che hai sbagliato</h4><div class="mt-3">${mistakesHTML}</div></div></div>`;
     const encodedCategoryName = encodeURIComponent(categoryName);
     modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button><a href="quiz.html?category=${encodedCategoryName}&submode=errors" class="btn btn-danger"><i class="bi bi-bullseye"></i> Allena solo Errori (${wrongQuestions.length})</a><a href="quiz.html?category=${encodedCategoryName}&submode=all" class="btn btn-primary"><i class="bi bi-arrow-clockwise"></i> Ripassa Tutta la Categoria</a>`;
     bootstrap.Modal.getOrCreateInstance(modalElement).show();
@@ -349,8 +305,8 @@ function prepareAndStartExam() {
 }
 
 async function updateUiCounters() {
-    const srsData = await common.getSrsData();
-    const errorDeck = await common.getErrorDeck();
+    const srsData = await getSrsData();
+    const errorDeck = await getErrorDeck();
     if (!srsData || !errorDeck) return;
     const today = new Date().toISOString().split('T')[0];
     const srsDueCount = Object.values(srsData).filter(item => item.nextReview <= today).length;

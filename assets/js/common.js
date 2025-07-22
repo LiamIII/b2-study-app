@@ -30,6 +30,100 @@ Vocabulary ::: Questa categoria testa la conoscenza di singole parole, sinonimi,
 Phrasal Verbs ::: I verbi frasali sono verbi composti da un verbo più un avverbio o una preposizione, che insieme assumono un nuovo significato. Questa categoria verifica la conoscenza del significato di questi verbi.
 `;
 
+// in assets/js/common.js
+
+export const tagDictionary = {
+    'tenses': 'Tempi Verbali',
+    'conditionals': 'Periodi Ipotetici',
+    'conditionals-wishes': 'Periodi Ipotetici e Desideri',
+    'conditional-type-1': 'Condizionale di Tipo 1',
+    'conditional-type-2': 'Condizionale di Tipo 2',
+    'conditional-type-3': 'Condizionale di Tipo 3',
+    'mixed-conditional': 'Condizionale Misto',
+    'wishes': 'Desideri (Wishes)',
+    'if-only': 'If Only',
+    'infinitive': 'Infinito',
+    'bare-infinitive': 'Infinito senza "to"',
+    'perfect-infinitive': 'Infinito Perfetto',
+    'passive-infinitive': 'Infinito Passivo',
+    'gerund': 'Gerundio',
+    'passive-gerund': 'Gerundio Passivo',
+    'verb-patterns': 'Verb Patterns',
+    'passive-voice': 'Forma Passiva',
+    'modal-passive': 'Forma Passiva con Modali',
+    'future-passive': 'Forma Passiva al Futuro',
+    'present-perfect-passive': 'Present Perfect Passivo',
+    'present-continuous-passive': 'Present Continuous Passivo',
+    'past-perfect-passive': 'Past Perfect Passivo',
+    'past-continuous-passive': 'Past Continuous Passivo',
+    'present-simple-passive': 'Present Simple Passivo',
+    'reported-speech': 'Discorso Indiretto',
+    'reported-question': 'Domande Indirette',
+    'tense-backshift': 'Backshift dei Tempi',
+    'modal-shift': 'Shift dei Modali',
+    'modal-perfect': 'Modali Perfetti (es. would have)',
+    'past-perfect': 'Past Perfect',
+    'past-simple': 'Past Simple',
+    'present-perfect': 'Present Perfect',
+    'present-perfect-continuous': 'Present Perfect Continuous',
+    'future-simple': 'Future Simple (will)',
+    'be-going-to': 'Be going to',
+    'modals': 'Verbi Modali',
+    'modal-can': 'Modale "Can"',
+    'modal-could': 'Modale "Could"',
+    'modal-must': 'Modale "Must"',
+    'modal-mustnt': 'Modale "Mustn\'t"',
+    'modal-should': 'Modale "Should"',
+    'modal-might': 'Modale "Might"',
+    'modal-may': 'Modale "May"',
+    'modal-of-deduction': 'Modali di Deduzione',
+    'causative-structures': 'Strutture Causative',
+    'causative-have-something-done': 'Causativo "Have something done"',
+    'causative-get-something-done': 'Causativo "Get something done"',
+    'causative-make': 'Causativo "Make"',
+    'causative-let': 'Causativo "Let"',
+    'causative-get': 'Causativo "Get"',
+    'used-to': 'Used to (Abitudine Passata)',
+    'be-used-to': 'Be Used to (Essere Abituati)',
+    'used-to-vs-be-get-used-to': 'Used to vs Be/Get used to',
+    'time-clauses': 'Proposizioni Temporali',
+    'time-marker': 'Marcatore Temporale',
+    'time-marker-since': 'Marcatore "Since"',
+    'time-marker-for': 'Marcatore "For"',
+    'time-marker-ago': 'Marcatore "Ago"',
+    'time-marker-yesterday': 'Marcatore "Yesterday"',
+    'time-marker-lately': 'Marcatore "Lately"',
+    'time-marker-recently': 'Marcatore "Recently"',
+    'time-marker-before': 'Marcatore "Before"',
+    'prepositions': 'Preposizioni',
+    'preposition-in': 'Preposizione "in"',
+    'preposition-on': 'Preposizione "on"',
+    'preposition-at': 'Preposizione "at"',
+    'phrasal-verbs': 'Verbi Frasali',
+    'phrasal-verb-look-after': 'Phrasal Verb "look after"',
+    'phrasal-verb-look-for': 'Phrasal Verb "look for"',
+    'phrasal-verb-look-into': 'Phrasal Verb "look into"',
+    'vocabulary': 'Vocabolario',
+    'confusing-words': 'Parole che generano confusione',
+    'word-choice-rob': 'Scelta lessicale: rob',
+    'word-choice-steal': 'Scelta lessicale: steal',
+    'adjectives': 'Aggettivi',
+    'adverbs': 'Avverbi',
+    'adjective-order': 'Ordine degli Aggettivi',
+    'comparatives': 'Comparativi',
+    'superlatives': 'Superlativi',
+    'nouns-pronouns-determiners': 'Nomi, Pronomi e Determinanti',
+    'uncountable-nouns': 'Nomi non numerabili',
+    'countable-nouns': 'Nomi numerabili',
+    'articles': 'Articoli',
+    'definite-article-the': 'Articolo Determinativo "the"',
+    'zero-article': 'Articolo Zero',
+    'quantifiers': 'Quantificatori',
+    'conjunctions': 'Congiunzioni',
+    'question-formation': 'Formulazione delle Domande',
+    'question-tags': 'Question Tags'
+};
+
 // AGGIUNTO 'export'
 export function parseDescriptions(text) {
     const descriptionMap = new Map();
@@ -174,6 +268,16 @@ export async function updateLearningState(questionId, isCorrect) {
         if (!errorDeck.includes(questionId)) {
             errorDeck.push(questionId);
         }
+    } else {
+        // Se la risposta è corretta, rimuovi la domanda dal mazzo degli errori
+        // quando raggiunge un livello SRS sufficientemente alto (livello 2 o superiore)
+        const currentSrs = srsData[questionId] || { level: 0 };
+        if (currentSrs.level >= 1) {
+            const errorIndex = errorDeck.indexOf(questionId);
+            if (errorIndex > -1) {
+                errorDeck.splice(errorIndex, 1);
+            }
+        }
     }
     const intervals = [1, 3, 7, 15, 30, 60]; 
     let currentSrs = srsData[questionId] || { level: 0 };
@@ -224,48 +328,24 @@ export async function recordStudySession(questionsStudied) {
  * @param {Array<number>} errorDeckIds - L'array degli ID delle domande sbagliate.
  * @returns {Array} Un array di oggetti che rappresentano i pattern di errore.
  */
+// RI-AGGIUNGIAMO QUESTA FUNZIONE FONDAMENTALE
 export function analyzeErrorPatterns(allQuestions, errorDeckIds) {
-    // Filtra per ottenere solo gli oggetti completi delle domande sbagliate
     const wrongQuestions = allQuestions.filter(q => errorDeckIds.includes(q.id));
-
-    if (wrongQuestions.length < 5) {
-        // Non ha senso fare analisi su un numero esiguo di errori
-        console.log("Non ci sono abbastanza errori per un'analisi significativa.");
-        return [];
-    }
-
-    const tagPairCounts = {};
-
-    wrongQuestions.forEach(question => {
-        // Assicurati che la domanda abbia dei tag
-        if (!question.tags || question.tags.length < 2) return;
-
-        // Rimuovi eventuali duplicati e ordina per creare chiavi consistenti
-        const tags = [...new Set(question.tags)].sort();
-
-        // Genera tutte le possibili coppie di tag per questa domanda
+    if (wrongQuestions.length < 5) return [];
+    const tagPairData = {};
+    wrongQuestions.forEach(q => {
+        if (!q.tags || q.tags.length < 2) return;
+        const tags = [...new Set(q.tags)].sort();
         for (let i = 0; i < tags.length; i++) {
             for (let j = i + 1; j < tags.length; j++) {
-                const key = `${tags[i]}|${tags[j]}`; // Crea una chiave unica per la coppia
-                tagPairCounts[key] = (tagPairCounts[key] || 0) + 1;
+                const key = `${tags[i]}|${tags[j]}`;
+                if (!tagPairData[key]) tagPairData[key] = { count: 0, questionIds: [] };
+                tagPairData[key].count++;
+                tagPairData[key].questionIds.push(q.id);
             }
         }
     });
-
-    // Trasforma l'oggetto delle frequenze in un array di oggetti "pattern"
-    const patterns = Object.keys(tagPairCounts)
-        .map(key => ({
-            tags: key.split('|'),
-            count: tagPairCounts[key]
-        }))
-        // Filtra per i pattern che si sono ripetuti almeno 2 volte (o più, se vuoi essere più selettivo)
-        .filter(pattern => pattern.count >= 2)
-        // Ordina per i pattern più frequenti
-        .sort((a, b) => b.count - a.count);
-
-    // Salva i risultati nel localStorage per renderli accessibili alla pagina dei progressi
-    localStorage.setItem('errorPatterns', JSON.stringify(patterns));
-    
-    console.log("Analisi dei pattern di errore completata:", patterns);
-    return patterns;
+    return Object.keys(tagPairData)
+        .map(key => ({ tags: key.split('|'), count: tagPairData[key].count, questionIds: [...new Set(tagPairData[key].questionIds)] }))
+        .filter(p => p.count >= 2).sort((a, b) => b.count - a.count);
 }

@@ -69,6 +69,19 @@ async function initializeQuiz() {
         const errorDeckIds = await common.getErrorDeck(); // Recupera il Mazzo degli Errori
         questionsToAsk = allQuestions.filter(q => errorDeckIds.includes(q.id));
         if (questionsToAsk.length === 0) { handleFatalError("Il tuo 'Mazzo degli Errori' è vuoto. Complimenti!"); return; }
+    } else if (mode === 'custom') {
+        // Modalità custom per allenare pattern di errore specifici
+        const idsParam = urlParams.get('ids');
+        if (!idsParam) { handleFatalError("Nessun set di domande specificato per l'allenamento personalizzato."); return; }
+        try {
+            const customQuestionIds = JSON.parse(decodeURIComponent(idsParam));
+            questionsToAsk = allQuestions.filter(q => customQuestionIds.includes(q.id));
+            if (questionsToAsk.length === 0) { handleFatalError("Nessuna domanda trovata per questo pattern di errore."); return; }
+            quizTitle = `Allenamento Mirato (${questionsToAsk.length} domande)`;
+        } catch (error) {
+            handleFatalError("Errore nel parsing dei parametri dell'allenamento personalizzato.");
+            return;
+        }
     } else if (categoryName) {
         const submode = urlParams.get('submode');
         quizTitle = `Quiz: ${categoryName}`;

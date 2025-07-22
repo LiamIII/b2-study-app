@@ -1837,7 +1837,7 @@
     "ripasso": "Unit 57 - remember/forget + -ing (past) vs. to do (future)",
     "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
     "spiegazione": "'Forget + -ing' si usa per parlare di un ricordo di un'azione passata. 'Forget + to' si usa per un'azione che si doveva fare.",
-    "tags": ["verb-patterns", "verb-gerund", "verb-infinitive", "verb-forget", "verb-remember"]
+    "tags": ["verb-patterns", "verb-gerund", "verb-infinitive", "forget-doing", "forget-to-do", "remember-doing", "remember-to-do"]
   },
   {
     "id": 185,
@@ -2217,7 +2217,7 @@
     "ripasso": "Unit 65 - Verb + to... (purpose)",
     "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
     "spiegazione": "'Stop + infinito con to' significa fermarsi per fare qualcosa (esprimere uno scopo). 'Stop + -ing' significa smettere di fare qualcosa.",
-    "tags": ["verb-patterns", "verb-infinitive", "verb-gerund", "verb-stop", "clause-of-purpose"]
+    "tags": ["verb-patterns", "verb-infinitive", "verb-gerund", "stop-doing", "stop-to-do", "clause-of-purpose"]
   },
   {
     "id": 223,
@@ -2487,7 +2487,7 @@
     "ripasso": "Unit 57 - Remind",
     "categoria": "Verb Patterns (Gerundi, Infiniti, etc.)",
     "spiegazione": "'Remind' significa 'ricordare a qualcuno di fare qualcosa' (remind somebody to do something). 'Remember' significa 'ricordarsi'.",
-    "tags": ["verb-patterns", "confusing-verbs", "verb-remind", "verb-remember", "verb-object-infinitive"]
+    "tags": ["verb-patterns", "confusing-verbs", "verb-remind", "remember-doing", "remember-to-do", "verb-object-infinitive"]
   },
   {
     "id": 250,

@@ -1,202 +1,188 @@
-/**
- * progress.js - VERSIONE FINALE CON TOOLTIPS
- * 
- * - Gestisce il controllo dell'autenticazione all'avvio della pagina.
- * - Recupera i dati di progresso dell'utente da Firestore e i dati statici dalla cache.
- * - Popola le card delle statistiche (Streak, Domande Masterizzate, Proficiency).
- * - Renderizza il grafico dell'attività di studio.
- * - Inizializza i tooltip di Bootstrap per fornire aiuto contestuale.
- */
-
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { auth } from './firebase-init.js';
-import * as common from './common.js'; // Importa TUTTE le funzioni da common.js
+import * as common from './common.js'; // Importa TUTTO come 'common'
+
+let patternGlossary = {};
 
 document.addEventListener('DOMContentLoaded', () => {
     onAuthStateChanged(auth, async (user) => {
         if (user) {
-            // L'utente è confermato, ora possiamo procedere
-            console.log("Pagina Progressi caricata per l'utente:", user.email);
             await initializeProgressPage();
         } else {
-            // L'utente non è loggato, torna al login
             window.location.href = 'login.html';
         }
     });
 });
 
-/**
- * Funzione principale che orchestra il caricamento dei dati e il rendering della pagina.
- */
 async function initializeProgressPage() {
-    // Recupera tutti i dati necessari in parallelo dove possibile
-    const [profile, history, srsData] = await Promise.all([
-        common.getUserProfile(),
-        common.getStudyHistory(),
-        common.getSrsData()
+    const allQuestions = JSON.parse(localStorage.getItem('allQuestions'));
+    if (!allQuestions) { /* ... */ return; }
+    
+    try {
+        const response = await fetch('data/glossary/patterns.json');
+        if (response.ok) patternGlossary = await response.json();
+    } catch (error) { console.error("Errore caricamento glossario:", error); }
+
+    const [profile, history, srsData, errorDeck] = await Promise.all([
+        common.getUserProfile(), common.getStudyHistory(), common.getSrsData(), common.getErrorDeck()
     ]);
-    const allQuestions = JSON.parse(localStorage.getItem('allQuestions')); // Leggiamo dalla cache
-
-    if (!allQuestions) {
-        document.querySelector('main').innerHTML = '<div class="alert alert-warning">Nessun dato di base trovato. Inizia una sessione dalla dashboard.</div>';
-        return;
-    }
-
-    // Popola i riquadri delle statistiche
+    
+    // Il calcolo e il rendering dei pattern ora avvengono qui
+    const patterns = common.analyzeErrorPatterns(allQuestions, errorDeck);
+    
     updateStatCards(profile, srsData, allQuestions);
-
-    // Crea i grafici
     renderActivityChart(history);
-renderErrorPatterns();
-
-    // Attiva i tooltip per le icone di aiuto
+    renderErrorPatterns(patterns);
+    setupModalEventListeners();
     initializeTooltips();
 }
 
+// in progress.js
+
 /**
- * NUOVA FUNZIONE
- * Legge i pattern di errore dal localStorage e li visualizza nella UI.
+ * Renderizza i pattern di errore in modo interattivo.
+ * (Versione con la logica HTML corretta)
  */
-function renderErrorPatterns() {
+function renderErrorPatterns(patterns) {
     const container = document.getElementById('error-patterns-container');
-    const patternsJSON = localStorage.getItem('errorPatterns');
-    const patterns = patternsJSON ? JSON.parse(patternsJSON) : [];
+    if (!container) return;
+
+    const errorDeckCache = JSON.parse(localStorage.getItem('errorDeck_cache')) || [];
 
     if (patterns.length === 0) {
-        container.innerHTML = '<p class="text-muted">Nessun pattern di errore sistematico trovato. Continua a studiare per raccogliere più dati!</p>';
+        if (errorDeckCache.length > 0) {
+            container.innerHTML = `<p class="text-muted">Hai ${errorDeckCache.length} errori registrati, ma non abbiamo trovato confusioni sistematiche. Continua a studiare per raccogliere più dati!</p>`;
+        } else {
+            container.innerHTML = '<p class="text-muted">Nessun errore registrato, nessun pattern da analizzare. Ottimo lavoro!</p>';
+        }
         return;
     }
 
-    let html = '<p>Abbiamo notato alcune possibili confusioni nel tuo modo di rispondere. Potrebbe essere utile ripassare le differenze tra:</p><ul class="list-group list-group-flush">';
+    let htmlContent = ''; // Usiamo un nome di variabile diverso per chiarezza
     
-    // Mostriamo i primi 5 pattern più rilevanti
     patterns.slice(0, 5).forEach(pattern => {
-        const tag1 = pattern.tags[0].replace(/-/g, ' '); // Rende i tag più leggibili
-        const tag2 = pattern.tags[1].replace(/-/g, ' ');
+        const patternKey = [...pattern.tags].sort().join('|');
+        const tag1 = common.tagDictionary[pattern.tags[0]] || pattern.tags[0].replace(/-/g, ' ');
+        const tag2 = common.tagDictionary[pattern.tags[1]] || pattern.tags[1].replace(/-/g, ' ');
+        const quizUrl = `quiz.html?mode=custom&ids=${encodeURIComponent(JSON.stringify(pattern.questionIds))}`;
 
-        const message = `<strong>${tag1}</strong> e <strong>${tag2}</strong> <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill float-end mt-1">${pattern.count} errori correlati</span>`;
-
-        html += `<li class="list-group-item">${message}</li>`;
+        // *** QUESTA È LA LOGICA HTML CHE MANCAVA ***
+        htmlContent += `
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <h6 class="mb-1">
+                        <i class="bi bi-info-circle-fill text-primary me-2" role="button" data-bs-toggle="modal" 
+                           data-bs-target="#pattern-details-modal" data-pattern-key="${patternKey}"></i>
+                        <strong>${tag1}</strong> e <strong>${tag2}</strong>
+                    </h6>
+                    <small class="text-muted">${pattern.count} errori correlati</small>
+                </div>
+                <a href="${quizUrl}" class="btn btn-primary btn-sm">
+                    Allena <span class="badge bg-light text-dark">${pattern.questionIds.length}</span>
+                </a>
+            </div>
+        `;
     });
 
-    html += '</ul>';
-    container.innerHTML = html;
+    container.innerHTML = `
+        <p>Abbiamo notato alcune possibili confusioni. Clicca su un pattern per un quiz mirato o sull'icona <i class="bi bi-info-circle"></i> per dettagli:</p>
+        <div class="list-group">
+            ${htmlContent}
+        </div>
+    `;
 }
 
 /**
- * Inizializza tutti i tooltip di Bootstrap presenti nella pagina.
+ * Inizializza tutti i tooltip di Bootstrap.
  */
 function initializeTooltips() {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    [...tooltipTriggerList].forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    [...document.querySelectorAll('[data-bs-toggle="tooltip"]')].forEach(el => new bootstrap.Tooltip(el));
 }
 
 /**
  * Popola le card con le statistiche chiave.
- * @param {object} profile - L'oggetto profilo utente con la streak.
- * @param {object} srsData - L'oggetto con i dati di Spaced Repetition.
- * @param {Array} allQuestions - L'array di tutte le domande.
  */
-
-/**
- * Popola le card con le statistiche chiave, inclusa la nuova card SRS.
- * @param {object} profile - L'oggetto profilo utente con la streak.
- * @param {object} srsData - L'oggetto con i dati di Spaced Repetition.
- * @param {Array} allQuestions - L'array di tutte le domande.
- */
-async function updateStatCards(profile, srsData, allQuestions) {
-    // 1. Streak
+function updateStatCards(profile, srsData, allQuestions) {
     document.getElementById('streak-count').textContent = profile.streak || 0;
-
-    // 2. Suddivisione Livelli SRS
-    let srsLowCount = 0;
-    let srsMidCount = 0;
-    let srsHighCount = 0;
-
     const intervals = [1, 3, 7, 15, 30, 60];
     const maxSrsLevel = intervals.length - 1;
+    let srsLowCount = 0, srsMidCount = 0, srsHighCount = 0;
 
     Object.values(srsData).forEach(item => {
-        if (item.level <= 1) {
-            srsLowCount++;
-        } else if (item.level < maxSrsLevel) {
-            srsMidCount++;
-        } else {
-            srsHighCount++;
-        }
+        if (item.level <= 1) srsLowCount++;
+        else if (item.level < maxSrsLevel) srsMidCount++;
+        else srsHighCount++;
     });
 
     document.getElementById('srs-level-low').textContent = srsLowCount;
     document.getElementById('srs-level-mid').textContent = srsMidCount;
     document.getElementById('srs-level-high').textContent = srsHighCount;
-    
-    // 3. Domande Masterizzate (ora è lo stesso valore di srsHighCount)
     document.getElementById('mastered-count').textContent = srsHighCount;
 
-    // 4. Proficiency Generale (basata sui dati iniziali del file .csv)
     const totalCorrect = allQuestions.filter(q => q.isCorrect).length;
     const proficiency = allQuestions.length > 0 ? (totalCorrect / allQuestions.length) * 100 : 0;
     document.getElementById('proficiency-percentage').textContent = `${proficiency.toFixed(1)}%`;
 }
 
 /**
- * Renderizza il grafico a barre dell'attività di studio degli ultimi 14 giorni.
- * @param {object} history - L'oggetto con lo storico delle sessioni di studio.
+ * Renderizza il grafico a barre dell'attività di studio.
  */
 function renderActivityChart(history) {
-    const ctx = document.getElementById('activity-chart').getContext('2d');
+    const ctx = document.getElementById('activity-chart')?.getContext('2d');
     if (!ctx) return;
     
-    // Prepariamo i dati per gli ultimi 14 giorni
-    const labels = [];
-    const data = [];
+    const labels = [], data = [];
     for (let i = 13; i >= 0; i--) {
         const date = new Date();
         date.setDate(date.getDate() - i);
         const dateStr = date.toISOString().split('T')[0];
-        
         labels.push(date.toLocaleDateString('it-IT', { day: 'numeric', month: 'short' }));
         data.push(history[dateStr] ? history[dateStr].studied : 0);
     }
 
-    // Distrugge un eventuale grafico precedente per evitare conflitti
-    if (window.activityChartInstance) {
-        window.activityChartInstance.destroy();
-    }
+    if (window.activityChartInstance) window.activityChartInstance.destroy();
 
     window.activityChartInstance = new Chart(ctx, {
         type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: 'Domande Studiate',
-                data: data,
-                backgroundColor: 'rgba(0, 123, 255, 0.5)',
-                borderColor: 'rgba(0, 123, 255, 1)',
-                borderWidth: 1,
-                borderRadius: 4
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        stepSize: 1 // Mostra solo numeri interi sull'asse Y
-                    }
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                },
-                tooltip: {
-                    callbacks: {
-                        title: () => '', // Nasconde il titolo del tooltip
-                        label: (context) => `  Studiate: ${context.raw}`
-                    }
-                }
-            }
+        data: { labels, datasets: [{ label: 'Domande Studiate', data, backgroundColor: 'rgba(0, 123, 255, 0.5)', borderColor: 'rgba(0, 123, 255, 1)', borderWidth: 1, borderRadius: 4 }] },
+        options: { scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }, plugins: { legend: { display: false }, tooltip: { callbacks: { title: () => '', label: c => `  Studiate: ${c.raw}` } } } }
+    });
+}
+
+
+
+/**
+ * Imposta l'event listener per il modal dei dettagli del pattern.
+ */
+function setupModalEventListeners() {
+    const modalElement = document.getElementById('pattern-details-modal');
+    if (!modalElement) return;
+    modalElement.addEventListener('show.bs.modal', (event) => {
+        const triggerElement = event.relatedTarget;
+        const patternKey = triggerElement.getAttribute('data-pattern-key');
+        const patternData = patternGlossary[patternKey];
+        const modalTitle = modalElement.querySelector('.modal-title');
+        const modalBody = modalElement.querySelector('.modal-body');
+
+        if (!patternData) {
+            modalTitle.textContent = 'Errore';
+            modalBody.innerHTML = `<p class="text-danger">Dettagli non trovati nel glossario per: <strong>${patternKey}</strong>. Assicurati che la chiave nel JSON sia ordinata alfabeticamente.</p>`;
+            return;
         }
+
+        modalTitle.textContent = patternData.title;
+        let referencesHTML = '<hr><h6 class="mt-3">Approfondisci su:</h6><ul class="list-unstyled small">';
+        let hasReferences = false;
+        if (patternData.references?.egu) { referencesHTML += `<li><strong>English Grammar in Use:</strong> Units ${patternData.references.egu}</li>`; hasReferences = true; }
+        if (patternData.references?.ess) { referencesHTML += `<li><strong>Essential Grammar in Use:</strong> Units ${patternData.references.ess}</li>`; hasReferences = true; }
+        if (patternData.references?.evu) { referencesHTML += `<li><strong>English Vocabulary in Use:</strong> Units ${patternData.references.evu}</li>`; hasReferences = true; }
+        referencesHTML += '</ul>';
+
+        modalBody.innerHTML = `
+            <p class="lead fs-6">${patternData.explanation}</p>
+            <h6>Consigli Pratici:</h6>
+            <ul class="list-group list-group-flush mb-3">${patternData.tips.map(tip => `<li class="list-group-item">${tip}</li>`).join('')}</ul>
+            ${hasReferences ? referencesHTML : ''}
+        `;
     });
 }
