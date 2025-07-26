@@ -375,33 +375,93 @@ function renderStrategicMap(categoryStats) {
     if (!ctx) return;
     if (window.chartInstance) window.chartInstance.destroy();
 
-    const successThreshold = 65;
+    // Definisci soglie e valori per il grafico
+    const successThreshold = 65; // Soglia per definire "alta" o "bassa" bravura
     const frequencies = categoryStats.map(cat => cat.frequency);
-    const frequencyThreshold = frequencies.length > 0 ? frequencies.reduce((a, b) => a + b, 0) / frequencies.length : 10;
-    
-    const dataForChart = categoryStats.map(cat => ({
-        x: cat.successRate, y: cat.frequency,
-        r: Math.max(cat.priorityScore / (frequencyThreshold * 2.5), 5),
-        label: cat.name, errorRate: cat.errorRate
-    }));
+    const frequencyThreshold = frequencies.length > 0 ? frequencies.reduce((a, b) => a + b, 0) / frequencies.length : 10; // Soglia media di frequenza
 
+    // Trova il numero massimo di domande per normalizzare la dimensione del raggio
+    const maxQuestionsInCategory = Math.max(...categoryStats.map(cat => cat.total), 0);
+    const MIN_RADIUS = 5;
+    const MAX_RADIUS = 25;
+
+    // Prepara i dati per il grafico
+    const dataForChart = categoryStats.map(cat => {
+        // Calcola il raggio in base al numero totale di domande
+        let radius = MIN_RADIUS;
+        if (maxQuestionsInCategory > 0) {
+            const normalizedSize = cat.total / maxQuestionsInCategory;
+            radius = MIN_RADIUS + (normalizedSize * (MAX_RADIUS - MIN_RADIUS));
+        }
+
+        return {
+            x: cat.successRate,      // Asse X: Bravura
+            y: cat.frequency,        // Asse Y: Frequenza
+            r: radius,               // Raggio: Numero totale di domande
+            label: cat.name,         // Etichetta per il tooltip
+            errorRate: cat.errorRate, // Dati extra per il tooltip
+            totalQuestions: cat.total // Dati extra per il tooltip
+        };
+    });
+
+    // Crea il grafico
     window.chartInstance = new Chart(ctx, {
         type: 'bubble',
-        data: { datasets: [{ data: dataForChart, backgroundColor: c => getPerformanceColor(c.raw.errorRate, 0.7), borderColor: c => getPerformanceColor(c.raw.errorRate, 1), borderWidth: 1.5 }] },
+        data: {
+            datasets: [{
+                data: dataForChart,
+                backgroundColor: c => getPerformanceColor(c.raw.errorRate, 0.7),
+                borderColor: c => getPerformanceColor(c.raw.errorRate, 1),
+                borderWidth: 1.5
+            }]
+        },
         options: {
-            responsive: true, maintainAspectRatio: false,
-            plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.raw.label}: ${c.raw.errorRate.toFixed(1)}% errore` } },
-                annotation: { annotations: {
-                    boxLowSuccessLowFreq: { type: 'box', xMin: 0, xMax: successThreshold, yMin: 0, yMax: frequencyThreshold, backgroundColor: 'rgba(255, 193, 7, 0.05)', borderColor: 'rgba(255, 193, 7, 0.1)' },
-                    boxLowSuccessHighFreq: { type: 'box', xMin: 0, xMax: successThreshold, yMin: frequencyThreshold, backgroundColor: 'rgba(220, 53, 69, 0.05)', borderColor: 'rgba(220, 53, 69, 0.1)' },
-                    boxHighSuccessLowFreq: { type: 'box', xMin: successThreshold, xMax: 100, yMin: 0, yMax: frequencyThreshold, backgroundColor: 'rgba(108, 117, 125, 0.05)', borderColor: 'rgba(108, 117, 125, 0.1)' },
-                    boxHighSuccessHighFreq: { type: 'box', xMin: successThreshold, xMax: 100, yMin: frequencyThreshold, backgroundColor: 'rgba(25, 135, 84, 0.05)', borderColor: 'rgba(25, 135, 84, 0.1)' },
-                    lineSuccessThreshold: { type: 'line', xMin: successThreshold, xMax: successThreshold, borderColor: 'rgba(0,0,0,0.2)', borderWidth: 1, borderDash: [6, 6] },
-                    lineFrequencyThreshold: { type: 'line', yMin: frequencyThreshold, yMax: frequencyThreshold, borderColor: 'rgba(0,0,0,0.2)', borderWidth: 1, borderDash: [6, 6] }
-                }}
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            const raw = context.raw;
+                            return [
+                                `${raw.label}`,
+                                `Bravura: ${raw.x.toFixed(1)}%`,
+                                `Frequenza: ${raw.y}`,
+                                `Tasso Errore: ${raw.errorRate.toFixed(1)}%`,
+                                `N. Domande: ${raw.totalQuestions}`
+                            ];
+                        }
+                    }
+                },
+                annotation: {
+                    annotations: {
+                        boxLowSuccessLowFreq: { type: 'box', xMin: 0, xMax: successThreshold, yMin: 0, yMax: frequencyThreshold, backgroundColor: 'rgba(255, 193, 7, 0.05)', borderColor: 'rgba(255, 193, 7, 0.1)' },
+                        boxLowSuccessHighFreq: { type: 'box', xMin: 0, xMax: successThreshold, yMin: frequencyThreshold, backgroundColor: 'rgba(220, 53, 69, 0.05)', borderColor: 'rgba(220, 53, 69, 0.1)' },
+                        boxHighSuccessLowFreq: { type: 'box', xMin: successThreshold, xMax: 100, yMin: 0, yMax: frequencyThreshold, backgroundColor: 'rgba(108, 117, 125, 0.05)', borderColor: 'rgba(108, 117, 125, 0.1)' },
+                        boxHighSuccessHighFreq: { type: 'box', xMin: successThreshold, xMax: 100, yMin: frequencyThreshold, backgroundColor: 'rgba(25, 135, 84, 0.05)', borderColor: 'rgba(25, 135, 84, 0.1)' },
+                        lineSuccessThreshold: { type: 'line', xMin: successThreshold, xMax: successThreshold, borderColor: 'rgba(0,0,0,0.2)', borderWidth: 1, borderDash: [6, 6] },
+                        lineFrequencyThreshold: { type: 'line', yMin: frequencyThreshold, yMax: frequencyThreshold, borderColor: 'rgba(0,0,0,0.2)', borderWidth: 1, borderDash: [6, 6] }
+                    }
+                }
             },
-            scales: { x: { title: { display: true, text: 'Bravura (% Successo)' }, min: 0, max: 100 }, y: { title: { display: true, text: 'Frequenza (Numero di Domande)' } } },
-            onClick: (e, el) => { if (el.length > 0) showDetailsModal(dataForChart[el[0].index].label); }
+            scales: {
+                x: {
+                    title: { display: true, text: 'Bravura (% Successo)' },
+                    min: 0,
+                    max: 100
+                },
+                y: {
+                    title: { display: true, text: 'Frequenza (Numero di Domande)' }
+                }
+            },
+            onClick: (e, elements) => {
+                if (elements.length > 0) {
+                    const clickedIndex = elements[0].index;
+                    const categoryLabel = dataForChart[clickedIndex].label;
+                    showDetailsModal(categoryLabel);
+                }
+            }
         }
     });
 }
