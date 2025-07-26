@@ -269,20 +269,27 @@ async function handleAnswer(selectedButton) {
 async function handleNextQuestion() {
     if (isWarmupPhase && currentQuestionIndex === warmupQuestions.length - 1) isWarmupPhase = false;
     currentQuestionIndex++;
-    if (currentQuestionIndex < currentQuizQuestions.length) {
+     if (currentQuestionIndex < currentQuizQuestions.length) {
         renderQuestion();
     } else {
         const mode = new URLSearchParams(window.location.search).get('mode');
+        // Registra sempre la sessione di studio, tranne per il test di posizionamento iniziale.
+        if (mode !== 'placement') {
+            await common.recordStudySession(currentQuizQuestions.length);
+        }
+
         if (mode === 'exam') {
             const totalTime = stopTimer();
             const examResults = { questions: mainQuizQuestions, userAnswers: userExamAnswers, timeTaken: totalTime };
             localStorage.setItem('examReportData', JSON.stringify(examResults));
             window.location.href = 'report.html';
         } else if (mode === 'placement' || mode === 'cooldown') {
+            // Per placement e cooldown, torna semplicemente alla dashboard.
+            // La sessione di cooldown è già stata registrata.
             alert('Sessione completata! Stai tornando alla dashboard.');
             window.location.href = 'index.html';
         } else {
-            await common.recordStudySession(currentQuizQuestions.length);
+            // Per tutte le altre modalità (srs, errors, custom, etc.) vai al riepilogo sessione.
             const sessionData = {
                 questionsStudied: currentQuizQuestions.length,
                 errorsMadeIds: JSON.parse(sessionStorage.getItem('sessionErrors') || '[]')
