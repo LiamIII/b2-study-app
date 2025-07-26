@@ -12,6 +12,47 @@
       "ess": "Unit 91"
     }
   },
+  "adjective-order|adjectives-adverbs": {
+    "title": "Confusione: Ordine degli Aggettivi e Uso di Aggettivi/Avverbi",
+    "explanation": "L'inglese segue un ordine abbastanza rigido per gli aggettivi (es. opinione, dimensione, età, colore). Un'altra fonte di confusione è l'uso di un aggettivo al posto di un avverbio (o viceversa) per modificare un verbo o un altro aggettivo.",
+    "tips": [
+      "Ordine aggettivi (OSASCOMP): Opinion, Size, Age, Shape, Colour, Origin, Material, Purpose.",
+      "Esempio ordine: A beautiful (Opinion) small (Size) old (Age) Italian (Origin) car.",
+      "Usa un aggettivo per descrivere un nome: 'She is a careful driver'.",
+      "Usa un avverbio per descrivere un verbo: 'She drives carefully'.",
+      "Ricorda che alcuni verbi (look, feel, seem, taste) sono seguiti da aggettivi: 'This tastes good' (non 'well')."
+    ],
+    "references": {
+      "egu": "Units 98, 100",
+      "ess": "Units 86, 87"
+    }
+  },
+  "adjective-order|size-adjective": {
+    "title": "Confusione: Ordine degli Aggettivi (Focus su Dimensione)",
+    "explanation": "L'inglese segue un ordine specifico per gli aggettivi prima di un nome. Gli aggettivi di opinione (beautiful, nice) vengono prima, seguiti da quelli di dimensione (big, small) e poi età, forma, colore, etc. (OSASCOMP).",
+    "tips": [
+      "Ricorda l'ordine comune: Opinion -> Size -> Age -> Shape -> Colour -> Origin -> Material -> Purpose.",
+      "Esempio: 'A lovely (Opinion) small (Size) round (Shape) table.'",
+      "L'aggettivo di dimensione ('size') viene quasi sempre dopo l'opinione ma prima di altre caratteristiche fisiche."
+    ],
+    "references": {
+      "egu": "Unit 98",
+      "ess": "Unit 86"
+    }
+  },
+  "adjectives-adverbs|size-adjective": {
+    "title": "Confusione: Ordine degli Aggettivi (Focus su Dimensione)",
+    "explanation": "L'inglese segue un ordine specifico per gli aggettivi prima di un nome. Gli aggettivi di opinione (beautiful, nice) vengono prima, seguiti da quelli di dimensione (big, small) e poi età, forma, colore, etc. (OSASCOMP).",
+    "tips": [
+      "Ricorda l'ordine comune: Opinion -> Size -> Age -> Shape -> Colour -> Origin -> Material -> Purpose.",
+      "Esempio: 'A lovely (Opinion) small (Size) round (Shape) table.'",
+      "L'aggettivo di dimensione ('size') viene quasi sempre dopo l'opinione ma prima di altre caratteristiche fisiche."
+    ],
+    "references": {
+      "egu": "Unit 98",
+      "ess": "Unit 86"
+    }
+  },
   "although|despite": {
     "title": "Confusione: Although vs. Despite/In Spite Of",
     "explanation": "Entrambi introducono un contrasto, ma la loro struttura grammaticale è diversa. 'Although' è seguito da una frase completa (soggetto + verbo), mentre 'despite' e 'in spite of' sono seguiti da un sostantivo o un verbo in -ing.",
@@ -543,6 +584,19 @@
     ],
     "references": {
       "egu": "Unit 40"
+    }
+  },
+  "present-perfect|tenses": {
+    "title": "Confusione: Present Perfect vs. Altri Tempi Verbali",
+    "explanation": "Il Present Perfect è spesso confuso non solo con il Past Simple, ma anche con il Present Simple o il Past Perfect. La chiave è la sua connessione con il presente, che lo distingue dagli altri tempi.",
+    "tips": [
+      "Present Perfect vs Past Simple: 'I have lost my keys' (rilevante ora) vs 'I lost my keys yesterday' (azione finita in un tempo finito).",
+      "Present Perfect vs Present Simple: 'I have lived here for 5 years' (durata fino ad ora) vs 'I live here' (stato attuale, senza enfasi sulla durata).",
+      "Present Perfect vs Past Perfect: 'When I arrived, he had already left' (il Past Perfect è accaduto prima di un altro evento passato) vs 'He has already left' (è accaduto prima di ora)."
+    ],
+    "references": {
+      "egu": "Units 7, 12, 15",
+      "ess": "Units 11-15"
     }
   }
 }

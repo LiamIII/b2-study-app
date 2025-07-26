@@ -107,6 +107,7 @@ function renderDetailedAnalysis(questions, userAnswers) {
     questions.forEach((q, index) => {
         const userAnswer = userAnswers[q.id];
         const isCorrect = userAnswer === q.soluzione;
+        const glossaryLink = q.pattern ? `<a href="glossary.html#${q.pattern.split('|').sort().join('|')}" target="_blank" class="btn btn-sm btn-outline-secondary mt-2">Approfondisci l'argomento</a>` : '';
 
         const accordionItem = `
             <div class="accordion-item">
@@ -122,6 +123,7 @@ function renderDetailedAnalysis(questions, userAnswers) {
                         <hr>
                         <p><strong>Spiegazione:</strong> <em>${q.spiegazione}</em></p>
                         <small class="text-muted">Riferimento di studio: ${q.ripasso}</small>
+                        <div class="mt-2">${glossaryLink}</div>
                     </div>
                 </div>
             </div>
