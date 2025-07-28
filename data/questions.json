@@ -273,11 +273,11 @@
     "id": 28,
     "domanda": "Choose the synonym:",
     "opzioni": [ "Pelvis", "Lake", "Basket", "Bowl" ],
-    "soluzione": "Lake",
-    "ripasso": "Vocabulary: Synonyms (This is an error in the original test; no synonym is correct. 'Lake' is likely the intended but incorrect answer)",
+    "soluzione": "Bowl",
+    "ripasso": "Vocabulary: Synonyms",
     "categoria": "Vocabulary",
-    "spiegazione": "La domanda è incompleta e errata, poiché manca la parola di cui trovare il sinonimo. Non c'è una relazione di sinonimia chiara tra le opzioni.",
-    "tags": ["vocabulary", "synonyms", "error-in-question"]
+    "spiegazione": "La domanda è incompleta poiché manca la parola di cui trovare il sinonimo. Tuttavia, se si tratta di trovare sinonimi tra le opzioni, 'Bowl' e 'Basket' potrebbero essere considerati simili come contenitori.",
+    "tags": ["vocabulary", "synonyms", "incomplete-question"]
   },
   {
     "id": 29,
@@ -323,11 +323,11 @@
     "id": 33,
     "domanda": "Harry won't be there and ...",
     "opzioni": [ "Nor will Dan", "Nor won't Dan", "Nor Dan won't", "Nor Dan will" ],
-    "soluzione": "Nor Dan won't",
+    "soluzione": "Nor will Dan",
     "ripasso": "Unit 42 - Neither/Nor",
     "categoria": "Agreement & Disagreement (So/Neither)",
-    "spiegazione": "ERRORE NEL TEST: La soluzione corretta è 'Nor will Dan'. Per essere d'accordo con una frase negativa, si usa 'Nor/Neither + ausiliare affermativo + soggetto'. La soluzione fornita nel test è grammaticalmente errata a causa del doppio negativo.",
-    "tags": ["agreement-disagreement", "neither-nor", "inversion", "auxiliary-verb", "double-negative", "error-in-test"]
+    "spiegazione": "Per essere d'accordo con una frase negativa, si usa 'Nor/Neither + verbo ausiliare/modale affermativo + soggetto'. Poiché la prima frase usa 'won't' (will not), la risposta corretta usa 'will'.",
+    "tags": ["agreement-disagreement", "neither-nor", "inversion", "auxiliary-verb"]
   },
   {
     "id": 34,
@@ -493,11 +493,11 @@
     "id": 50,
     "domanda": "He put down his beach towel and ... down on the sand.",
     "opzioni": [ "Lain", "Laid", "Lay", "Lied" ],
-    "soluzione": "Laid",
+    "soluzione": "Lay",
     "ripasso": "Vocabulary: Lie vs. Lay",
     "categoria": "Vocabulary",
-    "spiegazione": "ERRORE NEL TEST: Il verbo corretto è 'lay', il passato di 'lie' (giacere, sdraiarsi). 'Lay - Laid - Laid' significa 'posare'. Quindi, 'he lay down'. La soluzione fornita, 'laid', è il passato di 'lay', che è un verbo transitivo (es. 'he laid the towel down').",
-    "tags": ["vocabulary", "confusing-verbs", "verb-lie", "verb-lay", "irregular-verbs", "error-in-test"]
+    "spiegazione": "Il verbo corretto è 'lay', il passato di 'lie' (giacere, sdraiarsi). 'Lie - Lay - Lain' significa sdraiarsi. 'Lay - Laid - Laid' significa posare qualcosa.",
+    "tags": ["vocabulary", "confusing-verbs", "verb-lie", "verb-lay", "irregular-verbs"]
   },
   {
     "id": 51,
@@ -682,12 +682,12 @@
   {
     "id": 69,
     "domanda": "I won't have time to do it today, Mr Brown said Mr West.",
-    "opzioni": [ "Mr West told Mr Brown he won't have time to do it that day", "Mr West told Mr Brown he woulden't have time to do it that day", "Mr West told Mr Brown he wouldn't had time to do it today", "Mr West told Mr Brown he wouldn't have had time to do it that day" ],
-    "soluzione": "Mr West told Mr Brown he wouldn't have had time to do it that day",
+    "opzioni": [ "Mr West told Mr Brown he won't have time to do it that day", "Mr West told Mr Brown he woulden't have time to do it that day", "Mr West told Mr Brown he wouldn't had time to do it today", "Mr West told Mr Brown he wouldn't have time to do it that day" ],
+    "soluzione": "Mr West told Mr Brown he wouldn't have time to do it that day",
     "ripasso": "Unit 48 - Reported speech (tense changes)",
     "categoria": "Reported Speech",
-    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, 'will' diventa 'would'. 'Today' diventa 'that day'. La soluzione corretta dovrebbe essere: 'Mr West told Mr Brown he wouldn't have time to do it that day'.",
-    "tags": ["reported-speech", "modal-shift-will-would", "time-adverb-change", "tense-backshift", "error-in-test"]
+    "spiegazione": "Nel discorso indiretto, 'will' diventa 'would' e 'today' diventa 'that day'. La forma corretta è 'wouldn't have time'.",
+    "tags": ["reported-speech", "modal-shift-will-would", "time-adverb-change", "tense-backshift"]
   },
   {
     "id": 70,
@@ -726,37 +726,37 @@
     "soluzione": "You will be told where to go",
     "ripasso": "Unit 43 - Passive",
     "categoria": "Passive Voice",
-    "spiegazione": "Questa è la forma passiva corretta. La frase attiva sarebbe '(Someone) will tell you where to go'. Nella forma passiva, 'you' diventa il soggetto e il verbo diventa 'will be told'.",
+    "spiegazione": "Questa è la forma passiva di '(Someone) will tell you...'. Il soggetto della frase passiva è 'You', e il verbo diventa 'will be told'.",
     "tags": ["passive-voice", "future-passive", "modal-will", "active-voice"]
   },
   {
     "id": 74,
     "domanda": "I ... ten years.",
-    "opzioni": [ "Have been knowing him for", "Have known him since", "Have know him for", "Know him for" ],
-    "soluzione": "Have been knowing him for",
-    "ripasso": "Unit 10 - Present perfect continuous",
+    "opzioni": [ "Have been knowing him for", "Have known him since", "Have know him for", "Have known him for" ],
+    "soluzione": "Have known him for",
+    "ripasso": "Unit 8 - Present Perfect with for/since",
     "categoria": "Tenses (inclusi for/since, time clauses)",
-    "spiegazione": "ERRORE NEL TEST: Il verbo 'know' è un verbo di stato e di norma non si usa nella forma continua. La risposta corretta è 'I have known him for ten years'.",
-    "tags": ["tenses", "present-perfect", "state-verb", "present-perfect-continuous", "time-marker-for", "error-in-test"]
+    "spiegazione": "Il verbo 'know' è un verbo di stato e non si usa nella forma continua. Con 'for' si usa il Present Perfect: 'I have known him for ten years'.",
+    "tags": ["tenses", "present-perfect", "state-verb", "time-marker-for", "present-perfect-continuous"]
   },
   {
     "id": 75,
     "domanda": "I'm still not ... alone.",
     "opzioni": [ "Used to living", "Get used to living", "Use to live", "Used to live" ],
-    "soluzione": "Used to live",
+    "soluzione": "Used to living",
     "ripasso": "Unit 61 - (be/get) used to something",
     "categoria": "used to vs be/get used to",
-    "spiegazione": "ERRORE NEL TEST: La struttura corretta per 'essere abituati a' è 'be used to + -ing'. La risposta corretta dovrebbe essere 'used to living'. La soluzione fornita è grammaticalmente errata.",
-    "tags": ["used-to-vs-be-get-used-to", "be-used-to", "gerund", "used-to", "infinitive", "error-in-test"]
+    "spiegazione": "La struttura 'be used to' (essere abituati a) è seguita dalla forma in -ing. La frase corretta è 'I'm still not used to living alone'.",
+    "tags": ["used-to-vs-be-get-used-to", "be-used-to", "gerund", "used-to", "infinitive"]
   },
   {
     "id": 76,
     "domanda": "I ... so quickly to catch the bus as in the end it turned up ten minutes late.",
-    "opzioni": [ "Hadn't to run", "Needn't have run", "Mustn't have run", "Didn't need to run" ],
+    "opzioni": [ "Hadn't to run", "Didn't need to run", "Mustn't have run", "Needn't have run" ],
     "soluzione": "Didn't need to run",
     "ripasso": "Unit 34 - Needn't have (done) vs. didn't need to (do)",
     "categoria": "Modals & Related Structures",
-    "spiegazione": "'Didn't need to run' significa che non era necessario correre e (probabilmente) non l'ho fatto. 'Needn't have run' significa che ho corso, ma dopo ho scoperto che non era necessario.",
+    "spiegazione": "'Didn't need to run' significa che non era necessario correre. 'Needn't have run' implica che la persona ha corso, ma poi ha scoperto che non era necessario.",
     "tags": ["modals", "modals-of-necessity", "didnt-need-to-do", "neednt-have-done"]
   },
   {
@@ -883,11 +883,11 @@
     "id": 89,
     "domanda": "He read the manual ... exactly what to do.",
     "opzioni": [ "So that to know", "So that he know", "So he know", "So to know" ],
-    "soluzione": "So that he know",
+    "soluzione": "So that he would know",
     "ripasso": "Unit 116 - In order to / so that",
     "categoria": "Conjunctions & Connectors",
-    "spiegazione": "ERRORE NEL TEST: La congiunzione 'so that' (in modo che, affinché) è usata per esprimere uno scopo ed è seguita da una frase con un modale (es. 'can', 'could', 'would'). La risposta più plausibile sarebbe 'so that he would know' o 'so that he knew'. Tra le opzioni, nessuna è perfetta.",
-    "tags": ["conjunctions", "clause-of-purpose", "so-that", "in-order-to", "error-in-test"]
+    "spiegazione": "La congiunzione 'so that' (in modo che, affinché) esprime uno scopo ed è seguita da una frase con un modale. La forma corretta sarebbe 'so that he would know' o 'so that he could know'.",
+    "tags": ["conjunctions", "clause-of-purpose", "so-that", "in-order-to", "modal-would"]
   },
   {
     "id": 90,
@@ -992,12 +992,12 @@
   {
     "id": 100,
     "domanda": "Wendy ...",
-    "opzioni": [ "Has just made a tooth extracted", "Has just had a tooth entracte", "Has just got a tooth extract", "Has just had extracted a tooth" ],
-    "soluzione": "Has just got a tooth extract",
+    "opzioni": [ "Has just made a tooth extracted", "Has just had a tooth entracte", "Has just got a tooth extract", "Has just had a tooth extracted" ],
+    "soluzione": "Has just had a tooth extracted",
     "ripasso": "Unit 46 - Have/get something done (Causative)",
     "categoria": "Causative Structures (have/get/make/let)",
-    "spiegazione": "ERRORE NEL TEST: La struttura causativa è 'get something done' (con il participio passato). La risposta corretta sarebbe 'has just got a tooth extracted'. La soluzione fornita usa la forma base 'extract' invece del participio.",
-    "tags": ["causative-structures", "causative-get-something-done", "causative-have-something-done", "past-participle", "error-in-test"]
+    "spiegazione": "La struttura causativa corretta è 'have/get something done' con il participio passato. 'Has just had a tooth extracted' significa che si è appena fatta estrarre un dente.",
+    "tags": ["causative-structures", "causative-have-something-done", "causative-get-something-done", "past-participle"]
   },
   {
     "id": 101,
@@ -1253,11 +1253,11 @@
     "id": 126,
     "domanda": "Mike must work harder or he won't pass the exam said the teacher.",
     "opzioni": [ "The teacher said that Mike would have to work harder or he wouldn't pass the exam", "The teacher said that Mike would have to work harder or he wouldn't have passed the exam", "The teacher said that Mike would have to work harder or he won't pass the exam", "The teacher said that Mike must have worked harder or he wouldn't pass the exam" ],
-    "soluzione": "The teacher said that Mike would have to work harder or he wouldn't have passed the exam",
+    "soluzione": "The teacher said that Mike would have to work harder or he wouldn't pass the exam",
     "ripasso": "Unit 48 - Reported speech (reporting modals)",
     "categoria": "Reported Speech",
-    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, 'must' per obbligo può diventare 'had to'. 'Will' diventa 'would'. La risposta corretta sarebbe '...Mike had to work harder or he wouldn't pass the exam'. 'Would have to' è una delle opzioni, ma la seconda parte della soluzione ('wouldn't have passed') è sbagliata.",
-    "tags": ["reported-speech", "modal-shift", "modal-must", "modal-will-would", "error-in-test"]
+    "spiegazione": "Nel discorso indiretto, 'must' per obbligo diventa 'had to' o 'would have to', e 'will' diventa 'would'. La forma corretta è 'would have to work harder or he wouldn't pass'.",
+    "tags": ["reported-speech", "modal-shift", "modal-must", "modal-will-would"]
   },
   {
     "id": 127,
@@ -1493,11 +1493,11 @@
     "id": 150,
     "domanda": "People ... personal computers at home.",
     "opzioni": [ "Didn't use to have", "Weren't used to have", "Weren't used having", "Didn't used toh ave" ],
-    "soluzione": "Weren't used to have",
-    "ripasso": "Unit 61 - (be/get) used to something",
+    "soluzione": "Didn't use to have",
+    "ripasso": "Unit 36 - used to (do)",
     "categoria": "used to vs be/get used to",
-    "spiegazione": "ERRORE NEL TEST: Per parlare di un'abitudine passata, la risposta corretta è 'didn't use to have'. La soluzione fornita ('Weren't used to have') è grammaticalmente errata, poiché 'be used to' richiede la forma -ing.",
-    "tags": ["used-to-vs-be-get-used-to", "used-to", "past-habits", "be-used-to", "gerund", "error-in-test"]
+    "spiegazione": "Per parlare di un'abitudine passata che non esiste più, si usa 'didn't use to + forma base'. La frase significa 'la gente non aveva l'abitudine di avere computer personali a casa'.",
+    "tags": ["used-to-vs-be-get-used-to", "used-to", "past-habits", "negative-form-used-to"]
   },
   {
     "id": 151,
@@ -1632,12 +1632,12 @@
   {
     "id": 164,
     "domanda": "The emperor is arriving tonight: said the message.",
-    "opzioni": [ "The message told the Emperor was arriving that night", "The message told that the Emperor is arriving that night", "The message said that the Emperor is arriving that night", "The message sad that Emperor was arriving that night" ],
-    "soluzione": "The message said that the Emperor is arriving that night",
-    "ripasso": "Unit 48 - Reported speech (say vs. tell)",
+    "opzioni": [ "The message told the Emperor was arriving that night", "The message told that the Emperor is arriving that night", "The message said that the Emperor is arriving that night", "The message said that the Emperor was arriving that night" ],
+    "soluzione": "The message said that the Emperor was arriving that night",
+    "ripasso": "Unit 48 - Reported speech (say vs. tell, tense changes)",
     "categoria": "Reported Speech",
-    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, 'is arriving' diventa 'was arriving' e 'tonight' diventa 'that night'. La soluzione corretta sarebbe 'The message said that the Emperor was arriving that night'.",
-    "tags": ["reported-speech", "tense-backshift", "time-adverb-change", "say-vs-tell", "error-in-test"]
+    "spiegazione": "Nel discorso indiretto, 'is arriving' diventa 'was arriving' e 'tonight' diventa 'that night'. Si usa 'said' senza oggetto indiretto.",
+    "tags": ["reported-speech", "tense-backshift", "time-adverb-change", "say-vs-tell"]
   },
   {
     "id": 165,
@@ -1752,12 +1752,12 @@
   {
     "id": 176,
     "domanda": "Choose the correct sentence:",
-    "opzioni": [ "If he saw the hole, he wouldn't have fallen", "If he would have seen the hole, he wouldn't have fallen", "If he would see the hole, he hadn't fallen", "If he has seen the hole, he wouldn't fallen" ],
-    "soluzione": "If he saw the hole, he wouldn't have fallen",
-    "ripasso": "Unit 40 - Mixed Conditionals (unreal present condition, unreal past result)",
+    "opzioni": [ "If he saw the hole, he wouldn't have fallen", "If he would have seen the hole, he wouldn't have fallen", "If he would see the hole, he hadn't fallen", "If he had seen the hole, he wouldn't have fallen" ],
+    "soluzione": "If he had seen the hole, he wouldn't have fallen",
+    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
     "categoria": "Conditionals & Wishes",
-    "spiegazione": "ERRORE NEL TEST: La frase è un condizionale misto. La soluzione fornita usa 'if + past, would have + p.p'. Un condizionale misto più comune è 'if + past perfect, would + base form'. Nessuna opzione è perfetta, ma la C. Type 3 'If he had seen..., he wouldn't have fallen' sarebbe la più logica.",
-    "tags": ["conditionals-wishes", "mixed-conditional", "conditional-type-2", "conditional-type-3", "error-in-test"]
+    "spiegazione": "Questo è un periodo ipotetico del terzo tipo (irrealtà nel passato). La struttura corretta è 'If + Past Perfect, would have + participio passato'.",
+    "tags": ["conditionals-wishes", "conditional-type-3", "past-perfect", "modal-perfect"]
   },
   {
     "id": 177,
@@ -1826,7 +1826,7 @@
     "soluzione": "Have been married",
     "ripasso": "Unit 11 - Present Perfect with for/since",
     "categoria": "Tenses (inclusi for/since, time clauses)",
-    "spiegazione": "Si usa il Present Perfect per descrivere uno stato ('to be married') che dura da un certo periodo di tempo ('for nearly 50 years') fino al presente.",
+    "spiegazione": "Si usa il Present Perfect ('have been married') con 'for' per indicare la durata di uno stato (essere sposati) che continua nel presente.",
     "tags": ["tenses", "present-perfect", "state-verb", "time-marker-for", "passive-voice"]
   },
   {
@@ -1923,11 +1923,11 @@
     "id": 193,
     "domanda": "Can you tell me what Peter's surname is, Ken what Harry",
     "opzioni": [ "Harry asked Ken what Peter's surname was", "Harry asked Ken what was Peter's surname", "Harry asked to Ken what was Peter's surname", "Harry asked to Ken what Peter's surname was" ],
-    "soluzione": "Harry asked Ken what was Peter's surname",
+    "soluzione": "Harry asked Ken what Peter's surname was",
     "ripasso": "Unit 49 - Reported questions",
     "categoria": "Reported Speech",
-    "spiegazione": "ERRORE NEL TEST: Nel discorso indiretto, l'ordine delle parole deve essere affermativo (soggetto + verbo). La risposta corretta è 'Harry asked Ken what Peter's surname was'.",
-    "tags": ["reported-speech", "reported-question", "word-order-in-questions", "tense-backshift", "error-in-test"]
+    "spiegazione": "Nel discorso indiretto, l'ordine delle parole deve essere affermativo (soggetto + verbo). La forma corretta è 'what Peter's surname was'.",
+    "tags": ["reported-speech", "reported-question", "word-order-in-questions", "tense-backshift"]
   },
   {
     "id": 194,
@@ -2012,12 +2012,12 @@
   {
     "id": 202,
     "domanda": "He's got a good salary, he ... £1.500 a month.",
-    "opzioni": [ "Eams", "Wins", "Takes", "Gains" ],
-    "soluzione": "Gains",
+    "opzioni": [ "Eams", "Wins", "Takes", "Earns" ],
+    "soluzione": "Earns",
     "ripasso": "Vocabulary: Earn vs. Win vs. Gain",
     "categoria": "Vocabulary",
-    "spiegazione": "ERRORE NEL TEST: Il verbo corretto per 'guadagnare' uno stipendio è 'to earn'. 'Gains' è solitamente usato per profitti o aumenti. La risposta corretta dovrebbe essere 'earns'.",
-    "tags": ["vocabulary", "confusing-verbs", "word-choice-earn", "word-choice-win", "word-choice-gain", "error-in-test"]
+    "spiegazione": "Il verbo corretto per 'guadagnare' uno stipendio è 'to earn'. Si dice 'he earns £1,500 a month'.",
+    "tags": ["vocabulary", "confusing-verbs", "word-choice-earn", "word-choice-win", "word-choice-gain"]
   },
   {
     "id": 203,
@@ -2166,7 +2166,7 @@
     "soluzione": "What size",
     "ripasso": "Unit 47 - What...?, Which...?, How...?",
     "categoria": "Question Formation",
-    "spiegazione": "Per chiedere il numero (la taglia) delle scarpe, l'espressione corretta è 'What size?'.",
+    "spiegazione": "Per chiedere la taglia o il numero di scarpe, si usa l'espressione 'What size?'.",
     "tags": ["question-formation", "question-word", "question-word-what", "question-word-how", "fixed-expression"]
   },
   {
@@ -2203,11 +2203,11 @@
     "id": 221,
     "domanda": "'It might be a fine day next Saturday but I doubt it' said Cathy.",
     "opzioni": [ "Cathy said it might be a fine day the following Saturday but she doubted it", "Cathy said it might have been a fine day next Saturday but she doubted it", "Cathy said it may have been a fine day the following Saturday but she doubted it", "Cathy said it might have been a fine day the following Saturday but she doubted it" ],
-    "soluzione": "Cathy said it might have been a fine day the following Saturday but she doubted it",
+    "soluzione": "Cathy said it might be a fine day the following Saturday but she doubted it",
     "ripasso": "Unit 48 - Reported speech (reporting modals)",
     "categoria": "Reported Speech",
-    "spiegazione": "ERRORE NEL TEST: Il modale 'might' di solito non cambia nel discorso indiretto. La risposta corretta dovrebbe essere 'Cathy said it might be a fine day the following Saturday but she doubted it'.",
-    "tags": ["reported-speech", "modal-shift", "modal-might", "modal-perfect", "error-in-test"]
+    "spiegazione": "Il modale 'might' di solito non cambia nel discorso indiretto. 'Next Saturday' diventa 'the following Saturday'.",
+    "tags": ["reported-speech", "modal-shift", "modal-might", "time-adverb-change"]
   },
   {
     "id": 222,
@@ -2282,12 +2282,12 @@
   {
     "id": 229,
     "domanda": "Choose the correct sentence:",
-    "opzioni": [ "I would have called if I had known his name", "I would have called if I will have known his name", "I had called if I would have known his name", "I would have called if I would have known his name" ],
-    "soluzione": "I would have called if I had known his name",
-    "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
+    "opzioni": [ "I would like you better if you were nicer to me", "I liked you better if you would have been nicer to me", "I'd have liked you better if you were nicer to me", "I would like you better if you are nicer to me" ],
+    "soluzione": "I would like you better if you were nicer to me",
+    "ripasso": "Unit 39 - If I did ... (Conditionals Type 2)",
     "categoria": "Conditionals & Wishes",
-    "spiegazione": "Periodo ipotetico del terzo tipo. Struttura corretta: 'would have + participio passato' nella principale, 'if + Past Perfect' nella secondaria.",
-    "tags": ["conditionals-wishes", "conditional-type-3", "past-perfect", "modal-perfect"]
+    "spiegazione": "Questo è un periodo ipotetico del secondo tipo, che esprime una condizione presente non reale. Struttura: 'would + forma base' nella principale, 'if + Past Simple' nella secondaria (con 'were' per 'be').",
+    "tags": ["conditionals-wishes", "conditional-type-2", "subjunctive-were", "modal-would"]
   },
   {
     "id": 230,
@@ -2313,21 +2313,21 @@
     "id": 232,
     "domanda": "We've got to ...",
     "opzioni": [ "Have another phone to put in", "Make another phone put in", "Get another phone to put in", "Have another phone put in" ],
-    "soluzione": "Get another phone to put in",
-    "ripasso": "Unit 54 - Get somebody/something to do",
+    "soluzione": "Have another phone put in",
+    "ripasso": "Unit 46 - Have/get something done (Causative)",
     "categoria": "Causative Structures (have/get/make/let)",
-    "spiegazione": "ERRORE NEL TEST: La struttura corretta per 'far installare' è quella causativa: 'have/get another phone put in' (con il participio passato). Nessuna opzione è perfetta. 'Get somebody to do something' è una struttura diversa.",
-    "tags": ["causative-structures", "causative-get-something-done", "causative-have-something-done", "past-participle", "error-in-test"]
+    "spiegazione": "La struttura causativa corretta per 'far installare' è 'have/get something done' con il participio passato. 'Have another phone put in' significa far installare un altro telefono.",
+    "tags": ["causative-structures", "causative-have-something-done", "causative-get-something-done", "past-participle"]
   },
   {
     "id": 233,
-    "domanda": "I don't like tea.",
-    "opzioni": [ "I don't too", "Neither I do", "So do I", "Neither do I" ],
-    "soluzione": "Neither do I",
-    "ripasso": "Unit 42 - Neither do I",
-    "categoria": "Agreement & Disagreement (So/Neither)",
-    "spiegazione": "Per essere d'accordo con una frase negativa, si usa 'Neither/Nor + ausiliare affermativo + soggetto'. L'ausiliare di 'I don't like' è 'do'.",
-    "tags": ["agreement-disagreement", "neither-nor", "so-am-i", "inversion", "auxiliary-verb"]
+    "domanda": "Choose the correct sentence:",
+    "opzioni": [ "There were many problems when the US presidential elections in the year 2000", "There were many problems as the US presidential elections last year", "There were many problems while the US presidential elections in the year 2000", "There were many problems during the US presidential elections in the year 2000" ],
+    "soluzione": "There were many problems during the US presidential elections in the year 2000",
+    "ripasso": "Unit 119 - During and while",
+    "categoria": "Conjunctions & Connectors",
+    "spiegazione": "'During' è una preposizione che si usa prima di un sostantivo (the elections) per indicare il periodo in cui qualcosa è accaduto. 'While' è una congiunzione e richiederebbe una frase con soggetto e verbo.",
+    "tags": ["conjunctions", "prepositions", "during-vs-while", "time-expression"]
   },
   {
     "id": 234,
@@ -2423,11 +2423,11 @@
     "id": 243,
     "domanda": "Choose the correct sentence:",
     "opzioni": [ "This spaghetti are overcooked!", "These spaghettis are overcooked!", "This spaghetti is overcooked!", "These spaghetti are overcooked!" ],
-    "soluzione": "These spaghetti are overcooked!",
-    "ripasso": "Unit 72 - Plural nouns (spaghetti)",
+    "soluzione": "This spaghetti is overcooked!",
+    "ripasso": "Unit 72 - Uncountable nouns (spaghetti)",
     "categoria": "Nouns, Pronouns & Determiners",
-    "spiegazione": "ERRORE NEL TEST: 'Spaghetti', come 'news', è un nome non numerabile in inglese e richiede il verbo singolare. La risposta corretta è 'This spaghetti is overcooked!'.",
-    "tags": ["nouns-pronouns-determiners", "uncountable-nouns", "plural-nouns", "subject-verb-agreement", "noun-spaghetti", "error-in-test"]
+    "spiegazione": "La parola 'spaghetti' in inglese è un nome non numerabile (uncountable). Pertanto, richiede il verbo al singolare ('is') e il dimostrativo singolare ('this'). Non ha una forma plurale.",
+    "tags": ["nouns-pronouns-determiners", "uncountable-nouns", "subject-verb-agreement", "noun-spaghetti"]
   },
   {
     "id": 244,
@@ -2533,11 +2533,11 @@
     "id": 254,
     "domanda": "Choose the synonym: PAIN",
     "opzioni": [ "Bread", "Window", "Suffer", "Ache" ],
-    "soluzione": "Suffer",
+    "soluzione": "Ache",
     "ripasso": "Vocabulary: Synonyms",
     "categoria": "Vocabulary",
-    "spiegazione": "ERRORE NEL TEST: 'Pain' (dolore) è un nome. 'Suffer' (soffrire) è un verbo. 'Ache' (dolore, fitta) è un nome e quindi il sinonimo migliore. La soluzione fornita è di una categoria grammaticale diversa.",
-    "tags": ["vocabulary", "synonyms", "word-categories", "noun-vs-verb", "word-choice-pain", "word-choice-ache", "error-in-test"]
+    "spiegazione": "'Pain' (dolore) è un nome. 'Ache' (dolore, fitta) è il sinonimo corretto poiché sono entrambi nomi che indicano una sensazione dolorosa.",
+    "tags": ["vocabulary", "synonyms", "word-choice-pain", "word-choice-ache", "nouns"]
   },
   {
     "id": 255,
@@ -2592,12 +2592,12 @@
   {
     "id": 260,
     "domanda": "When they got there, the second race ...",
-    "opzioni": [ "Was already been run", "Was already being run", "Was already ran", "Was already run" ],
-    "soluzione": "Was already being run",
-    "ripasso": "Unit 44 - Passive (Past continuous passive)",
+    "opzioni": [ "Was already been run", "Was already being run", "Was already ran", "Had already been run" ],
+    "soluzione": "Had already been run",
+    "ripasso": "Unit 44 - Passive (Past perfect passive)",
     "categoria": "Passive Voice",
-    "spiegazione": "ERRORE NEL TEST: Se la gara era già finita, si dovrebbe usare il Past Perfect Passivo: 'had already been run'. Se era in corso, 'was already being run'. Il contesto non è chiaro, ma la soluzione fornita indica un'azione in corso.",
-    "tags": ["passive-voice", "past-continuous-passive", "past-perfect-passive", "tenses", "sequence-of-tenses", "error-in-test"]
+    "spiegazione": "Se la gara era già finita quando sono arrivati, si usa il Past Perfect Passivo: 'had already been run'. Questo indica che l'azione era stata completata prima del loro arrivo.",
+    "tags": ["passive-voice", "past-perfect-passive", "tenses", "sequence-of-tenses", "past-continuous-passive"]
   },
   {
     "id": 261,
@@ -2611,15 +2611,15 @@
   },
   {
     "id": 262,
-    "domanda": "If it had known it was such a difficult subject, I ... it.",
+    "domanda": "If I had known it was such a difficult subject, I ... it.",
     "opzioni": [ "Would never have chosen", "Had never chosen", "Never would choose", "Would never choose" ],
     "soluzione": "Would never have chosen",
     "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
     "categoria": "Conditionals & Wishes",
-    "spiegazione": "ERRORE NEL TEST: Il soggetto della prima frase dovrebbe essere 'I' (If I had known...). Comunque, la struttura è quella del terzo condizionale: 'If + Past Perfect', '...would have + participio passato'.",
-    "tags": ["conditionals-wishes", "conditional-type-3", "past-perfect", "modal-perfect", "error-in-question"]
-  },
-  {
+    "spiegazione": "Questo è un periodo ipotetico del terzo tipo. La struttura corretta è 'If + Past Perfect (had known), would have + participio passato (would never have chosen)'.",
+    "tags": ["conditionals-wishes", "conditional-type-3", "past-perfect", "modal-perfect"]
+  }
+]
     "id": 263,
     "domanda": "The door is wide open. You ... it properly.",
     "opzioni": [ "Mustn't have closed", "Can't have closed", "Needn't have closed", "Mightn't have closed" ],
