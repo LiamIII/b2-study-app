@@ -2617,12 +2617,12 @@
     "ripasso": "Unit 40 - If I had known... (Conditionals Type 3)",
     "categoria": "Conditionals & Wishes",
     "spiegazione": "Questo è un periodo ipotetico del terzo tipo. La struttura corretta è 'If + Past Perfect (had known), would have + participio passato (would never have chosen)'.",
-    "tags": ["conditionals-wishes", "conditional-type-3", "past-perfect", "modal-perfect"]
-  }
-]
-    "id": 263,
-    "domanda": "The door is wide open. You ... it properly.",
-    "opzioni": [ "Mustn't have closed", "Can't have closed", "Needn't have closed", "Mightn't have closed" ],
+  "tags": ["conditionals-wishes", "conditional-type-3", "past-perfect", "modal-perfect"]
+},
+{
+  "id": 263,
+  "domanda": "The door is wide open. You ... it properly.",
+  "opzioni": [ "Mustn't have closed", "Can't have closed", "Needn't have closed", "Mightn't have closed" ],
     "soluzione": "Can't have closed",
     "ripasso": "Unit 29 - Can't have done (deduction about the past)",
     "categoria": "Modals & Related Structures",
